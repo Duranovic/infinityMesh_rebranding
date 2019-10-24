@@ -1,0 +1,113 @@
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important; } }
+
+.visible-xs {
+  display: none !important; }
+  @media (max-width: 767px) {
+    .visible-xs {
+      display: block !important; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0; }
+
+.primary-button {
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  border-radius: 7%;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 200px;
+  background-color: dodgerBlue;
+  color: white; }
+
+.secondary-button {
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  border-radius: 7%;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 200px;
+  background-color: #055c05;
+  color: white; }
+
+.primary-button-bordered {
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  border-radius: 7%;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 200px;
+  background-color: dodgerBlue;
+  color: white;
+  border: 2px solid white; }
+
+.secondary-button-bordered {
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  border-radius: 7%;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 200px;
+  background-color: #055c05;
+  color: white;
+  border: 2px solid white; }
+
+.home-section {
+  height: 100vh;
+  background: black; }
+
+.how-we-do-section {
+  height: 100vh;
+  background: white; }
+
+.services-section {
+  height: 100vh;
+  background: gainsboro; }
+
+.quotes-section {
+  height: 100vh;
+  background: green; }
+
+footer {
+  height: 25vh;
+  background-color: darkblue; }
+
+.box-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #97c552;
+  padding: 30px;
+  width: 400px;
+  color: white; }
+  .box-item h1 {
+    margin: 10px 10px 0 0; }
+  .box-item .box-item-body {
+    width: 300px;
+    border-left: 2px solid white; }
+    .box-item .box-item-body .box-item-body-title {
+      color: white;
+      padding: 20px;
+      background: dodgerblue;
+      text-transform: uppercase; }
+    .box-item .box-item-body .box-item-body-description {
+      color: white;
+      padding: 20px; }
+
+/*# sourceMappingURL=main.css.map */

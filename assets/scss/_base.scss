@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+@mixin button {
+    padding: 7px 30px 7px 30px;
+    text-decoration: none;
+    border-radius: 7%;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 200px;
+}
+.primary-button{
+    @include button();
+    background-color: $main-color;
+    color: white;
+}
+.secondary-button{
+    @include button();
+    background-color:rgb(5, 92, 5);
+    color: white;
+}
+.primary-button-bordered{
+    @include button();
+    background-color: $main-color;
+    color: white;
+    border: 2px solid white;
+}
+.secondary-button-bordered{
+    @include button();
+    background-color:rgb(5, 92, 5);
+    color: white;
+    border: 2px solid white;
+}
+.home-section{
+    height: 100vh;
+    background: black;
+}
+.how-we-do-section{
+    height: 100vh;
+    background: white;
+}
+.services-section{
+    height: 100vh;
+    background: gainsboro;
+}
+.quotes-section{
+    height: 100vh;
+    background: green;
+}
+footer{
+    height: 25vh;
+    background-color: darkblue;
+}
+.box-item{
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(151, 197, 82);
+    padding: 30px;
+    width: 400px;
+    color: white;
+    h1{
+        margin: 10px 10px 0 0;
+    }
+    .box-item-body{
+        width: 300px;
+        border-left: 2px solid white;
+        .box-item-body-title{
+            color: white;
+            padding: 20px;
+            background: dodgerblue;
+            text-transform: uppercase;
+        }
+        .box-item-body-description{
+            color: white;
+            padding: 20px;
+        }
+    }
+}
