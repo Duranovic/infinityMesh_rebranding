@@ -1,5 +1,5 @@
 $main-color: dodgerBlue;
-$secondary-color: #85f26d;
+$secondary-color: #57c73e;
 
 // Media Queries
 // Extra Small Devices, Mobile .visible-xs-*
@@ -48,6 +48,12 @@ $secondary-color: #85f26d;
         @content;
     }
 }
+// Extra Extra large devices, Desktop
+@mixin media-xxlg{
+    @media(min-width: 1824px){
+        @content;
+    }
+}
 .hidden-xs {
     @include media-xs() {
         display: none !important;
@@ -74,3 +80,4 @@ $secondary-color: #85f26d;
         display: block !important;
     }
 }
+

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     margin: 0;
@@ -35,48 +36,222 @@ body{
     color: white;
     border: 2px solid white;
 }
+.secondary-color{
+    color: $secondary-color;
+}
+.main-color{
+    color: $main-color;
+}
+
+
 .home-section{
     height: 100vh;
     background: black;
 }
+
+
+
+
 .how-we-do-section{
-    height: 100vh;
     background: white;
+    text-align: center;
+    padding-bottom: 300px;
+    @include media-lmd{
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    @include media-lg{
+        padding-top: 80px;
+        padding-bottom: 200px;
+    }
+    @include media-xlg{
+        padding-top: 95px;
+        padding-bottom: 250px;
+    }
+    @include media-xxlg{
+        padding-bottom: 300px;
+    }
+    >h1{
+        color: $main-color;
+        margin-bottom: 100px;
+        @include media-lg{
+            margin-bottom: 50px;
+        }
+        @include media-xlg{
+            padding: 80px;
+        }
+        @include media-xxlg{
+            padding: 100px;
+            font-size: 40px;
+        }
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        .left-box{
+            display: flex;
+            transition: width .4s, height .4s;
+            background-color: rgb(18, 89, 160);
+            @include media-lmd{
+                width: 55%;
+            }
+            @include media-lg{
+                width: 50%;
+            }
+            @include media-xlg{
+                width: 35%;
+            }
+            @include media-xxlg{
+                width: 40%;
+                padding: 30px 20px;
+            }
+   
+            flex-wrap: wrap;
+            .box-item{
+                width: 50%;
+                display: flex;
+                align-items: flex-start;
+                padding: 30px;
+                color: white;
+                h1{
+                    margin: 10px 10px 0 0;
+                    color: white;
+                }
+                .box-item-body{
+                    width: 300px;
+                    border-left: 2px solid white;
+                    .box-item-body-title{
+                        text-align: left;
+                        color: white;
+                        padding: 20px;
+                        background: $secondary-color;
+                        text-transform: uppercase;
+                        @include media-lmd{
+                            padding: 10px;
+                        }
+                        @include media-lg{
+                            padding: 10px;
+                        }
+                        @include media-xlg{
+                            padding: 15px;
+                        }
+                        @include media-xxlg{
+                            padding: 20px;
+                        }
+                    }
+                    .box-item-body-description{
+                        color: white;
+                        padding: 20px;
+                        text-align: left;
+                        @include media-lmd{
+                            padding: 10px;
+                        }
+                        @include media-lg{
+                            padding: 10px;
+                        }
+                        @include media-xlg{
+                            padding: 15px;
+                        }
+                        @include media-xxlg{
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .right-box{
+            display: inline-block;
+            background-color: $secondary-color;
+            transition: width .4s, height .4s;
+            @include media-lmd{
+                width: 30%;
+            }
+            @include media-lg{
+                width: 30%;
+            }
+            @include media-xlg{
+                width: 25%;
+            }
+            @include media-xxlg{
+                width: 18%;
+            }
+            .box-item{
+                display: flex;
+                align-items: flex-start;
+                padding: 30px;
+                color: white;
+                
+                h1{
+                    margin: 10px 10px 0 0;
+                    color: white;
+                }
+                .box-item-body{
+                    width: 300px;
+                    border-left: 2px solid white;
+                    .box-item-body-title{
+                        text-align: left;
+                        color: white;
+                        padding: 20px;
+                        background: dodgerblue;
+                        text-transform: uppercase;
+                        @include media-lmd{
+                            padding: 10px;
+                        }
+                        @include media-lg{
+                            padding: 10px;
+                        }
+                        @include media-xlg{
+                            padding: 15px;
+                        }
+                        @include media-xxlg{
+                            padding: 20px;
+                        }
+                    }
+                    .box-item-body-description{
+                        color: white;
+                        padding: 20px;
+                        text-align: left;
+                        @include media-lmd{
+                            padding: 10px;
+                        }
+                        @include media-lg{
+                            padding: 10px;
+                        }
+                        @include media-xlg{
+                            padding: 15px;
+                        }
+                        @include media-xxlg{
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .services-section{
     height: 100vh;
     background: gainsboro;
 }
-.quotes-section{
-    height: 100vh;
-    background: green;
+.work-with-section{
+    box-shadow: 0 0 100px 4px gainsboro;
+    .work-with-section-container{
+        padding: 100px 60px;
+        display: flex;
+        align-items: center;
+        .heading{
+            width: 30%;
+            padding: 0 70px;
+            h1{
+                font-size: 60px;
+                color: $secondary-color;
+            }
+        }    
+    }
 }
 footer{
     height: 25vh;
     background-color: darkblue;
-}
-.box-item{
-    display: flex;
-    align-items: flex-start;
-    background-color: rgb(151, 197, 82);
-    padding: 30px;
-    width: 400px;
-    color: white;
-    h1{
-        margin: 10px 10px 0 0;
-    }
-    .box-item-body{
-        width: 300px;
-        border-left: 2px solid white;
-        .box-item-body-title{
-            color: white;
-            padding: 20px;
-            background: dodgerblue;
-            text-transform: uppercase;
-        }
-        .box-item-body-description{
-            color: white;
-            padding: 20px;
-        }
-    }
 }
