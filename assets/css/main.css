@@ -191,7 +191,7 @@ body {
       margin-bottom: 40px; }
       @media (min-width: 768px) and (max-width: 991px) {
         .work-with-section .brands .brand-container {
-          width: 33.33%; } }
+          width: 33.333%; } }
 
 footer {
   height: 25vh;
