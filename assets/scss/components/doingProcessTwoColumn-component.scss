@@ -2,6 +2,7 @@
     display: flex;
     transition: width .4s, height .4s;
     background-color: rgb(18, 89, 160);
+    border-radius: 7px;
     @include media-sm{
         width: 80%;
     }
