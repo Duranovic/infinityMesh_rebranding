@@ -1,5 +1,17 @@
 .quotes-container{
     width: 72%;
+    @include media-lmd{
+            
+    }
+    @include media-lg{
+        width: 70%;
+    }
+    @include media-xlg{
+        width: 60%;
+    }
+    @include media-xxlg{
+        width: 50%;
+    }
     .quote-container{
         margin-bottom: 30px;
         width: 80%;
@@ -7,6 +19,18 @@
         align-items: stretch;
         box-shadow: 0 0 10px 3px gainsboro;
         border-radius: 5px;
+        @include media-lmd{
+            
+        }
+        @include media-lg{
+           
+        }
+        @include media-xlg{
+            width: 70%;
+        }
+        @include media-xxlg{
+            width: 70%;
+        }
         .img-container{
             background-color: $main-color;
             padding: 20px;

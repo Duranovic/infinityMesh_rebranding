@@ -90,145 +90,6 @@ body{
         align-items: center;
         justify-content: space-around;
         flex-direction: row;
-        .left-box{
-            display: flex;
-            transition: width .4s, height .4s;
-            background-color: rgb(18, 89, 160);
-            @include media-lmd{
-                width: 55%;
-            }
-            @include media-lg{
-                width: 50%;
-            }
-            @include media-xlg{
-                width: 35%;
-            }
-            @include media-xxlg{
-                width: 40%;
-                padding: 30px 20px;
-            }
-   
-            flex-wrap: wrap;
-            .box-item{
-                width: 50%;
-                display: flex;
-                align-items: flex-start;
-                padding: 30px;
-                color: white;
-                h1{
-                    margin: 10px 10px 0 0;
-                    color: white;
-                }
-                .box-item-body{
-                    width: 300px;
-                    border-left: 2px solid white;
-                    .box-item-body-title{
-                        text-align: left;
-                        color: white;
-                        padding: 20px;
-                        background: $secondary-color;
-                        text-transform: uppercase;
-                        @include media-lmd{
-                            padding: 10px;
-                        }
-                        @include media-lg{
-                            padding: 10px;
-                        }
-                        @include media-xlg{
-                            padding: 15px;
-                        }
-                        @include media-xxlg{
-                            padding: 20px;
-                        }
-                    }
-                    .box-item-body-description{
-                        color: white;
-                        padding: 20px;
-                        text-align: left;
-                        @include media-lmd{
-                            padding: 10px;
-                        }
-                        @include media-lg{
-                            padding: 10px;
-                        }
-                        @include media-xlg{
-                            padding: 15px;
-                        }
-                        @include media-xxlg{
-                            padding: 20px;
-                        }
-                    }
-                }
-            }
-        }
-        .right-box{
-            display: inline-block;
-            background-color: $secondary-color;
-            transition: width .4s, height .4s;
-            @include media-lmd{
-                width: 30%;
-            }
-            @include media-lg{
-                width: 30%;
-            }
-            @include media-xlg{
-                width: 25%;
-            }
-            @include media-xxlg{
-                width: 18%;
-            }
-            .box-item{
-                display: flex;
-                align-items: flex-start;
-                padding: 30px;
-                color: white;
-                
-                h1{
-                    margin: 10px 10px 0 0;
-                    color: white;
-                }
-                .box-item-body{
-                    width: 300px;
-                    border-left: 2px solid white;
-                    .box-item-body-title{
-                        text-align: left;
-                        color: white;
-                        padding: 20px;
-                        background: dodgerblue;
-                        text-transform: uppercase;
-                        @include media-lmd{
-                            padding: 10px;
-                        }
-                        @include media-lg{
-                            padding: 10px;
-                        }
-                        @include media-xlg{
-                            padding: 15px;
-                        }
-                        @include media-xxlg{
-                            padding: 20px;
-                        }
-                    }
-                    .box-item-body-description{
-                        color: white;
-                        padding: 20px;
-                        text-align: left;
-                        @include media-lmd{
-                            padding: 10px;
-                        }
-                        @include media-lg{
-                            padding: 10px;
-                        }
-                        @include media-xlg{
-                            padding: 15px;
-                        }
-                        @include media-xxlg{
-                            padding: 20px;
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 .services-section{
@@ -241,9 +102,37 @@ body{
         padding: 100px 60px;
         display: flex;
         align-items: center;
+        @include media-lmd{
+            
+        }
+        @include media-lg{
+           
+        }
+        @include media-xlg{
+           
+        }
+        @include media-xxlg{
+            padding: 100px 60px;
+
+        }
         .heading{
             width: 30%;
             padding: 0 70px;
+            @include media-lmd{
+            
+            }
+            @include media-lg{
+                width: 30%;
+                padding: 0 7% 0 3%;
+            }
+            @include media-xlg{
+                width: 40%;
+                padding: 0 7% 0 15%;
+            }
+            @include media-xxlg{
+                width: 50%;
+                padding: 0 5% 0 30%;
+            }
             h1{
                 font-size: 60px;
                 color: $secondary-color;

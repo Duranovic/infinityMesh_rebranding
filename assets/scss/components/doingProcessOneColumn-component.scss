@@ -1,0 +1,69 @@
+.right-box{
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-color;
+    transition: width .4s, height .4s;
+    @include media-lmd{
+        min-min-width: 30%;
+    }
+    @include media-lg{
+        min-width: 30%;
+    }
+    @include media-xlg{
+        min-width: 25%;
+    }
+    @include media-xxlg{
+        min-width: 18%;
+    }
+    .box-item{
+        display: flex;
+        align-items: flex-start;
+        padding: 30px;
+        color: white;
+        
+        h1{
+            margin: 10px 10px 0 0;
+            color: white;
+        }
+        .box-item-body{
+            width: 300px;
+            border-left: 2px solid white;
+            .box-item-body-title{
+                text-align: left;
+                color: white;
+                padding: 20px;
+                background: $main-color;
+                text-transform: uppercase;
+                @include media-lmd{
+                    padding: 10px;
+                }
+                @include media-lg{
+                    padding: 10px;
+                }
+                @include media-xlg{
+                    padding: 15px;
+                }
+                @include media-xxlg{
+                    padding: 20px;
+                }
+            }
+            .box-item-body-description{
+                color: white;
+                padding: 20px;
+                text-align: left;
+                @include media-lmd{
+                    padding: 10px;
+                }
+                @include media-lg{
+                    padding: 10px;
+                }
+                @include media-xlg{
+                    padding: 15px;
+                }
+                @include media-xxlg{
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

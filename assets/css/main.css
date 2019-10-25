@@ -117,131 +117,6 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: row; }
-    .how-we-do-section .boxes .left-box {
-      display: flex;
-      transition: width .4s, height .4s;
-      background-color: #1259a0;
-      flex-wrap: wrap; }
-      @media (min-width: 992px) {
-        .how-we-do-section .boxes .left-box {
-          width: 55%; } }
-      @media (min-width: 1200px) {
-        .how-we-do-section .boxes .left-box {
-          width: 50%; } }
-      @media (min-width: 1450px) {
-        .how-we-do-section .boxes .left-box {
-          width: 35%; } }
-      @media (min-width: 1824px) {
-        .how-we-do-section .boxes .left-box {
-          width: 40%;
-          padding: 30px 20px; } }
-      .how-we-do-section .boxes .left-box .box-item {
-        width: 50%;
-        display: flex;
-        align-items: flex-start;
-        padding: 30px;
-        color: white; }
-        .how-we-do-section .boxes .left-box .box-item h1 {
-          margin: 10px 10px 0 0;
-          color: white; }
-        .how-we-do-section .boxes .left-box .box-item .box-item-body {
-          width: 300px;
-          border-left: 2px solid white; }
-          .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-title {
-            text-align: left;
-            color: white;
-            padding: 20px;
-            background: #57c73e;
-            text-transform: uppercase; }
-            @media (min-width: 992px) {
-              .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-title {
-                padding: 10px; } }
-            @media (min-width: 1200px) {
-              .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-title {
-                padding: 10px; } }
-            @media (min-width: 1450px) {
-              .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-title {
-                padding: 15px; } }
-            @media (min-width: 1824px) {
-              .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-title {
-                padding: 20px; } }
-          .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-description {
-            color: white;
-            padding: 20px;
-            text-align: left; }
-            @media (min-width: 992px) {
-              .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-description {
-                padding: 10px; } }
-            @media (min-width: 1200px) {
-              .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-description {
-                padding: 10px; } }
-            @media (min-width: 1450px) {
-              .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-description {
-                padding: 15px; } }
-            @media (min-width: 1824px) {
-              .how-we-do-section .boxes .left-box .box-item .box-item-body .box-item-body-description {
-                padding: 20px; } }
-    .how-we-do-section .boxes .right-box {
-      display: inline-block;
-      background-color: #57c73e;
-      transition: width .4s, height .4s; }
-      @media (min-width: 992px) {
-        .how-we-do-section .boxes .right-box {
-          width: 30%; } }
-      @media (min-width: 1200px) {
-        .how-we-do-section .boxes .right-box {
-          width: 30%; } }
-      @media (min-width: 1450px) {
-        .how-we-do-section .boxes .right-box {
-          width: 25%; } }
-      @media (min-width: 1824px) {
-        .how-we-do-section .boxes .right-box {
-          width: 18%; } }
-      .how-we-do-section .boxes .right-box .box-item {
-        display: flex;
-        align-items: flex-start;
-        padding: 30px;
-        color: white; }
-        .how-we-do-section .boxes .right-box .box-item h1 {
-          margin: 10px 10px 0 0;
-          color: white; }
-        .how-we-do-section .boxes .right-box .box-item .box-item-body {
-          width: 300px;
-          border-left: 2px solid white; }
-          .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-title {
-            text-align: left;
-            color: white;
-            padding: 20px;
-            background: dodgerblue;
-            text-transform: uppercase; }
-            @media (min-width: 992px) {
-              .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-title {
-                padding: 10px; } }
-            @media (min-width: 1200px) {
-              .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-title {
-                padding: 10px; } }
-            @media (min-width: 1450px) {
-              .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-title {
-                padding: 15px; } }
-            @media (min-width: 1824px) {
-              .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-title {
-                padding: 20px; } }
-          .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-description {
-            color: white;
-            padding: 20px;
-            text-align: left; }
-            @media (min-width: 992px) {
-              .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-description {
-                padding: 10px; } }
-            @media (min-width: 1200px) {
-              .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-description {
-                padding: 10px; } }
-            @media (min-width: 1450px) {
-              .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-description {
-                padding: 15px; } }
-            @media (min-width: 1824px) {
-              .how-we-do-section .boxes .right-box .box-item .box-item-body .box-item-body-description {
-                padding: 20px; } }
 
 .services-section {
   height: 100vh;
@@ -253,9 +128,24 @@ body {
     padding: 100px 60px;
     display: flex;
     align-items: center; }
+    @media (min-width: 1824px) {
+      .work-with-section .work-with-section-container {
+        padding: 100px 60px; } }
     .work-with-section .work-with-section-container .heading {
       width: 30%;
       padding: 0 70px; }
+      @media (min-width: 1200px) {
+        .work-with-section .work-with-section-container .heading {
+          width: 30%;
+          padding: 0 7% 0 3%; } }
+      @media (min-width: 1450px) {
+        .work-with-section .work-with-section-container .heading {
+          width: 40%;
+          padding: 0 7% 0 15%; } }
+      @media (min-width: 1824px) {
+        .work-with-section .work-with-section-container .heading {
+          width: 50%;
+          padding: 0 5% 0 30%; } }
       .work-with-section .work-with-section-container .heading h1 {
         font-size: 60px;
         color: #57c73e; }
@@ -264,8 +154,145 @@ footer {
   height: 25vh;
   background-color: darkblue; }
 
+.right-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #57c73e;
+  transition: width .4s, height .4s; }
+  @media (min-width: 992px) {
+    .right-box {
+      min-min-width: 30%; } }
+  @media (min-width: 1200px) {
+    .right-box {
+      min-width: 30%; } }
+  @media (min-width: 1450px) {
+    .right-box {
+      min-width: 25%; } }
+  @media (min-width: 1824px) {
+    .right-box {
+      min-width: 18%; } }
+  .right-box .box-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    color: white; }
+    .right-box .box-item h1 {
+      margin: 10px 10px 0 0;
+      color: white; }
+    .right-box .box-item .box-item-body {
+      width: 300px;
+      border-left: 2px solid white; }
+      .right-box .box-item .box-item-body .box-item-body-title {
+        text-align: left;
+        color: white;
+        padding: 20px;
+        background: dodgerBlue;
+        text-transform: uppercase; }
+        @media (min-width: 992px) {
+          .right-box .box-item .box-item-body .box-item-body-title {
+            padding: 10px; } }
+        @media (min-width: 1200px) {
+          .right-box .box-item .box-item-body .box-item-body-title {
+            padding: 10px; } }
+        @media (min-width: 1450px) {
+          .right-box .box-item .box-item-body .box-item-body-title {
+            padding: 15px; } }
+        @media (min-width: 1824px) {
+          .right-box .box-item .box-item-body .box-item-body-title {
+            padding: 20px; } }
+      .right-box .box-item .box-item-body .box-item-body-description {
+        color: white;
+        padding: 20px;
+        text-align: left; }
+        @media (min-width: 992px) {
+          .right-box .box-item .box-item-body .box-item-body-description {
+            padding: 10px; } }
+        @media (min-width: 1200px) {
+          .right-box .box-item .box-item-body .box-item-body-description {
+            padding: 10px; } }
+        @media (min-width: 1450px) {
+          .right-box .box-item .box-item-body .box-item-body-description {
+            padding: 15px; } }
+        @media (min-width: 1824px) {
+          .right-box .box-item .box-item-body .box-item-body-description {
+            padding: 20px; } }
+
+.left-box {
+  display: flex;
+  transition: width .4s, height .4s;
+  background-color: #1259a0;
+  flex-wrap: wrap; }
+  @media (min-width: 992px) {
+    .left-box {
+      width: 55%; } }
+  @media (min-width: 1200px) {
+    .left-box {
+      width: 50%; } }
+  @media (min-width: 1450px) {
+    .left-box {
+      width: 35%; } }
+  @media (min-width: 1824px) {
+    .left-box {
+      width: 40%;
+      padding: 30px 20px; } }
+  .left-box .box-item {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    color: white; }
+    .left-box .box-item h1 {
+      margin: 10px 10px 0 0;
+      color: white; }
+    .left-box .box-item .box-item-body {
+      width: 300px;
+      border-left: 2px solid white; }
+      .left-box .box-item .box-item-body .box-item-body-title {
+        text-align: left;
+        color: white;
+        padding: 20px;
+        background: #57c73e;
+        text-transform: uppercase; }
+        @media (min-width: 992px) {
+          .left-box .box-item .box-item-body .box-item-body-title {
+            padding: 10px; } }
+        @media (min-width: 1200px) {
+          .left-box .box-item .box-item-body .box-item-body-title {
+            padding: 10px; } }
+        @media (min-width: 1450px) {
+          .left-box .box-item .box-item-body .box-item-body-title {
+            padding: 15px; } }
+        @media (min-width: 1824px) {
+          .left-box .box-item .box-item-body .box-item-body-title {
+            padding: 20px; } }
+      .left-box .box-item .box-item-body .box-item-body-description {
+        color: white;
+        padding: 20px;
+        text-align: left; }
+        @media (min-width: 992px) {
+          .left-box .box-item .box-item-body .box-item-body-description {
+            padding: 10px; } }
+        @media (min-width: 1200px) {
+          .left-box .box-item .box-item-body .box-item-body-description {
+            padding: 10px; } }
+        @media (min-width: 1450px) {
+          .left-box .box-item .box-item-body .box-item-body-description {
+            padding: 15px; } }
+        @media (min-width: 1824px) {
+          .left-box .box-item .box-item-body .box-item-body-description {
+            padding: 20px; } }
+
 .quotes-container {
   width: 72%; }
+  @media (min-width: 1200px) {
+    .quotes-container {
+      width: 70%; } }
+  @media (min-width: 1450px) {
+    .quotes-container {
+      width: 60%; } }
+  @media (min-width: 1824px) {
+    .quotes-container {
+      width: 50%; } }
   .quotes-container .quote-container {
     margin-bottom: 30px;
     width: 80%;
@@ -273,6 +300,12 @@ footer {
     align-items: stretch;
     box-shadow: 0 0 10px 3px gainsboro;
     border-radius: 5px; }
+    @media (min-width: 1450px) {
+      .quotes-container .quote-container {
+        width: 70%; } }
+    @media (min-width: 1824px) {
+      .quotes-container .quote-container {
+        width: 70%; } }
     .quotes-container .quote-container .img-container {
       background-color: dodgerBlue;
       padding: 20px;

@@ -1,0 +1,71 @@
+.left-box{
+    display: flex;
+    transition: width .4s, height .4s;
+    background-color: rgb(18, 89, 160);
+    @include media-lmd{
+        width: 55%;
+    }
+    @include media-lg{
+        width: 50%;
+    }
+    @include media-xlg{
+        width: 35%;
+    }
+    @include media-xxlg{
+        width: 40%;
+        padding: 30px 20px;
+    }
+
+    flex-wrap: wrap;
+    .box-item{
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        padding: 30px;
+        color: white;
+        h1{
+            margin: 10px 10px 0 0;
+            color: white;
+        }
+        .box-item-body{
+            width: 300px;
+            border-left: 2px solid white;
+            .box-item-body-title{
+                text-align: left;
+                color: white;
+                padding: 20px;
+                background: $secondary-color;
+                text-transform: uppercase;
+                @include media-lmd{
+                    padding: 10px;
+                }
+                @include media-lg{
+                    padding: 10px;
+                }
+                @include media-xlg{
+                    padding: 15px;
+                }
+                @include media-xxlg{
+                    padding: 20px;
+                }
+            }
+            .box-item-body-description{
+                color: white;
+                padding: 20px;
+                text-align: left;
+                @include media-lmd{
+                    padding: 10px;
+                }
+                @include media-lg{
+                    padding: 10px;
+                }
+                @include media-xlg{
+                    padding: 15px;
+                }
+                @include media-xxlg{
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
