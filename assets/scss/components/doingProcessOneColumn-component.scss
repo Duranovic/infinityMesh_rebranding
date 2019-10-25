@@ -3,8 +3,12 @@
     flex-direction: column;
     background-color: $secondary-color;
     transition: width .4s, height .4s;
+    @include media-sm{
+        margin-top: 60px;
+        min-width: auto;
+    }
     @include media-lmd{
-        min-min-width: 30%;
+        min-width: 30%;
     }
     @include media-lg{
         min-width: 30%;
@@ -34,6 +38,9 @@
                 padding: 20px;
                 background: $main-color;
                 text-transform: uppercase;
+                @include media-sm{
+                    padding: 6px;
+                }
                 @include media-lmd{
                     padding: 10px;
                 }
@@ -51,6 +58,9 @@
                 color: white;
                 padding: 20px;
                 text-align: left;
+                @include media-sm{
+                    padding: 6px;
+                }
                 @include media-lmd{
                     padding: 10px;
                 }

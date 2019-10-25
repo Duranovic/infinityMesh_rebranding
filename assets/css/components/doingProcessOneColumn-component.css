@@ -7,10 +7,10 @@ Error: Undefined variable: "$secondary-color".
 3:     flex-direction: column;
 4:     background-color: $secondary-color;
 5:     transition: width .4s, height .4s;
-6:     @include media-lmd{
-7:         min-min-width: 30%;
-8:     }
-9:     @include media-lg{
+6:     @include media-sm{
+7:         margin-top: 60px;
+8:         min-width: auto;
+9:     }
 
 Backtrace:
 assets/scss/components/doingProcessOneColumn-component.scss:4
@@ -67,4 +67,4 @@ assets/scss/components/doingProcessOneColumn-component.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$secondary-color\".\A         on line 4 of assets/scss/components/doingProcessOneColumn-component.scss\A \A 1: .right-box{\A 2:     display: flex;\A 3:     flex-direction: column;\A 4:     background-color: $secondary-color;\A 5:     transition: width .4s, height .4s;\A 6:     @include media-lmd{\A 7:         min-min-width: 30%;\A 8:     }\A 9:     @include media-lg{"; }
+  content: "Error: Undefined variable: \"$secondary-color\".\A         on line 4 of assets/scss/components/doingProcessOneColumn-component.scss\A \A 1: .right-box{\A 2:     display: flex;\A 3:     flex-direction: column;\A 4:     background-color: $secondary-color;\A 5:     transition: width .4s, height .4s;\A 6:     @include media-sm{\A 7:         margin-top: 60px;\A 8:         min-width: auto;\A 9:     }"; }

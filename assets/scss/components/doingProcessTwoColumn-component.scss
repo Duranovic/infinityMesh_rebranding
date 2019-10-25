@@ -2,6 +2,9 @@
     display: flex;
     transition: width .4s, height .4s;
     background-color: rgb(18, 89, 160);
+    @include media-sm{
+        width: 80%;
+    }
     @include media-lmd{
         width: 55%;
     }
@@ -36,6 +39,9 @@
                 padding: 20px;
                 background: $secondary-color;
                 text-transform: uppercase;
+                @include media-sm{
+                    padding: 6px;
+                }
                 @include media-lmd{
                     padding: 10px;
                 }
@@ -53,6 +59,9 @@
                 color: white;
                 padding: 20px;
                 text-align: left;
+                @include media-sm{
+                    padding: 6px;
+                }
                 @include media-lmd{
                     padding: 10px;
                 }
