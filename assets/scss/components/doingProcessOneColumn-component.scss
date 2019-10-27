@@ -4,6 +4,9 @@
     background-color: $secondary-color;
     border-radius: 7px;
     transition: width .4s, height .4s;
+    @include media-xs{
+        width: 80%;
+    }
     @include media-sm{
         margin-top: 60px;
         min-width: auto;

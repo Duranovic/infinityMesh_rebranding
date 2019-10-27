@@ -8,6 +8,7 @@
 @import '_fonts';
 
 // Components
-@import 'components/doingProcessOneColumn-component.scss';
-@import 'components/doingProcessTwoColumn-component.scss';
-@import 'components/quote-component.scss';
+@import './components/doingProcessOneColumn-component.scss';
+@import './components/doingProcessTwoColumn-component.scss';
+@import './components/quote-component.scss';
+@import './components/_footer.scss';

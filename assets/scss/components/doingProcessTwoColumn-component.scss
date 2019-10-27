@@ -1,19 +1,22 @@
 .left-box{
     display: flex;
     transition: width .4s, height .4s;
-    background-color: rgb(18, 89, 160);
+    background-color: $main-color;
     border-radius: 7px;
+    @include media-xs{
+        width: 80%;
+    }
     @include media-sm{
         width: 80%;
     }
-    @include media-lmd{
-        width: 55%;
-    }
-    @include media-lg{
+    @include media-md{
         width: 50%;
     }
+    @include media-lg{
+        width: 45%;
+    }
     @include media-xlg{
-        width: 35%;
+        width: 45%;
     }
     @include media-xxlg{
         width: 40%;
@@ -27,6 +30,9 @@
         align-items: flex-start;
         padding: 30px;
         color: white;
+        @include media-xs{
+            width: 90%;
+        }
         h1{
             margin: 10px 10px 0 0;
             color: white;

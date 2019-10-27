@@ -104,6 +104,9 @@ body{
         align-items: center;
         justify-content: space-around;
         flex-direction: row;
+        @include media-xs{
+            flex-direction: column;
+        }
         @include media-sm{
             flex-direction: column;
         }
@@ -187,10 +190,4 @@ body{
         }
         }
     }
-}
-
-
-footer{
-    height: 25vh;
-    background-color: darkblue;
 }
