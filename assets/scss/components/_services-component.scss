@@ -1,9 +1,10 @@
 .services-container{
     border-radius: 10px;
     box-shadow: 0 0 10px 5px gainsboro;
+    position: relative;
     .services-container-left{
         color: white;
-        position: relative;
+
         border-radius: 10px;
         background-image: url('/themes//images/services-man@2x.png');
         box-shadow:inset 0 0 0 2000px rgba(24, 24, 24, 0.822);
@@ -21,6 +22,7 @@
         .services-container-left-body{
             margin-top: 400px;
             padding-left: 50px;
+            padding-right: 200px;
             padding-bottom: 100px;
             h1, h2, h3, h4, h5, h6{
                 color: $secondary-color;
