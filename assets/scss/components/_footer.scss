@@ -6,6 +6,11 @@ footer{
    width: 100%;
    .footer-logo{
       margin-bottom: 30px;
+      position: relative;
+      img{
+         max-width: 100%;
+         max-height: 100%;
+      }
    }
    .footer-contact{
       .footer-contact-working-days{
@@ -40,6 +45,10 @@ footer{
          transition: box-shadow .3s;
          text-decoration: none;
          margin: 10px 0;
+         img{
+            width: 70px;
+            height: 50px;
+         }
          &:hover{
             box-shadow: 0 0 9px 5px rgba(155, 155, 155, 0.274);
          }
