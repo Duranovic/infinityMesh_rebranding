@@ -1,10 +1,13 @@
 .left-box{
+    position: relative;
     display: flex;
     transition: width .4s, height .4s;
     background-color: rgb(245, 245, 245);
     border-radius: 7px;
     box-shadow: 0 0 10px 3px gainsboro;
     @include media-xs{
+        align-items: center;
+        justify-content: center;
         width: 80%;
     }
     @include media-sm{
@@ -38,6 +41,10 @@
             margin: 10px 10px 0 0;
             color: $secondary-color;
             font-weight: bolder;
+            @include media-xs{
+                font-size: 30px;
+                margin: 5px 10px 0 0;
+            }
             @include media-sm{
                 font-size: 30px;
                 margin: 5px 10px 0 0;
@@ -53,7 +60,7 @@
         }
         .box-item-body{
             width: 300px;
-            border-left: 2px solid $main-color;
+            border-left: 3px solid $main-color;
             .box-item-body-title{
                 text-align: left;
                 color: white;
@@ -62,6 +69,9 @@
                 text-transform: uppercase;
                 h1, h2, h3, h4, h5, h6{
                     margin: 0;
+                    @include media-xs{
+                        font-size: 20px;
+                    }
                     @include media-sm{
                         font-size: 20px;
                     }
@@ -71,6 +81,9 @@
                     @include media-lg{
                         font-size: 20px;
                     }
+                }
+                @include media-xs{
+                    padding: 6px;
                 }
                 @include media-sm{
                     padding: 6px;

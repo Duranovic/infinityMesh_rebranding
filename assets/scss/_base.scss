@@ -22,23 +22,39 @@ body{
     @include button();
     background-color: $main-color;
     color: white;
+    transition: background-color .3s;
+    &:hover{
+        background-color: $secondary-color;
+    }
 }
 .secondary-button{
     @include button();
     background-color:rgb(5, 92, 5);
     color: white;
+    transition: background-color .3s;
+    &:hover{
+        background-color: $secondary-color;
+    }
 }
 .primary-button-bordered{
     @include button();
     background-color: transparentize($color: $main-color, $amount: 0.6);
     color: white;
     border: 2px solid white;
+    transition: background .3s, color .3s, border-color .3s;
+    &:hover{
+        background-color: transparentize($color: $secondary-color, $amount: 0.6);
+    }
 }
 .secondary-button-bordered{
     @include button();
     background-color:rgb(5, 92, 5);
     color: white;
     border: 2px solid white;
+    transition: background .3s, color .3s, border-color .3s;
+    &:hover{
+        background-color: transparentize($color: $main-color, $amount: 0.6);
+    }
 }
 .secondary-color{
     color: $secondary-color;
@@ -54,9 +70,13 @@ body{
 }
 .how-we-do-section{
     width: 100%;
-    background: rgba(220, 220, 220, 0.315);
     text-align: center;
     padding-bottom: 300px;
+    position: relative;
+    @include media-xs{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     @include media-sm{
         padding-top: 50px;
         padding-bottom: 70px;
@@ -76,9 +96,25 @@ body{
     @include media-xxlg{
         padding-bottom: 300px;
     }
+    &::after{
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/themes/images/computer-developer@2x.png); 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.04;
+    z-index: -1;
+    }
     >h1{
         color: $secondary-color;
         margin-bottom: 100px;
+        @include media-xs{
+            margin-bottom: 30px;
+        }
         @include media-sm{
             margin-bottom: 40px;
         }
@@ -136,9 +172,13 @@ body{
         padding: 100px 60px;
         display: flex;
         align-items: center;
+        @include media-xs{
+            flex-direction: column;
+            padding: 50px 60px 20px 60px;
+        }
         @include media-sm{
             flex-direction: column;
-    }
+        }
         @include media-lmd{
             
         }
@@ -155,6 +195,12 @@ body{
         .heading{
             width: 30%;
             padding: 0 70px;
+            @include media-xs{
+                width: 100%;
+                padding: 0;
+                text-align: center;
+                padding-bottom: 50px;
+            }
             @include media-sm{
                 width: 100%;
                 padding: 0;
@@ -179,6 +225,9 @@ body{
             h1{
                 font-size: 60px;
                 color: $secondary-color;
+                @include media-xs{
+                    font-size: 30px;
+                }
                 @include media-sm{
                     font-size: 40px;
                 }
@@ -194,7 +243,7 @@ body{
         padding-right: 10vw;
         padding-top: 70px;
         padding-bottom: 50px;
-        background-color: rgb(230, 230, 230);
+        background-color: rgb(247, 242, 242);
         @include media-xs{
             padding-left: 5vw;
             padding-right: 5vw;
@@ -212,9 +261,11 @@ body{
             text-align: center;
             @include media-xs{
                 width: 100%;
-        }
+                margin-bottom: 10px;
+            }
             @include media-sm{
                 width: 50%;
+                margin-bottom: 20px;
             }
             @include media-md{
                 width: 33.333%;
