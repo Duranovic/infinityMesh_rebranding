@@ -1,5 +1,8 @@
 .quotes-container{
     width: 72%;
+    @include media-us{
+        width: 95%; 
+ }
     @include media-xs{
         width: 90%; 
  }
@@ -25,6 +28,10 @@
         align-items: stretch;
         box-shadow: 0 0 10px 3px gainsboro;
         border-radius: 5px;
+        @include media-us{
+            width: 100%;
+            flex-direction: column;
+        }
         @include media-xs{
             width: 100%;
         }
@@ -47,6 +54,9 @@
             background-color: $main-color;
             padding: 20px;
             border-radius: 5px;
+            @include media-us{
+                padding: 5px;
+            }
             img{
                 max-width: 100px;
                 border-radius:100px;
@@ -55,12 +65,20 @@
                 left: 50%;
                 top: 50%;
                 transform: translateY(-50%);
+                @include media-us{
+                    left: 50%;
+                    top: 80%;
+                    transform: translate(-50%, 50%);
+                }
             }
         }
         .quote-text-container{
             box-sizing: border-box;
             text-align: center;
             padding: 30px 50px;
+            @include media-us{
+                padding: 30% 20px 10px 20px;
+            }
             .quote-text{                      
                 color: rgb(78, 78, 78);
                 font-style: italic;
@@ -77,9 +95,6 @@
     .quote-container:nth-of-type(even){            
            .img-container{
                background: $secondary-color;
-               img{
-                //border-color: $secondary-color;
-               }
            }
     }
     

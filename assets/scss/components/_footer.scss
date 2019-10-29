@@ -4,6 +4,11 @@ footer{
    background: linear-gradient(to right, rgb(16, 16, 82), rgb(2, 2, 34), rgb(1, 1, 20));
    color: gainsboro;
    width: 100%;
+   h1, h2, h3, h4, h5, h6{
+      color: white;
+      font-weight: bold;
+      font-family: $heebo-bold;
+   }
    @include media-xs{
       padding-right:30px;
       padding-left: 30px;

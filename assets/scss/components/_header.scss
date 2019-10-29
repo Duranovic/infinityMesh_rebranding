@@ -7,6 +7,24 @@ header{
     min-height: 500px;
     padding: 20px 100px 400px 100px;
     z-index: 10;
+    @include media-us{
+        padding: 20px 50px 400px 50px;
+    }
+    @include media-xs{
+        padding: 25px 55px 400px 50px;
+    }
+    @include media-sm{
+        
+    }
+    @include media-md{
+        
+    }
+    @include media-lg{
+        
+    }
+    @include media-xlg{
+        
+    }
     .hamburger-menu{
         display: none;
         top: 100px;
@@ -161,11 +179,21 @@ header{
         .header-body-content{
             margin-top: 80px;
             display: inline-block;
+            h1{
+                font-family: $heebo-bold;
+                @include media-us{
+                    margin-bottom: 40px;
+                }
+            }
             .header-body-content-btn-container{
                 margin-top: 50px;
                 a{
                     text-decoration: none;
                     margin-right: 20px;
+                    @include media-us{
+                        display: block;
+                        margin-top: 20px;
+                    }
                 }
             }
         }

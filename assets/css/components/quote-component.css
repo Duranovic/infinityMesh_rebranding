@@ -1,19 +1,19 @@
 /*
-Error: Undefined mixin 'media-xs'.
-        on line 3 of assets/scss/components/quote-component.scss, in `media-xs'
+Error: Undefined mixin 'media-us'.
+        on line 3 of assets/scss/components/quote-component.scss, in `media-us'
         from line 3 of assets/scss/components/quote-component.scss
 
 1: .quotes-container{
 2:     width: 72%;
-3:     @include media-xs{
-4:         width: 90%; 
+3:     @include media-us{
+4:         width: 95%; 
 5:  }
-6:     @include media-sm{
-7:            width: 90%; 
-8:     }
+6:     @include media-xs{
+7:         width: 90%; 
+8:  }
 
 Backtrace:
-assets/scss/components/quote-component.scss:3:in `media-xs'
+assets/scss/components/quote-component.scss:3:in `media-us'
 assets/scss/components/quote-component.scss:3
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -70,4 +70,4 @@ assets/scss/components/quote-component.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-xs'.\A         on line 3 of assets/scss/components/quote-component.scss, in `media-xs'\A         from line 3 of assets/scss/components/quote-component.scss\A \A 1: .quotes-container{\A 2:     width: 72%;\A 3:     @include media-xs{\A 4:         width: 90%; \A 5:  }\A 6:     @include media-sm{\A 7:            width: 90%; \A 8:     }"; }
+  content: "Error: Undefined mixin 'media-us'.\A         on line 3 of assets/scss/components/quote-component.scss, in `media-us'\A         from line 3 of assets/scss/components/quote-component.scss\A \A 1: .quotes-container{\A 2:     width: 72%;\A 3:     @include media-us{\A 4:         width: 95%; \A 5:  }\A 6:     @include media-xs{\A 7:         width: 90%; \A 8:  }"; }
