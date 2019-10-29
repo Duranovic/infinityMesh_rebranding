@@ -1,12 +1,61 @@
 header{
+    position: relative;
     background: url('/themes/images/header-background@2x.png');
     background-position: center;
     background-size: cover;
-    box-shadow:inset 0 0 0 2022px rgba(90, 59, 201, 0.205);
+    //box-shadow:inset 0 0 0 2022px rgba(90, 59, 201, 0.205);
     min-height: 500px;
     padding: 20px 100px 400px 100px;
-
+    z-index: 10;
+    .hamburger-menu{
+        display: none;
+        top: 100px;
+        right: 50%;
+        transform: translateX(50%);
+        position: absolute;
+        width: 90%;
+        background: white;
+        z-index: 12222;
+         @include media-md{
+             display: none !important;
+         }
+         @include media-lg{
+             display: none !important;
+         }
+         @include media-xlg{
+             display: none !important;
+         }
+         @include media-xxlg{
+             
+             display: none !important;
+         }
+        nav{
+            padding: 20px;
+            margin-top: 30px;
+            a{
+                border-top: 1px solid rgb(224, 224, 224);
+                padding: 10px;
+                display: block;
+                transition: transform .3s, color .3s;
+                text-decoration: none;
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .header-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(42, 159, 255, 0.527), rgba(109, 3, 248, 0.705));
+        z-index: 0;
+    }
     .header-head{
+        position: relative;
+        z-index: 100;
         display: flex;
         align-items: center;
         .header-flex-spacing{
@@ -15,14 +64,98 @@ header{
         nav{
             display: flex;
             justify-items: space-around;
+            @include media-xs{
+                display: none;
+             }
+             @include media-sm{
+                 display: none;
+             }
+             @include media-md{
+                 display: block;
+             }
+             @include media-lg{
+                 display: block;
+             }
+             @include media-xlg{
+                 display: block;
+             }
+             @include media-xxlg{
+                 
+                 display: block;
+             }
             a{
                 margin-right:20px;
                 text-decoration: none;
                 color: white;
+                transition: color .2s;
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+        .hamburger-menu-icon-close{
+            display: none;
+            color: white;
+            @include media-xs{
+                display: none;
+             }
+             @include media-sm{
+                 display: none;
+             }
+             @include media-md{
+                 display: none !important;
+             }
+             @include media-lg{
+                 display: none !important;
+             }
+             @include media-xlg{
+                 display: none !important;
+             }
+             @include media-xxlg{
+                 
+                 display: none !important;
+             }
+        }
+        .hamburger-menu-icon-open{
+            color: white;
+            position: relative;
+            width: 45px;
+            height: 40px;
+            .hamburger-menu-icon-unit{
+                position: absolute;
+                min-width: 40px;
+                min-height: 5px;
+                background: white;
+                &:nth-of-type(1){
+                    top: 15px;
+                }
+                &:nth-of-type(3){
+                    top: 30px;
+                }
+            }
+            @include media-xs{
+               display: block;
+            }
+            @include media-sm{
+                display: block;
+            }
+            @include media-md{
+                display: none !important;
+            }
+            @include media-lg{
+                display: none !important;
+            }
+            @include media-xlg{
+                display: none !important;
+            }
+            @include media-xxlg{
+                
+                display: none !important;
             }
         }
     }
     .header-body{
+        position: relative;
         color: white;
         text-align: center;
         .header-body-content{

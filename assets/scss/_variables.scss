@@ -81,4 +81,15 @@ $roboto: "Roboto";
         display: block !important;
     }
 }
-
+.visible-sm {
+    display: none !important;
+    @include media-sm() {
+        display: block !important;
+    }
+}
+.visible-md {
+    display: none !important;
+    @include media-md() {
+        display: block !important;
+    }
+}

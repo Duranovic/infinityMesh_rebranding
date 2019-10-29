@@ -149,22 +149,21 @@ body{
     padding: 400px 0 100px 0;
     position: relative;
     @include media-xs{
-        padding: 50px 0;
-}
+        padding: 700px 60px 100px 60px;
+    }
     @include media-sm{
-        padding: 50px 0;
-}
-    @include media-lmd{
-        
+        padding: 600px 60px 100px 60px;
+    }
+    @include media-md{
+        padding: 400px 60px 100px 60px;
     }
     @include media-lg{
-       
     }
     @include media-xlg{
-        padding: 1000px 60px;
+        padding: 350px 60px 200px 60px;
     }
     @include media-xxlg{
-        padding: 500px 60px;
+        padding: 400px 60px 200px 60px;
 
     }
 }

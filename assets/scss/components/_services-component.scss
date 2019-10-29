@@ -1,5 +1,4 @@
-
-    .why-choose-us-container{
+.why-choose-us-container{
         background: #83C71A;
         padding: 100px 200px 300px 200px;
         position: absolute;
@@ -9,9 +8,41 @@
         z-index: 10;
         width: 90vw;
         display: flex;
+        @include media-xs{
+            flex-direction: column;
+            padding: 100px 100px 300px 100px
+        }
+        @include media-sm{
+            flex-direction: column;
+            padding: 100px 100px 300px 100px;
+        }
+        @include media-md{
+            padding: 100px 150px 300px 150px;
+        }
+        @include media-lg{
+            padding: 100px 100px 300px 100px;
+        }
+        @include media-xlg{
+            padding: 100px 100px 300px 100px;
+        }
+        @include media-xxlg{
+            padding: 100px 200px 300px 200px;
+            width: 50vw;
+            top: -20vh;
+        }
         .why-choose-us-left{
             width: 50%;
             color: white;
+            margin-bottom: 100px;
+            @include media-xs{
+                width: 100%;
+            }
+            @include media-sm{
+                width: 100%;
+            }
+            @include media-md{
+                width: 50%;
+            }
             h1{
                 position: relative;
                 font-weight: 900;
@@ -22,11 +53,31 @@
                 width: 20%;
                 bottom: -20px;
                 border-bottom: 3px solid white;
-
+                @include media-xs{
+                    width: 50%;
+                }
+                @include media-sm{
+                    width: 50%;
+                }
             }
         }
         .why-choose-us-right{
             width: 50%;
+            @include media-xs{
+                width: 100%;
+            }
+            @include media-sm{
+                width: 100%;
+            }
+            @include media-md{
+                width: 50%;
+            }
+            @include media-lg{
+                width: 50%;
+            }
+            @include media-xlg{
+                width: 50%;
+            }
             .why-choose-us-reasons{
                 .why-choose-us-reason{
                     background-color: white;
@@ -62,7 +113,6 @@
     border: 1px solid gainsboro;
     .services-container-left{
         color: white;
-
         border-radius: 10px;
         background-image: url('/themes//images/services-man@2x.png');
         box-shadow:inset 0 0 0 2000px rgba(24, 24, 24, 0.822);
