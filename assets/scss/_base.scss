@@ -134,13 +134,41 @@ body{
     .boxes{
         display: flex;
         align-items: center;
-        justify-content: space-around;
         flex-direction: row;
+        justify-content: center;
         @include media-xs{
             flex-direction: column;
         }
         @include media-sm{
             flex-direction: column;
+        }
+        .how-we-do-path{
+            z-index: -1;
+            img{
+                width: 130%;
+                transform: translateX(-30px);
+            }
+            @include media-xs{
+                width: 20%;
+                transform: rotate(90deg) translateX(30px);
+            }
+            @include media-sm{
+                width: 20%;
+                transform: rotate(90deg);
+            }
+            @include media-md{
+                width: 10%;
+            }
+            @include media-lg{
+                width: 12%;
+            }
+            @include media-xlg{
+                width: 15%;
+            }
+            @include media-xxlg{
+                width: 10%;
+                padding: 30px 20px;
+            }
         }
     }
 }

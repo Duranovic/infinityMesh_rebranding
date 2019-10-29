@@ -170,14 +170,40 @@ body {
   .how-we-do-section .boxes {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: center; }
     @media (max-width: 767px) {
       .how-we-do-section .boxes {
         flex-direction: column; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .how-we-do-section .boxes {
         flex-direction: column; } }
+    .how-we-do-section .boxes .how-we-do-path {
+      z-index: -1; }
+      .how-we-do-section .boxes .how-we-do-path img {
+        width: 130%;
+        transform: translateX(-30px); }
+      @media (max-width: 767px) {
+        .how-we-do-section .boxes .how-we-do-path {
+          width: 20%;
+          transform: rotate(90deg) translateX(30px); } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .how-we-do-section .boxes .how-we-do-path {
+          width: 20%;
+          transform: rotate(90deg); } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .how-we-do-section .boxes .how-we-do-path {
+          width: 10%; } }
+      @media (min-width: 1200px) {
+        .how-we-do-section .boxes .how-we-do-path {
+          width: 12%; } }
+      @media (min-width: 1450px) {
+        .how-we-do-section .boxes .how-we-do-path {
+          width: 15%; } }
+      @media (min-width: 1824px) {
+        .how-we-do-section .boxes .how-we-do-path {
+          width: 10%;
+          padding: 30px 20px; } }
 
 .services-section {
   background: white;
@@ -581,9 +607,6 @@ body {
     .left-box {
       width: 40%;
       padding: 30px 20px; } }
-  .left-box:after {
-    content: url(/themes/images/how-we-do-path.png);
-    position: absolute; }
   .left-box .box-item {
     width: 50%;
     display: flex;
