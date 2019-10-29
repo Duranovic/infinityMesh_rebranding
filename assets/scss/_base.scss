@@ -10,7 +10,7 @@ body{
 }
 
 
-@mixin button {
+@mixin customButton {
     padding: 7px 30px 7px 30px;
     text-decoration: none;
     border-radius: 7%;
@@ -19,7 +19,7 @@ body{
     outline: none !important;
 }
 .primary-button{
-    @include button();
+    @include customButton();
     background-color: $main-color;
     color: white;
     transition: background-color .3s;
@@ -28,7 +28,7 @@ body{
     }
 }
 .secondary-button{
-    @include button();
+    @include customButton();
     background-color:rgb(5, 92, 5);
     color: white;
     transition: background-color .3s;
@@ -37,23 +37,25 @@ body{
     }
 }
 .primary-button-bordered{
-    @include button();
+    @include customButton();
     background-color: transparentize($color: $main-color, $amount: 0.6);
     color: white;
     border: 2px solid white;
     transition: background .3s, color .3s, border-color .3s;
     &:hover{
         background-color: transparentize($color: $secondary-color, $amount: 0.6);
+        color: white;
     }
 }
 .secondary-button-bordered{
-    @include button();
+    @include customButton();
     background-color:rgb(5, 92, 5);
     color: white;
     border: 2px solid white;
     transition: background .3s, color .3s, border-color .3s;
     &:hover{
         background-color: transparentize($color: $main-color, $amount: 0.6);
+        color: white;
     }
 }
 .secondary-color{
@@ -144,7 +146,7 @@ body{
 }
 .services-section{
     background: white;
-    padding: 200px 0;
+    padding: 400px 0 100px 0;
     position: relative;
     @include media-xs{
         padding: 50px 0;
@@ -159,10 +161,10 @@ body{
        
     }
     @include media-xlg{
-       
+        padding: 1000px 60px;
     }
     @include media-xxlg{
-        padding: 200px 60px;
+        padding: 500px 60px;
 
     }
 }
