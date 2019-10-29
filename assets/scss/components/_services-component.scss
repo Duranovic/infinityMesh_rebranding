@@ -128,14 +128,13 @@
             background-size: 160%;
         }
         .services-container-left-body{
-            margin-top: 400px;
+            margin-top: 300px;
             padding-left: 50px;
             padding-right: 200px;
             padding-bottom: 100px;
             h1, h2, h3, h4, h5, h6{
                 color: $secondary-color;
             }
-            
         }
     }
     .services-container-right{
@@ -143,10 +142,19 @@
         padding: 120px 0;
         background: white;
         @include media-xs{
-            padding: 20px 0;
+            padding: 60px 0;
         }
         @include media-sm{
-            padding: 20px 0 90px 0;
+            padding: 60px 0 40px 0;
+        }
+        @include media-md{
+            padding: 60px 0 40px 0;
+        }
+        @include media-lg{
+            padding: 60px 0 40px 0;
+        }
+        @include media-xlg{
+            padding: 60px 0 40px 0;
         }
         .service-item{
             margin-top: 50px;
