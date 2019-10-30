@@ -56,6 +56,8 @@ header{
                 display: block;
                 transition: transform .3s, color .3s;
                 text-decoration: none;
+                font-family: $heebo-regular;
+                color: rgb(131, 131, 131);
                 &:hover{
                     color: $secondary-color;
                 }
@@ -137,18 +139,18 @@ header{
         .hamburger-menu-icon-open{
             color: white;
             position: relative;
-            width: 45px;
-            height: 40px;
+            width: 23px;
+            height: 25px;
             .hamburger-menu-icon-unit{
                 position: absolute;
-                min-width: 40px;
-                min-height: 5px;
+                min-width: 20px;
+                min-height: 3px;
                 background: white;
                 &:nth-of-type(1){
-                    top: 15px;
+                    top: 9px;
                 }
                 &:nth-of-type(3){
-                    top: 30px;
+                    top: 18px;
                 }
             }
             @include media-xs{

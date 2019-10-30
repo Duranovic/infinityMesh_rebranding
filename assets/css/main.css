@@ -347,6 +347,11 @@ html, body {
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'Heebo Regular';
+  src: url("../fonts/heebo/Heebo-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'Heebo Medium';
   src: url("../fonts/heebo/Heebo-Medium.ttf");
   font-weight: normal;
@@ -990,7 +995,9 @@ header {
         padding: 10px;
         display: block;
         transition: transform .3s, color .3s;
-        text-decoration: none; }
+        text-decoration: none;
+        font-family: "Heebo Regular";
+        color: #838383; }
         header .hamburger-menu nav a:hover {
           color: #73bf15; }
   header .header-overlay {
@@ -1060,17 +1067,17 @@ header {
     header .header-head .hamburger-menu-icon-open {
       color: white;
       position: relative;
-      width: 45px;
-      height: 40px; }
+      width: 23px;
+      height: 25px; }
       header .header-head .hamburger-menu-icon-open .hamburger-menu-icon-unit {
         position: absolute;
-        min-width: 40px;
-        min-height: 5px;
+        min-width: 20px;
+        min-height: 3px;
         background: white; }
         header .header-head .hamburger-menu-icon-open .hamburger-menu-icon-unit:nth-of-type(1) {
-          top: 15px; }
+          top: 9px; }
         header .header-head .hamburger-menu-icon-open .hamburger-menu-icon-unit:nth-of-type(3) {
-          top: 30px; }
+          top: 18px; }
       @media (max-width: 767px) {
         header .header-head .hamburger-menu-icon-open {
           display: block; } }
