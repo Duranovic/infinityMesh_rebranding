@@ -1,5 +1,4 @@
 header{
-    position: relative;
     background: url('/themes/images/header-background@2x.png');
     background-position: center;
     background-size: cover;
@@ -26,12 +25,13 @@ header{
         
     }
     .hamburger-menu{
+        box-shadow: 1px 0 3px -3px gainsboro;
         display: none;
-        top: 100px;
+        top: 80px;
         right: 50%;
         transform: translateX(50%);
-        position: absolute;
-        width: 90%;
+        position: fixed;
+        width: 100%;
         background: white;
         z-index: 12222;
          @include media-md{
@@ -75,9 +75,15 @@ header{
     }
     .header-head{
         position: relative;
-        z-index: 100;
+        z-index: 10000;
         display: flex;
         align-items: center;
+        .header-logo{
+            img{
+                height: 46px;
+            }
+            
+        }
         .header-flex-spacing{
             flex-grow: 1;
         }
@@ -172,6 +178,91 @@ header{
                 
                 display: none !important;
             }
+        }
+    }
+    .header-head.sticky {
+        z-index: 100;
+        transition: all .3s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 200px;
+        background: white;
+        align-items: center;
+        display: flex;
+        box-shadow: 0 6px 3px -3px rgb(230, 230, 230);
+        .hamburger-menu-icon-open{
+            color: rgb(131, 125, 125);
+            position: relative;
+            width: 23px;
+            height: 25px;
+            .hamburger-menu-icon-unit{
+                position: absolute;
+                min-width: 20px;
+                min-height: 3px;
+                background: $main-color;
+                &:nth-of-type(1){
+                    top: 9px;
+                }
+                &:nth-of-type(3){
+                    top: 18px;
+                }
+            }
+            @include media-xs{
+               display: block;
+            }
+            @include media-sm{
+                display: block;
+            }
+            @include media-md{
+                display: none !important;
+            }
+            @include media-lg{
+                display: none !important;
+            }
+            @include media-xlg{
+                display: none !important;
+            }
+            @include media-xxlg{
+                
+                display: none !important;
+            }
+        }
+        .hamburger-menu-icon-close{
+            display: none;
+            color: $main-color;
+            @include media-xs{
+                display: none;
+             }
+             @include media-sm{
+                 display: none;
+             }
+             @include media-md{
+                 display: none !important;
+             }
+             @include media-lg{
+                 display: none !important;
+             }
+             @include media-xlg{
+                 display: none !important;
+             }
+             @include media-xxlg{
+                 
+                 display: none !important;
+             }
+        }
+        .header-logo{
+            img{
+                height: 46px;
+            }
+            
+        }
+        .header-flex-spacing{
+            flex-grow: 1;
+        }
+        a{
+            color: gray;
         }
     }
     .header-body{

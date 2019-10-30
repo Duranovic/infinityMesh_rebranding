@@ -40,7 +40,6 @@
 
 html, body {
   width: 100%;
-  height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; }
@@ -386,7 +385,7 @@ html, body {
   top: -25vh;
   left: 50%;
   transform: translate(-50%);
-  z-index: 10;
+  z-index: 0;
   width: 90vw;
   display: flex;
   transition: width .3s; }
@@ -1045,7 +1044,6 @@ footer {
         text-align: center; } }
 
 header {
-  position: relative;
   background: url("/themes/images/header-background@2x.png");
   background-position: center;
   background-size: cover;
@@ -1059,12 +1057,13 @@ header {
     header {
       padding: 25px 55px 400px 50px; } }
   header .hamburger-menu {
+    box-shadow: 1px 0 3px -3px gainsboro;
     display: none;
-    top: 100px;
+    top: 80px;
     right: 50%;
     transform: translateX(50%);
-    position: absolute;
-    width: 90%;
+    position: fixed;
+    width: 100%;
     background: white;
     z-index: 12222; }
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -1102,9 +1101,11 @@ header {
     z-index: 0; }
   header .header-head {
     position: relative;
-    z-index: 100;
+    z-index: 10000;
     display: flex;
     align-items: center; }
+    header .header-head .header-logo img {
+      height: 46px; }
     header .header-head .header-flex-spacing {
       flex-grow: 1; }
     header .header-head nav {
@@ -1188,6 +1189,77 @@ header {
       @media (min-width: 1824px) {
         header .header-head .hamburger-menu-icon-open {
           display: none !important; } }
+  header .header-head.sticky {
+    z-index: 100;
+    transition: all .3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 200px;
+    background: white;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 6px 3px -3px #e6e6e6; }
+    header .header-head.sticky .hamburger-menu-icon-open {
+      color: #837d7d;
+      position: relative;
+      width: 23px;
+      height: 25px; }
+      header .header-head.sticky .hamburger-menu-icon-open .hamburger-menu-icon-unit {
+        position: absolute;
+        min-width: 20px;
+        min-height: 3px;
+        background: #175fc7; }
+        header .header-head.sticky .hamburger-menu-icon-open .hamburger-menu-icon-unit:nth-of-type(1) {
+          top: 9px; }
+        header .header-head.sticky .hamburger-menu-icon-open .hamburger-menu-icon-unit:nth-of-type(3) {
+          top: 18px; }
+      @media (max-width: 767px) {
+        header .header-head.sticky .hamburger-menu-icon-open {
+          display: block; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        header .header-head.sticky .hamburger-menu-icon-open {
+          display: block; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        header .header-head.sticky .hamburger-menu-icon-open {
+          display: none !important; } }
+      @media (min-width: 1200px) {
+        header .header-head.sticky .hamburger-menu-icon-open {
+          display: none !important; } }
+      @media (min-width: 1450px) {
+        header .header-head.sticky .hamburger-menu-icon-open {
+          display: none !important; } }
+      @media (min-width: 1824px) {
+        header .header-head.sticky .hamburger-menu-icon-open {
+          display: none !important; } }
+    header .header-head.sticky .hamburger-menu-icon-close {
+      display: none;
+      color: #175fc7; }
+      @media (max-width: 767px) {
+        header .header-head.sticky .hamburger-menu-icon-close {
+          display: none; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        header .header-head.sticky .hamburger-menu-icon-close {
+          display: none; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        header .header-head.sticky .hamburger-menu-icon-close {
+          display: none !important; } }
+      @media (min-width: 1200px) {
+        header .header-head.sticky .hamburger-menu-icon-close {
+          display: none !important; } }
+      @media (min-width: 1450px) {
+        header .header-head.sticky .hamburger-menu-icon-close {
+          display: none !important; } }
+      @media (min-width: 1824px) {
+        header .header-head.sticky .hamburger-menu-icon-close {
+          display: none !important; } }
+    header .header-head.sticky .header-logo img {
+      height: 46px; }
+    header .header-head.sticky .header-flex-spacing {
+      flex-grow: 1; }
+    header .header-head.sticky a {
+      color: gray; }
   header .header-body {
     position: relative;
     color: white;
