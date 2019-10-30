@@ -13,6 +13,7 @@ html,body
     overflow-x: hidden; 
 }
 @mixin customButton {
+    position: relative;
     padding: 7px 30px 7px 30px;
     text-decoration: none;
     border-radius: 7%;
@@ -25,10 +26,19 @@ html,body
     background-color: $main-color;
     color: white;
     transition: background-color .3s;
-
-    /*&:hover{
-        background-color: $secondary-color;
-    }*/
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 5%;
+        background: $secondary-color;
+        transition: width 1s;
+    }
+    &:hover::after{
+        width: 100%;
+    }
 }
 .secondary-button{
     @include customButton();

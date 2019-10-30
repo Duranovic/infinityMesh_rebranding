@@ -134,7 +134,7 @@
     position: relative;
     z-index: 11;
     border-radius: 10px;
-    border: 1px solid gainsboro;
+    box-shadow: 0 10px 10px -3px gainsboro;
     background: white;
     padding-right: 5px;
     @include media-us{

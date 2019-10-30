@@ -36,6 +36,18 @@ footer{
             display: block;
          }
       }
+      .social-media-links{
+         font-size: 18px;
+         a{
+            color: gainsboro;
+            margin-right: 10px;
+            transition: color .3s;
+            position: relative;
+            &:hover{
+               color: $secondary-color;
+            }
+         }
+      }
    }
    .footer-quick-links{
       @include media-xs{

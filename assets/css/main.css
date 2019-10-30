@@ -46,6 +46,7 @@ html, body {
   overflow-x: hidden; }
 
 .primary-button {
+  position: relative;
   padding: 7px 30px 7px 30px;
   text-decoration: none;
   border-radius: 7%;
@@ -54,12 +55,21 @@ html, body {
   outline: none !important;
   background-color: #175fc7;
   color: white;
-  transition: background-color .3s;
-  /*&:hover{
-      background-color: $secondary-color;
-  }*/ }
+  transition: background-color .3s; }
+  .primary-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 5%;
+    background: #73bf15;
+    transition: width 1s; }
+  .primary-button:hover::after {
+    width: 100%; }
 
 .secondary-button {
+  position: relative;
   padding: 7px 30px 7px 30px;
   text-decoration: none;
   border-radius: 7%;
@@ -73,6 +83,7 @@ html, body {
     background-color: #73bf15; }
 
 .primary-button-bordered {
+  position: relative;
   padding: 7px 30px 7px 30px;
   text-decoration: none;
   border-radius: 7%;
@@ -88,6 +99,7 @@ html, body {
     color: white; }
 
 .secondary-button-bordered {
+  position: relative;
   padding: 7px 30px 7px 30px;
   text-decoration: none;
   border-radius: 7%;
@@ -491,7 +503,7 @@ html, body {
   position: relative;
   z-index: 11;
   border-radius: 10px;
-  border: 1px solid gainsboro;
+  box-shadow: 0 10px 10px -3px gainsboro;
   background: white;
   padding-right: 5px; }
   @media (max-width: 425px) {
@@ -629,6 +641,7 @@ html, body {
       .right-box .box-item {
         padding: 30px; } }
     .right-box .box-item h1 {
+      font-family: "Heebo Bold";
       margin: 10px 10px 0 0;
       color: white; }
       @media (max-width: 767px) {
@@ -657,6 +670,7 @@ html, body {
         background: #175fc7;
         text-transform: uppercase; }
         .right-box .box-item .box-item-body .box-item-body-title h1, .right-box .box-item .box-item-body .box-item-body-title h2, .right-box .box-item .box-item-body .box-item-body-title h3, .right-box .box-item .box-item-body .box-item-body-title h4, .right-box .box-item .box-item-body .box-item-body-title h5, .right-box .box-item .box-item-body .box-item-body-title h6 {
+          font-family: "Heebo Bold";
           margin: 0; }
           @media (max-width: 767px) {
             .right-box .box-item .box-item-body .box-item-body-title h1, .right-box .box-item .box-item-body .box-item-body-title h2, .right-box .box-item .box-item-body .box-item-body-title h3, .right-box .box-item .box-item-body .box-item-body-title h4, .right-box .box-item .box-item-body .box-item-body-title h5, .right-box .box-item .box-item-body .box-item-body-title h6 {
@@ -762,6 +776,7 @@ html, body {
         width: 90%;
         padding: 15px; } }
     .left-box .box-item h1 {
+      font-family: "Heebo Bold";
       margin: 10px 10px 0 0;
       color: #73bf15;
       font-weight: bolder; }
@@ -791,6 +806,7 @@ html, body {
         background: #175fc7;
         text-transform: uppercase; }
         .left-box .box-item .box-item-body .box-item-body-title h1, .left-box .box-item .box-item-body .box-item-body-title h2, .left-box .box-item .box-item-body .box-item-body-title h3, .left-box .box-item .box-item-body .box-item-body-title h4, .left-box .box-item .box-item-body .box-item-body-title h5, .left-box .box-item .box-item-body .box-item-body-title h6 {
+          font-family: "Heebo Bold";
           margin: 0; }
           @media (max-width: 767px) {
             .left-box .box-item .box-item-body .box-item-body-title h1, .left-box .box-item .box-item-body .box-item-body-title h2, .left-box .box-item .box-item-body .box-item-body-title h3, .left-box .box-item .box-item-body .box-item-body-title h4, .left-box .box-item .box-item-body .box-item-body-title h5, .left-box .box-item .box-item-body .box-item-body-title h6 {
@@ -956,6 +972,15 @@ footer {
     margin: 20px 0; }
     footer .footer-contact .footer-contact-working-days span {
       display: block; }
+  footer .footer-contact .social-media-links {
+    font-size: 18px; }
+    footer .footer-contact .social-media-links a {
+      color: gainsboro;
+      margin-right: 10px;
+      transition: color .3s;
+      position: relative; }
+      footer .footer-contact .social-media-links a:hover {
+        color: #73bf15; }
   @media (max-width: 767px) {
     footer .footer-quick-links {
       margin-top: 50px;
