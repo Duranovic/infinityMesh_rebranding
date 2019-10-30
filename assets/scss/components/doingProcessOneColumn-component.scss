@@ -29,7 +29,12 @@
         align-items: flex-start;
         padding: 30px;
         color: white;
-        
+        @include media-us{
+            padding: 10px;
+        }
+        @include media-xs{
+            padding: 30px;
+        }
         h1{
             margin: 10px 10px 0 0;
             color: white;
@@ -98,6 +103,12 @@
                 color: white;
                 padding: 20px;
                 text-align: left;
+                @include media-xs{
+                    padding: 6px;
+                }
+                @include media-xs{
+                    padding: 6px;
+                }
                 @include media-sm{
                     padding: 6px;
                 }

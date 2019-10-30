@@ -5,6 +5,11 @@
     background-color: rgb(245, 245, 245);
     border-radius: 7px;
     box-shadow: 0 0 10px 3px gainsboro;
+    @include media-us{
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
     @include media-xs{
         align-items: center;
         justify-content: center;
@@ -33,8 +38,12 @@
         align-items: flex-start;
         padding: 30px;
         color: black;
+        @include media-us{
+            padding: 10px;
+        }
         @include media-xs{
             width: 90%;
+            padding: 15px;
         }
         h1{
             margin: 10px 10px 0 0;
@@ -58,7 +67,7 @@
             }
         }
         .box-item-body{
-            width: 300px;
+            max-width: 300px;
             border-left: 3px solid $main-color;
             .box-item-body-title{
                 text-align: left;
@@ -104,6 +113,9 @@
                 color: black;
                 padding: 20px;
                 text-align: left;
+                @include media-xs{
+                    padding: 4px;
+                }
                 @include media-sm{
                     padding: 6px;
                 }

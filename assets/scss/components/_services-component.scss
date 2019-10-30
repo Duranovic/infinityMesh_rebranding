@@ -135,6 +135,17 @@
     z-index: 11;
     border-radius: 10px;
     border: 1px solid gainsboro;
+    background: white;
+    padding-right: 5px;
+    @include media-us{
+        padding-right: 0;    
+    }
+    @include media-xs{
+        padding-right: 0;
+    }
+    @include media-sm{
+        padding-right: 0;
+    }
     .services-container-left{
         color: white;
         border-radius: 10px;
@@ -165,6 +176,12 @@
                 padding-right: 20px;
                 padding-bottom: 50px;
             }
+            @include media-xs{
+                margin-top: 100px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-bottom: 70px;
+            }
             h1, h2, h3, h4, h5, h6{
                 font-family: $heebo-bold;
                 color: $secondary-color;
@@ -176,7 +193,7 @@
         padding: 120px 0;
         background: white;
         @include media-us{
-            padding: 20px 0;
+            padding: 5px 0;
         }
         @include media-xs{
             padding: 60px 0;
@@ -185,16 +202,34 @@
             padding: 60px 0 40px 0;
         }
         @include media-md{
-            padding: 60px 0 40px 0;
+            padding: 3% 0 40px 0;
         }
         @include media-lg{
-            padding: 60px 0 40px 0;
+            padding: 50px 0 40px 0;
         }
         @include media-xlg{
-            padding: 60px 0 40px 0;
+            padding: 0 0 40px 0;
         }
         .service-item{
             margin-top: 10px;
+            @include media-us{
+                margin-top:5px;
+            }
+            @include media-xs{
+                margin-top: 30px;
+            }
+            @include media-sm{
+                margin-top: 70px;
+            }
+            @include media-md{
+                margin-top: 100px;
+            }
+            @include media-lg{
+                margin-top: 65px;
+            }
+            @include media-xlg{
+                margin-top: 100px;
+            }
             img{
                 margin-bottom: 15px;
                 width: 64px;

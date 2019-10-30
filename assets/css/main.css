@@ -54,9 +54,10 @@ html, body {
   outline: none !important;
   background-color: #175fc7;
   color: white;
-  transition: background-color .3s; }
-  .primary-button:hover {
-    background-color: #73bf15; }
+  transition: background-color .3s;
+  /*&:hover{
+      background-color: $secondary-color;
+  }*/ }
 
 .secondary-button {
   padding: 7px 30px 7px 30px;
@@ -222,7 +223,7 @@ html, body {
       padding: 350px 60px 100px 60px !important; } }
   @media (max-width: 767px) {
     .services-section {
-      padding: 600px 60px 100px 60px; } }
+      padding: 400px 60px 100px 60px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .services-section {
       padding: 600px 60px 100px 60px; } }
@@ -490,7 +491,18 @@ html, body {
   position: relative;
   z-index: 11;
   border-radius: 10px;
-  border: 1px solid gainsboro; }
+  border: 1px solid gainsboro;
+  background: white;
+  padding-right: 5px; }
+  @media (max-width: 425px) {
+    .services-container {
+      padding-right: 0; } }
+  @media (max-width: 767px) {
+    .services-container {
+      padding-right: 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .services-container {
+      padding-right: 0; } }
   .services-container .services-container-left {
     color: white;
     border-radius: 10px;
@@ -518,6 +530,12 @@ html, body {
           padding-left: 20px;
           padding-right: 20px;
           padding-bottom: 50px; } }
+      @media (max-width: 767px) {
+        .services-container .services-container-left .services-container-left-body {
+          margin-top: 100px;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 70px; } }
       .services-container .services-container-left .services-container-left-body h1, .services-container .services-container-left .services-container-left-body h2, .services-container .services-container-left .services-container-left-body h3, .services-container .services-container-left .services-container-left-body h4, .services-container .services-container-left .services-container-left-body h5, .services-container .services-container-left .services-container-left-body h6 {
         font-family: "Heebo Bold";
         color: #73bf15; }
@@ -527,7 +545,7 @@ html, body {
     background: white; }
     @media (max-width: 425px) {
       .services-container .services-container-right {
-        padding: 20px 0; } }
+        padding: 5px 0; } }
     @media (max-width: 767px) {
       .services-container .services-container-right {
         padding: 60px 0; } }
@@ -536,15 +554,33 @@ html, body {
         padding: 60px 0 40px 0; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .services-container .services-container-right {
-        padding: 60px 0 40px 0; } }
+        padding: 3% 0 40px 0; } }
     @media (min-width: 1200px) {
       .services-container .services-container-right {
-        padding: 60px 0 40px 0; } }
+        padding: 50px 0 40px 0; } }
     @media (min-width: 1450px) {
       .services-container .services-container-right {
-        padding: 60px 0 40px 0; } }
+        padding: 0 0 40px 0; } }
     .services-container .services-container-right .service-item {
       margin-top: 10px; }
+      @media (max-width: 425px) {
+        .services-container .services-container-right .service-item {
+          margin-top: 5px; } }
+      @media (max-width: 767px) {
+        .services-container .services-container-right .service-item {
+          margin-top: 30px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .services-container .services-container-right .service-item {
+          margin-top: 70px; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .services-container .services-container-right .service-item {
+          margin-top: 100px; } }
+      @media (min-width: 1200px) {
+        .services-container .services-container-right .service-item {
+          margin-top: 65px; } }
+      @media (min-width: 1450px) {
+        .services-container .services-container-right .service-item {
+          margin-top: 100px; } }
       .services-container .services-container-right .service-item img {
         margin-bottom: 15px;
         width: 64px;
@@ -586,6 +622,12 @@ html, body {
     align-items: flex-start;
     padding: 30px;
     color: white; }
+    @media (max-width: 425px) {
+      .right-box .box-item {
+        padding: 10px; } }
+    @media (max-width: 767px) {
+      .right-box .box-item {
+        padding: 30px; } }
     .right-box .box-item h1 {
       margin: 10px 10px 0 0;
       color: white; }
@@ -650,6 +692,12 @@ html, body {
         color: white;
         padding: 20px;
         text-align: left; }
+        @media (max-width: 767px) {
+          .right-box .box-item .box-item-body .box-item-body-description {
+            padding: 6px; } }
+        @media (max-width: 767px) {
+          .right-box .box-item .box-item-body .box-item-body-description {
+            padding: 6px; } }
         @media (min-width: 768px) and (max-width: 991px) {
           .right-box .box-item .box-item-body .box-item-body-description {
             padding: 6px; } }
@@ -674,6 +722,11 @@ html, body {
   border-radius: 7px;
   box-shadow: 0 0 10px 3px gainsboro;
   flex-wrap: wrap; }
+  @media (max-width: 425px) {
+    .left-box {
+      align-items: center;
+      justify-content: center;
+      width: 95%; } }
   @media (max-width: 767px) {
     .left-box {
       align-items: center;
@@ -701,9 +754,13 @@ html, body {
     align-items: flex-start;
     padding: 30px;
     color: black; }
+    @media (max-width: 425px) {
+      .left-box .box-item {
+        padding: 10px; } }
     @media (max-width: 767px) {
       .left-box .box-item {
-        width: 90%; } }
+        width: 90%;
+        padding: 15px; } }
     .left-box .box-item h1 {
       margin: 10px 10px 0 0;
       color: #73bf15;
@@ -725,7 +782,7 @@ html, body {
           font-size: 40px;
           margin: 10px 10px 0 0; } }
     .left-box .box-item .box-item-body {
-      width: 300px;
+      max-width: 300px;
       border-left: 3px solid #175fc7; }
       .left-box .box-item .box-item-body .box-item-body-title {
         text-align: left;
@@ -769,6 +826,9 @@ html, body {
         color: black;
         padding: 20px;
         text-align: left; }
+        @media (max-width: 767px) {
+          .left-box .box-item .box-item-body .box-item-body-description {
+            padding: 4px; } }
         @media (min-width: 768px) and (max-width: 991px) {
           .left-box .box-item .box-item-body .box-item-body-description {
             padding: 6px; } }

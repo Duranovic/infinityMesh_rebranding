@@ -1,6 +1,6 @@
 /*
-Error: Undefined mixin 'media-xs'.
-        on line 8 of assets/scss/components/doingProcessTwoColumn-component.scss, in `media-xs'
+Error: Undefined mixin 'media-us'.
+        on line 8 of assets/scss/components/doingProcessTwoColumn-component.scss, in `media-us'
         from line 8 of assets/scss/components/doingProcessTwoColumn-component.scss
 
 3:     display: flex;
@@ -8,15 +8,15 @@ Error: Undefined mixin 'media-xs'.
 5:     background-color: rgb(245, 245, 245);
 6:     border-radius: 7px;
 7:     box-shadow: 0 0 10px 3px gainsboro;
-8:     @include media-xs{
+8:     @include media-us{
 9:         align-items: center;
 10:         justify-content: center;
-11:         width: 80%;
+11:         width: 95%;
 12:     }
-13:     @include media-sm{
+13:     @include media-xs{
 
 Backtrace:
-assets/scss/components/doingProcessTwoColumn-component.scss:8:in `media-xs'
+assets/scss/components/doingProcessTwoColumn-component.scss:8:in `media-us'
 assets/scss/components/doingProcessTwoColumn-component.scss:8
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -73,4 +73,4 @@ assets/scss/components/doingProcessTwoColumn-component.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-xs'.\A         on line 8 of assets/scss/components/doingProcessTwoColumn-component.scss, in `media-xs'\A         from line 8 of assets/scss/components/doingProcessTwoColumn-component.scss\A \A 3:     display: flex;\A 4:     transition: width .4s, height .4s;\A 5:     background-color: rgb(245, 245, 245);\A 6:     border-radius: 7px;\A 7:     box-shadow: 0 0 10px 3px gainsboro;\A 8:     @include media-xs{\A 9:         align-items: center;\A 10:         justify-content: center;\A 11:         width: 80%;\A 12:     }\A 13:     @include media-sm{"; }
+  content: "Error: Undefined mixin 'media-us'.\A         on line 8 of assets/scss/components/doingProcessTwoColumn-component.scss, in `media-us'\A         from line 8 of assets/scss/components/doingProcessTwoColumn-component.scss\A \A 3:     display: flex;\A 4:     transition: width .4s, height .4s;\A 5:     background-color: rgb(245, 245, 245);\A 6:     border-radius: 7px;\A 7:     box-shadow: 0 0 10px 3px gainsboro;\A 8:     @include media-us{\A 9:         align-items: center;\A 10:         justify-content: center;\A 11:         width: 95%;\A 12:     }\A 13:     @include media-xs{"; }

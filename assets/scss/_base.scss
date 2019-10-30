@@ -25,9 +25,10 @@ html,body
     background-color: $main-color;
     color: white;
     transition: background-color .3s;
-    &:hover{
+
+    /*&:hover{
         background-color: $secondary-color;
-    }
+    }*/
 }
 .secondary-button{
     @include customButton();
@@ -187,7 +188,7 @@ html,body
         padding: 350px 60px 100px 60px !important;
     }
     @include media-xs{
-        padding: 600px 60px 100px 60px;
+        padding: 400px 60px 100px 60px;
     }
     @include media-sm{
         padding: 600px 60px 100px 60px;
