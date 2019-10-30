@@ -30,6 +30,13 @@ footer{
          margin-top: 30px;
          text-align: center;
      }
+     >a{
+        transition: color .3s;
+        text-decoration: none;
+     }
+     >a:hover{
+        color: $secondary-color;
+     }
       .footer-contact-working-days{
          margin: 20px 0;
          span{
@@ -69,8 +76,10 @@ footer{
             padding: 3px 0;
             a{
                color: gainsboro;
+               transition: color .2s;
                &:hover{
-                  color: $main-color;
+                  color: $secondary-color;
+                  text-decoration: none;
                }
             }
          }

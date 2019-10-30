@@ -968,6 +968,11 @@ footer {
     footer .footer-contact {
       margin-top: 30px;
       text-align: center; } }
+  footer .footer-contact > a {
+    transition: color .3s;
+    text-decoration: none; }
+  footer .footer-contact > a:hover {
+    color: #73bf15; }
   footer .footer-contact .footer-contact-working-days {
     margin: 20px 0; }
     footer .footer-contact .footer-contact-working-days span {
@@ -999,9 +1004,11 @@ footer {
           margin-left: 15px;
           margin-top: 10px; } }
       footer .footer-quick-links ul li a {
-        color: gainsboro; }
+        color: gainsboro;
+        transition: color .2s; }
         footer .footer-quick-links ul li a:hover {
-          color: #175fc7; }
+          color: #73bf15;
+          text-decoration: none; }
   @media (max-width: 767px) {
     footer .footer-latest-posts {
       margin-top: 50px;
