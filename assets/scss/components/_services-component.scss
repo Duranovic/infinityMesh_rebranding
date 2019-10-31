@@ -8,27 +8,28 @@
         z-index: 0;
         width: 90vw;
         display: flex;
-        transition: width .3s;
+        transition: width .3s, height .3;
         @include media-us{
             flex-direction: column;
             padding: 20px 20px 100px 20px !important;
-            top: -25% !important;
+            top: -20% !important;
         }
         @include media-xs{
             flex-direction: column;
-            top: -30%;
+            top: -20%;
             padding: 20px 20px 100px 20px
         }
         @include media-sm{
-            top: -25vh;
+            top: -18%;
             flex-direction: column;
             padding: 100px 100px 300px 100px;
         }
         @include media-md{
+            top: -20%;
             padding: 100px 150px 300px 150px;
         }
         @include media-lg{
-            top: -30%;
+            top: -20%;
             padding: 100px 100px 300px 100px;
         }
         @include media-xlg{
@@ -194,13 +195,13 @@
         padding: 120px 0;
         background: white;
         @include media-us{
-            padding: 5px 0;
+            padding: 5px 0 35px 0 !important;
         }
         @include media-xs{
-            padding: 60px 0;
+            padding: 20px 0  40px 0;
         }
         @include media-sm{
-            padding: 60px 0 40px 0;
+            padding: 0 0  70px 0;
         }
         @include media-md{
             padding: 3% 0 40px 0;

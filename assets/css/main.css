@@ -318,7 +318,7 @@ html, body {
 }
 @media (max-width: 767px) {
   .services-section {
-    padding: 400px 60px 100px 60px;
+    padding: 450px 60px 100px 60px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -333,7 +333,7 @@ html, body {
 }
 @media (min-width: 1200px) {
   .services-section {
-    padding: 300px 60px 150px 60px;
+    padding: 400px 60px 150px 60px;
   }
 }
 @media (min-width: 1450px) {
@@ -554,37 +554,38 @@ html, body {
   z-index: 0;
   width: 90vw;
   display: flex;
-  transition: width 0.3s;
+  transition: width 0.3s, height 0.3;
 }
 @media (max-width: 424px) {
   .why-choose-us-container {
     flex-direction: column;
     padding: 20px 20px 100px 20px !important;
-    top: -25% !important;
+    top: -20% !important;
   }
 }
 @media (max-width: 767px) {
   .why-choose-us-container {
     flex-direction: column;
-    top: -30%;
+    top: -20%;
     padding: 20px 20px 100px 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .why-choose-us-container {
-    top: -25vh;
+    top: -18%;
     flex-direction: column;
     padding: 100px 100px 300px 100px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .why-choose-us-container {
+    top: -20%;
     padding: 100px 150px 300px 150px;
   }
 }
 @media (min-width: 1200px) {
   .why-choose-us-container {
-    top: -30%;
+    top: -20%;
     padding: 100px 100px 300px 100px;
   }
 }
@@ -794,17 +795,17 @@ html, body {
 }
 @media (max-width: 424px) {
   .services-container .services-container-right {
-    padding: 5px 0;
+    padding: 5px 0 35px 0 !important;
   }
 }
 @media (max-width: 767px) {
   .services-container .services-container-right {
-    padding: 60px 0;
+    padding: 20px 0 40px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .services-container .services-container-right {
-    padding: 60px 0 40px 0;
+    padding: 0 0 70px 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
