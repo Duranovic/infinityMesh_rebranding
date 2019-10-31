@@ -180,20 +180,20 @@ html, body {
 }
 @media (min-width: 1200px) {
   .how-we-do-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 }
 @media (min-width: 1450px) {
   .how-we-do-section {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 @media (min-width: 1824px) {
   .how-we-do-section {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 .how-we-do-section::after {
@@ -371,27 +371,27 @@ html, body {
 @media (min-width: 768px) and (max-width: 991px) {
   .work-with-section .work-with-section-container {
     flex-direction: column;
-    padding: 50px 60px 0 60px;
+    padding: 100px 60px 30px 60px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .work-with-section .work-with-section-container {
-    padding: 50px 60px 0 60px;
+    padding: 100px 60px 30px 60px;
   }
 }
 @media (min-width: 1200px) {
   .work-with-section .work-with-section-container {
-    padding: 50px 60px 0 60px;
+    padding: 100px 60px 30px 60px;
   }
 }
 @media (min-width: 1450px) {
   .work-with-section .work-with-section-container {
-    padding: 50px 60px 0 60px;
+    padding: 100px 60px 30px 60px;
   }
 }
 @media (min-width: 1824px) {
   .work-with-section .work-with-section-container {
-    padding: 50px 60px 0 60px;
+    padding: 100px 60px 30px 60px;
   }
 }
 .work-with-section .work-with-section-container .heading {
@@ -450,59 +450,48 @@ html, body {
 .work-with-section .work-with-section-container .heading h1 span {
   font-family: "Heebo Bold";
 }
-.work-with-section .brands {
+.work-with-section .brands-container {
+  background-color: #f7f2f2;
+}
+.work-with-section .brands-container .brands {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 70px;
-  padding-bottom: 50px;
-  background-color: #f7f2f2;
 }
-@media (max-width: 767px) {
-  .work-with-section .brands {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .work-with-section .brands {
-    padding-left: 7vw;
-    padding-right: 7vw;
-  }
-}
-@media (min-width: 1200px) {
-  .work-with-section .brands {
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-}
-.work-with-section .brands .brand-container {
-  margin-bottom: 40px;
+.work-with-section .brands-container .brands .brand-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .work-with-section .brands .brand-container {
+  .work-with-section .brands-container .brands .brand-container {
     width: 100%;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .work-with-section .brands .brand-container {
+  .work-with-section .brands-container .brands .brand-container {
     width: 50%;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .work-with-section .brands .brand-container {
-    width: 33.333%;
+  .work-with-section .brands-container .brands .brand-container {
+    width: 33.3333333333%;
   }
 }
 @media (min-width: 1200px) {
-  .work-with-section .brands .brand-container {
+  .work-with-section .brands-container .brands .brand-container {
     width: 20%;
+  }
+}
+.work-with-section .brands-container .brands .brand-container img {
+  height: 100px;
+}
+@media (min-width: 1450px) {
+  .work-with-section .brands-container .brands .brand-container img {
+    height: 120px;
   }
 }
 

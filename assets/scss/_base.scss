@@ -100,16 +100,16 @@ html,body
         padding-bottom: 40px;
     }
     @include media-lg{
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 120px;
     }
     @include media-xlg{
-        padding-top: 95px;
-        padding-bottom: 95px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     @include media-xxlg{
-        padding-top: 95px;
-        padding-bottom: 95px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     &::after{
     content : "";
@@ -237,19 +237,19 @@ html,body
         }
         @include media-sm{
             flex-direction: column;
-            padding: 50px 60px 0 60px;
+            padding: 100px 60px 30px 60px;
         }
         @include media-md{
-            padding: 50px 60px 0 60px;
+            padding: 100px 60px 30px 60px;
         }
         @include media-lg{
-            padding: 50px 60px 0 60px;
+            padding: 100px 60px 30px 60px;
         }
         @include media-xlg{
-            padding: 50px 60px 0 60px;
+            padding: 100px 60px 30px 60px;
         }
         @include media-xxlg{
-            padding: 50px 60px 0 60px;
+            padding: 100px 60px 30px 60px;
 
         }
         .heading{
@@ -298,45 +298,48 @@ html,body
             }
         }    
     }
-   .brands{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        padding-top: 70px;
-        padding-bottom: 50px;
+    .brands-container{
         background-color: rgb(247, 242, 242);
-        @include media-xs{
-            padding-left: 5vw;
-            padding-right: 5vw;
-        }
-        @include media-sm{
-            padding-left: 7vw;
-            padding-right: 7vw;
-        }
-         @include media-lg{
-            padding-left: 3vw;
-            padding-right: 3vw;
-        }
-        .brand-container{
-            margin-bottom: 40px;
-            text-align: center;
+        .brands{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
             @include media-xs{
-                width: 100%;
-                margin-bottom: 10px;
+
             }
             @include media-sm{
-                width: 50%;
-                margin-bottom: 20px;
-            }
-            @include media-md{
-                width: 33.333%;
+  
             }
              @include media-lg{
-                width: 20%;
+
+            }
+            .brand-container{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                @include media-xs{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                @include media-sm{
+                    width: 50%;
+                    margin-bottom: 20px;
+                }
+                @include media-md{
+                    width: 33.3333333333%;
+                }
+                 @include media-lg{
+                    width: 20%;
+                }
+                img{
+                    height: 100px;
+                    @include media-xlg{
+                        height: 120px;
+                    }
+                }
             }
         }
     }
+  
 }
