@@ -28,6 +28,7 @@
             padding: 100px 150px 300px 150px;
         }
         @include media-lg{
+            top: -30%;
             padding: 100px 100px 300px 100px;
         }
         @include media-xlg{
