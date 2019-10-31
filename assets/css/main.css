@@ -352,7 +352,7 @@ html, body {
   box-shadow: 0 0 100px 4px gainsboro;
 }
 .work-with-section .work-with-section-container {
-  padding: 100px 60px;
+  padding: 60px 60px;
   display: flex;
   align-items: center;
 }
@@ -371,32 +371,33 @@ html, body {
 @media (min-width: 768px) and (max-width: 991px) {
   .work-with-section .work-with-section-container {
     flex-direction: column;
-    padding: 100px 60px 30px 60px;
+    padding: 60px 60px 60px 60px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .work-with-section .work-with-section-container {
-    padding: 100px 60px 30px 60px;
+    padding: 100px 60px 100px 60px;
   }
 }
 @media (min-width: 1200px) {
   .work-with-section .work-with-section-container {
-    padding: 100px 60px 30px 60px;
+    padding: 100px 60px 100px 60px;
   }
 }
 @media (min-width: 1450px) {
   .work-with-section .work-with-section-container {
-    padding: 100px 60px 30px 60px;
+    padding: 100px 60px 100px 60px;
   }
 }
 @media (min-width: 1824px) {
   .work-with-section .work-with-section-container {
-    padding: 100px 60px 30px 60px;
+    padding: 100px 60px 100px 60px;
   }
 }
 .work-with-section .work-with-section-container .heading {
   text-align: right;
   width: 50%;
+  padding: 0;
 }
 @media (max-width: 767px) {
   .work-with-section .work-with-section-container .heading {
@@ -427,7 +428,7 @@ html, body {
 }
 @media (min-width: 1450px) {
   .work-with-section .work-with-section-container .heading {
-    width: 20%;
+    width: 35%;
     text-align: right;
   }
 }
@@ -460,44 +461,49 @@ html, body {
 .work-with-section .brands-container {
   background-color: #f7f2f2;
 }
-.work-with-section .brands-container .brands {
+@media (min-width: 1450px) {
+  .work-with-section .brands-container .container {
+    min-width: 55%;
+  }
+}
+.work-with-section .brands-container .container .brands {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
-.work-with-section .brands-container .brands .brand-container {
+.work-with-section .brands-container .container .brands .brand-container {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .work-with-section .brands-container .brands .brand-container {
+  .work-with-section .brands-container .container .brands .brand-container {
     width: 100%;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .work-with-section .brands-container .brands .brand-container {
+  .work-with-section .brands-container .container .brands .brand-container {
     width: 50%;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .work-with-section .brands-container .brands .brand-container {
+  .work-with-section .brands-container .container .brands .brand-container {
     width: 33.3333333333%;
   }
 }
 @media (min-width: 1200px) {
-  .work-with-section .brands-container .brands .brand-container {
+  .work-with-section .brands-container .container .brands .brand-container {
     width: 20%;
   }
 }
-.work-with-section .brands-container .brands .brand-container img {
+.work-with-section .brands-container .container .brands .brand-container img {
   height: 100px;
 }
 @media (min-width: 1450px) {
-  .work-with-section .brands-container .brands .brand-container img {
+  .work-with-section .brands-container .container .brands .brand-container img {
     height: 120px;
   }
 }
@@ -1275,88 +1281,105 @@ html, body {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .quotes-container {
-    padding-left: 0;
+    padding-left: 80px;
     width: 80%;
   }
 }
 @media (min-width: 1200px) {
   .quotes-container {
-    padding-left: 0;
+    padding-left: 80px;
     width: 70%;
   }
 }
 @media (min-width: 1450px) {
   .quotes-container {
-    width: 80%;
-    padding-left: 150px;
+    padding-left: 100px;
+    width: 65%;
   }
 }
 @media (min-width: 1824px) {
   .quotes-container {
+    padding-left: 200px;
     width: 70%;
-    padding-left: 150px;
   }
 }
-.quotes-container .quote-container {
-  width: 80%;
-  display: flex;
-  align-items: stretch;
-  box-shadow: 0 0 10px 3px gainsboro;
+.quotes-container .slider {
+  width: 70%;
+  box-shadow: 0 0 6px 2px gainsboro;
   border-radius: 5px;
 }
 @media (max-width: 424px) {
-  .quotes-container .quote-container {
+  .quotes-container .slider {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .quotes-container .slider {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .quotes-container .slider {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .quotes-container .slider {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .quotes-container .slider {
+    width: 100%;
+  }
+}
+@media (min-width: 1450px) {
+  .quotes-container .slider {
+    width: 80%;
+  }
+}
+@media (min-width: 1824px) {
+  .quotes-container .slider {
+    width: 70%;
+  }
+}
+.quotes-container .slider .slick-prev:before, .quotes-container .slider .slick-next:before {
+  color: gainsboro !important;
+}
+.quotes-container .slider .quote-container {
+  width: 80%;
+  display: flex !important;
+  align-items: stretch;
+  border-radius: 5px;
+}
+@media (max-width: 424px) {
+  .quotes-container .slider .quote-container {
     width: 100%;
     flex-direction: column;
   }
 }
 @media (max-width: 767px) {
-  .quotes-container .quote-container {
+  .quotes-container .slider .quote-container {
     width: 100%;
     flex-direction: column;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .quotes-container .quote-container {
-    width: 100%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .quotes-container .quote-container {
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .quotes-container .quote-container {
-    width: 100%;
-  }
-}
-@media (min-width: 1450px) {
-  .quotes-container .quote-container {
-    width: 90%;
-  }
-}
-@media (min-width: 1824px) {
-  .quotes-container .quote-container {
-    width: 70%;
-  }
-}
-.quotes-container .quote-container .img-container {
+.quotes-container .slider .quote-container .img-container {
   background-color: #175fc7;
   padding: 20px;
   border-radius: 5px;
 }
 @media (max-width: 424px) {
-  .quotes-container .quote-container .img-container {
+  .quotes-container .slider .quote-container .img-container {
     padding: 5px;
   }
 }
 @media (max-width: 767px) {
-  .quotes-container .quote-container .img-container {
+  .quotes-container .slider .quote-container .img-container {
     padding: 0;
   }
 }
-.quotes-container .quote-container .img-container img {
+.quotes-container .slider .quote-container .img-container img {
   max-width: 100px;
   border-radius: 100px;
   position: relative;
@@ -1365,46 +1388,46 @@ html, body {
   transform: translateY(-50%);
 }
 @media (max-width: 424px) {
-  .quotes-container .quote-container .img-container img {
+  .quotes-container .slider .quote-container .img-container img {
     left: 50%;
     top: 80%;
     transform: translate(-50%, 50%);
   }
 }
 @media (max-width: 767px) {
-  .quotes-container .quote-container .img-container img {
+  .quotes-container .slider .quote-container .img-container img {
     left: 50%;
     top: 80%;
     transform: translate(-50%, 50%);
   }
 }
-.quotes-container .quote-container .quote-text-container {
+.quotes-container .slider .quote-container .quote-text-container {
   box-sizing: border-box;
   text-align: center;
   padding: 30px 50px;
 }
 @media (max-width: 424px) {
-  .quotes-container .quote-container .quote-text-container {
+  .quotes-container .slider .quote-container .quote-text-container {
     padding: 60px 20px 10px 20px !important;
   }
 }
 @media (max-width: 767px) {
-  .quotes-container .quote-container .quote-text-container {
+  .quotes-container .slider .quote-container .quote-text-container {
     padding: 70px 20px 10px 20px;
   }
 }
-.quotes-container .quote-container .quote-text-container .quote-text {
+.quotes-container .slider .quote-container .quote-text-container .quote-text {
   color: #4e4e4e;
   font-style: italic;
 }
-.quotes-container .quote-container .quote-text-container .quote-person {
+.quotes-container .slider .quote-container .quote-text-container .quote-person {
   margin-top: 20px;
   color: #73bf15;
 }
-.quotes-container .quote-container .quote-text-container .quote-job-position {
+.quotes-container .slider .quote-container .quote-text-container .quote-job-position {
   color: gainsboro;
 }
-.quotes-container .quote-container:nth-of-type(even) .img-container {
+.quotes-container .slider .quote-container:nth-of-type(2n+1) .img-container {
   background: #73bf15;
 }
 

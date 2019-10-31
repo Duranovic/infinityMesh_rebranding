@@ -38,3 +38,14 @@ function myFunction() {
     header.getElementsByClassName("header-logo")[0].children[0].setAttribute("src", "/themes/images/header-logo.png");
   }
 } 
+
+$('.slider').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  vertical: false,
+  speed: 1000,
+  arrows: true,
+  autoplay: true
+});
+

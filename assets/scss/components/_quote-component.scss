@@ -14,34 +14,30 @@
         width: 100%;
     }
     @include media-md{
-        padding-left: 0;
+        padding-left: 80px;
         width: 80%;
     }
     @include media-lg{
-        padding-left: 0;
+        padding-left: 80px;
         width: 70%;
     }
     @include media-xlg{
-        width: 80%;
-        padding-left: 150px;
+        padding-left: 100px;
+        width: 65%;
     }
     @include media-xxlg{
+        padding-left: 200px;
         width: 70%;
-        padding-left: 150px;
     }
-    .quote-container{
-        width: 80%;
-        display: flex;
-        align-items: stretch;
-        box-shadow: 0 0 10px 3px gainsboro;
+    .slider{
+        width: 70%;
+        box-shadow: 0 0 6px 2px gainsboro;
         border-radius: 5px;
         @include media-us{
             width: 100%;
-            flex-direction: column;
         }
         @include media-xs{
             width: 100%;
-            flex-direction: column;
         }
         @include media-sm{
             width: 100%;
@@ -53,68 +49,87 @@
             width: 100%;
         }
         @include media-xlg{
-            width: 90%;
+            width: 80%;
         }
         @include media-xxlg{
             width: 70%;
         }
-        .img-container{
-            background-color: $main-color;
-            padding: 20px;
+        .slick-prev:before, .slick-next:before{
+            color:  gainsboro !important;
+        }
+        .quote-container{
+            width: 80%;
+            display: flex !important;
+            align-items: stretch;
             border-radius: 5px;
             @include media-us{
-                padding: 5px;
+                width: 100%;
+                flex-direction: column;
             }
             @include media-xs{
-                padding: 0;
+                width: 100%;
+                flex-direction: column;
             }
-            img{
-                max-width: 100px;
-                border-radius:100px;
-                //border: 3px solid $main-color;
-                position: relative;
-                left: 50%;
-                top: 50%;
-                transform: translateY(-50%);
+ 
+            .img-container{
+                background-color: $main-color;
+                padding: 20px;
+                border-radius: 5px;
                 @include media-us{
-                    left: 50%;
-                    top: 80%;
-                    transform: translate(-50%, 50%);
+                    padding: 5px;
                 }
                 @include media-xs{
+                    padding: 0;
+                }
+                img{
+                    max-width: 100px;
+                    border-radius:100px;
+                    //border: 3px solid $main-color;
+                    position: relative;
                     left: 50%;
-                    top: 80%;
-                    transform: translate(-50%, 50%);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include media-us{
+                        left: 50%;
+                        top: 80%;
+                        transform: translate(-50%, 50%);
+                    }
+                    @include media-xs{
+                        left: 50%;
+                        top: 80%;
+                        transform: translate(-50%, 50%);
+                    }
+                }
+            }
+            .quote-text-container{
+                box-sizing: border-box;
+                text-align: center;
+                padding: 30px 50px;
+                @include media-us{
+                    padding: 60px 20px 10px 20px !important;
+                }
+                @include media-xs{
+                    padding: 70px 20px 10px 20px;
+                }
+                .quote-text{                      
+                    color: rgb(78, 78, 78);
+                    font-style: italic;
+                }
+                .quote-person{
+                    margin-top: 20px;
+                    color: $secondary-color;
+                }
+                .quote-job-position{
+                    color: gainsboro;
                 }
             }
         }
-        .quote-text-container{
-            box-sizing: border-box;
-            text-align: center;
-            padding: 30px 50px;
-            @include media-us{
-                padding: 60px 20px 10px 20px !important;
-            }
-            @include media-xs{
-                padding: 70px 20px 10px 20px;
-            }
-            .quote-text{                      
-                color: rgb(78, 78, 78);
-                font-style: italic;
-            }
-            .quote-person{
-                margin-top: 20px;
-                color: $secondary-color;
-            }
-            .quote-job-position{
-                color: gainsboro;
-            }
+        .quote-container:nth-of-type(2n+1){            
+               .img-container{
+                   background: $secondary-color;
+               }
         }
     }
-    .quote-container:nth-of-type(even){            
-           .img-container{
-               background: $secondary-color;
-           }
-    }
+   
     
 }

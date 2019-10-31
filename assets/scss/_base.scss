@@ -224,7 +224,7 @@ html,body
     width: 100%;
     box-shadow: 0 0 100px 4px gainsboro;
     .work-with-section-container{
-        padding: 100px 60px;
+        padding: 60px 60px;
         display: flex;
         align-items: center;
         @include media-us{
@@ -237,24 +237,25 @@ html,body
         }
         @include media-sm{
             flex-direction: column;
-            padding: 100px 60px 30px 60px;
+            padding: 60px 60px 60px 60px;
         }
         @include media-md{
-            padding: 100px 60px 30px 60px;
+            padding: 100px 60px 100px 60px;
         }
         @include media-lg{
-            padding: 100px 60px 30px 60px;
+            padding: 100px 60px 100px 60px;
         }
         @include media-xlg{
-            padding: 100px 60px 30px 60px;
+            padding: 100px 60px 100px 60px;
         }
         @include media-xxlg{
-            padding: 100px 60px 30px 60px;
+            padding: 100px 60px 100px 60px;
 
         }
         .heading{
             text-align: right;
             width: 50%;
+            padding: 0;
             @include media-xs{
                 width: 100%;
                 padding: 0;
@@ -275,7 +276,7 @@ html,body
                 text-align: center;
             }
             @include media-xlg{
-                width: 20%;
+                width: 35%;
                 text-align: right;
             }
             @include media-xxlg{
@@ -302,46 +303,43 @@ html,body
     }
     .brands-container{
         background-color: rgb(247, 242, 242);
-        .brands{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            @include media-xs{
-
+        .container{
+             @include media-xlg{
+                min-width: 55%;
             }
-            @include media-sm{
-  
-            }
-             @include media-lg{
-
-            }
-            .brand-container{
-                margin-top: 20px;
-                margin-bottom: 20px;
-                text-align: center;
-                @include media-xs{
-                    width: 100%;
-                    margin-bottom: 10px;
-                }
-                @include media-sm{
-                    width: 50%;
+            .brands{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                .brand-container{
+                    margin-top: 20px;
                     margin-bottom: 20px;
-                }
-                @include media-md{
-                    width: 33.3333333333%;
-                }
-                 @include media-lg{
-                    width: 20%;
-                }
-                img{
-                    height: 100px;
-                    @include media-xlg{
-                        height: 120px;
+                    text-align: center;
+                    @include media-xs{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    @include media-sm{
+                        width: 50%;
+                        margin-bottom: 20px;
+                    }
+                    @include media-md{
+                        width: 33.3333333333%;
+                    }
+                     @include media-lg{
+                        width: 20%;
+                    }
+                    img{
+                        height: 100px;
+                        @include media-xlg{
+                            height: 120px;
+                        }
                     }
                 }
             }
         }
+  
     }
   
 }
