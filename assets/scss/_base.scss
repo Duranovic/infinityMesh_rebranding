@@ -253,8 +253,8 @@ html,body
 
         }
         .heading{
-            width: 30%;
-            padding: 0 70px;
+            text-align: right;
+            width: 50%;
             @include media-xs{
                 width: 100%;
                 padding: 0;
@@ -267,22 +267,24 @@ html,body
                 text-align: center;
                 padding-bottom: 50px;
             }
-            @include media-lmd{
-            
+            @include media-md{
+                text-align: center;
             }
             @include media-lg{
                 width: 30%;
-                padding: 0 7% 0 3%;
+                text-align: center;
             }
             @include media-xlg{
-                width: 40%;
-                padding: 0 7% 0 15%;
+                width: 20%;
+                text-align: right;
             }
             @include media-xxlg{
-                width: 50%;
-                padding: 0 5% 0 30%;
+                width: 30%;
+                text-align: right;
             }
             h1{
+                display: inline-block;
+                text-align: left;
                 font-family: $heebo-bold;
                 font-size: 60px;
                 color: $secondary-color;

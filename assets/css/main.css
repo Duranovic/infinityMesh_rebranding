@@ -266,7 +266,7 @@ html, body {
   width: 130%;
   transform: translateX(-30px);
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .how-we-do-section .boxes .how-we-do-path {
     width: 30% !important;
     transform: rotate(90deg) translateX(100px);
@@ -311,7 +311,7 @@ html, body {
   padding: 400px 0 100px 0;
   position: relative;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .services-section {
     padding: 350px 60px 100px 60px !important;
   }
@@ -356,7 +356,7 @@ html, body {
   display: flex;
   align-items: center;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .work-with-section .work-with-section-container {
     flex-direction: column;
     padding: 10px 20px 10px 20px;
@@ -395,8 +395,8 @@ html, body {
   }
 }
 .work-with-section .work-with-section-container .heading {
-  width: 30%;
-  padding: 0 70px;
+  text-align: right;
+  width: 50%;
 }
 @media (max-width: 767px) {
   .work-with-section .work-with-section-container .heading {
@@ -414,25 +414,32 @@ html, body {
     padding-bottom: 50px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .work-with-section .work-with-section-container .heading {
+    text-align: center;
+  }
+}
 @media (min-width: 1200px) {
   .work-with-section .work-with-section-container .heading {
     width: 30%;
-    padding: 0 7% 0 3%;
+    text-align: center;
   }
 }
 @media (min-width: 1450px) {
   .work-with-section .work-with-section-container .heading {
-    width: 40%;
-    padding: 0 7% 0 15%;
+    width: 20%;
+    text-align: right;
   }
 }
 @media (min-width: 1824px) {
   .work-with-section .work-with-section-container .heading {
-    width: 50%;
-    padding: 0 5% 0 30%;
+    width: 30%;
+    text-align: right;
   }
 }
 .work-with-section .work-with-section-container .heading h1 {
+  display: inline-block;
+  text-align: left;
   font-family: "Heebo Bold";
   font-size: 60px;
   color: #73bf15;
@@ -543,7 +550,7 @@ html, body {
   display: flex;
   transition: width 0.3s;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .why-choose-us-container {
     flex-direction: column;
     padding: 20px 20px 100px 20px !important;
@@ -592,7 +599,7 @@ html, body {
   color: white;
   margin-bottom: 100px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .why-choose-us-container .why-choose-us-left {
     width: 100%;
   }
@@ -616,7 +623,7 @@ html, body {
   position: relative;
   font-family: "Heebo Bold";
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .why-choose-us-container .why-choose-us-left h1 {
     font-size: 30px;
   }
@@ -644,7 +651,7 @@ html, body {
 .why-choose-us-container .why-choose-us-right {
   width: 50%;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .why-choose-us-container .why-choose-us-right {
     width: 100%;
   }
@@ -683,7 +690,7 @@ html, body {
   align-items: center;
   transition: width 0.3s;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .why-choose-us-container .why-choose-us-right .why-choose-us-reasons .why-choose-us-reason {
     padding: 10px 20px;
   }
@@ -712,7 +719,7 @@ html, body {
   background: white;
   padding-right: 5px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .services-container {
     padding-right: 0;
   }
@@ -754,7 +761,7 @@ html, body {
   padding-right: 200px;
   padding-bottom: 100px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .services-container .services-container-left .services-container-left-body {
     margin-top: 70px;
     padding-left: 20px;
@@ -779,7 +786,7 @@ html, body {
   padding: 120px 0;
   background: white;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .services-container .services-container-right {
     padding: 5px 0;
   }
@@ -812,7 +819,7 @@ html, body {
 .services-container .services-container-right .service-item {
   margin-top: 10px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .services-container .services-container-right .service-item {
     margin-top: 5px;
   }
@@ -850,7 +857,7 @@ html, body {
 .services-container .services-container-right .service-item:nth-of-type(odd) {
   border-right: 1px solid gainsboro;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .services-container .services-container-right .service-item:nth-of-type(odd) {
     border-right: none;
   }
@@ -901,7 +908,7 @@ html, body {
   padding: 30px;
   color: white;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .right-box .box-item {
     padding: 10px;
   }
@@ -1055,7 +1062,7 @@ html, body {
   box-shadow: 0 0 10px 3px gainsboro;
   flex-wrap: wrap;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .left-box {
     align-items: center;
     justify-content: center;
@@ -1102,7 +1109,7 @@ html, body {
   padding: 30px;
   color: black;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .left-box .box-item {
     padding: 10px;
   }
@@ -1246,46 +1253,58 @@ html, body {
 
 .quotes-container {
   width: 72%;
+  padding-left: 150px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .quotes-container {
-    width: 95%;
+    padding-left: 0;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
   .quotes-container {
-    width: 90%;
+    padding-left: 0;
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .quotes-container {
-    width: 90%;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .quotes-container {
+    padding-left: 0;
+    width: 80%;
   }
 }
 @media (min-width: 1200px) {
   .quotes-container {
+    padding-left: 0;
     width: 70%;
   }
 }
 @media (min-width: 1450px) {
   .quotes-container {
-    width: 60%;
+    width: 80%;
+    padding-left: 150px;
   }
 }
 @media (min-width: 1824px) {
   .quotes-container {
-    width: 50%;
+    width: 70%;
+    padding-left: 150px;
   }
 }
 .quotes-container .quote-container {
-  margin-bottom: 60px;
   width: 80%;
   display: flex;
   align-items: stretch;
   box-shadow: 0 0 10px 3px gainsboro;
   border-radius: 5px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .quotes-container .quote-container {
     width: 100%;
     flex-direction: column;
@@ -1294,6 +1313,7 @@ html, body {
 @media (max-width: 767px) {
   .quotes-container .quote-container {
     width: 100%;
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1301,9 +1321,19 @@ html, body {
     width: 100%;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .quotes-container .quote-container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .quotes-container .quote-container {
+    width: 100%;
+  }
+}
 @media (min-width: 1450px) {
   .quotes-container .quote-container {
-    width: 70%;
+    width: 90%;
   }
 }
 @media (min-width: 1824px) {
@@ -1316,9 +1346,14 @@ html, body {
   padding: 20px;
   border-radius: 5px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .quotes-container .quote-container .img-container {
     padding: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .quotes-container .quote-container .img-container {
+    padding: 0;
   }
 }
 .quotes-container .quote-container .img-container img {
@@ -1329,7 +1364,14 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
+  .quotes-container .quote-container .img-container img {
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 50%);
+  }
+}
+@media (max-width: 767px) {
   .quotes-container .quote-container .img-container img {
     left: 50%;
     top: 80%;
@@ -1341,9 +1383,14 @@ html, body {
   text-align: center;
   padding: 30px 50px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .quotes-container .quote-container .quote-text-container {
-    padding: 30% 20px 10px 20px;
+    padding: 60px 20px 10px 20px !important;
+  }
+}
+@media (max-width: 767px) {
+  .quotes-container .quote-container .quote-text-container {
+    padding: 70px 20px 10px 20px;
   }
 }
 .quotes-container .quote-container .quote-text-container .quote-text {
@@ -1513,7 +1560,7 @@ header {
   padding: 20px 100px 400px 100px;
   z-index: 10;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   header {
     padding: 20px 50px 400px 50px;
   }
@@ -1729,6 +1776,41 @@ header .header-head.sticky {
   display: flex;
   box-shadow: 0 6px 3px -3px #e6e6e6;
 }
+@media (max-width: 424px) {
+  header .header-head.sticky {
+    padding: 20px 20px !important;
+  }
+}
+@media (max-width: 767px) {
+  header .header-head.sticky {
+    padding: 20px 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .header-head.sticky {
+    padding: 20px 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  header .header-head.sticky {
+    padding: 20px 100px;
+  }
+}
+@media (min-width: 1200px) {
+  header .header-head.sticky {
+    padding: 20px 100px;
+  }
+}
+@media (min-width: 1450px) {
+  header .header-head.sticky {
+    padding: 20px 200px;
+  }
+}
+@media (min-width: 1824px) {
+  header .header-head.sticky {
+    padding: 20px 200px;
+  }
+}
 header .header-head.sticky .hamburger-menu-icon-open {
   color: #837d7d;
   position: relative;
@@ -1832,7 +1914,7 @@ header .header-body .header-body-content {
 header .header-body .header-body-content h1 {
   font-family: "Heebo Bold";
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   header .header-body .header-body-content h1 {
     margin-bottom: 40px;
   }
@@ -1844,7 +1926,7 @@ header .header-body .header-body-content .header-body-content-btn-container a {
   text-decoration: none;
   margin-right: 20px;
 }
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   header .header-body .header-body-content .header-body-content-btn-container a {
     display: block;
     margin-top: 20px;

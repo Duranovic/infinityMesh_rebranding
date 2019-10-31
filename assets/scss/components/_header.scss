@@ -192,6 +192,28 @@ header{
         align-items: center;
         display: flex;
         box-shadow: 0 6px 3px -3px rgb(230, 230, 230);
+        @include media-us{
+            padding: 20px 20px !important;
+         }
+        @include media-xs{
+            padding: 20px 100px;
+         }
+         @include media-sm{
+            padding: 20px 100px;
+         }
+         @include media-md{
+            padding: 20px 100px;
+         }
+         @include media-lg{
+            padding: 20px 100px;
+         }
+         @include media-xlg{
+            padding: 20px 200px;
+         }
+         @include media-xxlg{
+            padding: 20px 200px;
+            
+         }
         .hamburger-menu-icon-open{
             color: rgb(131, 125, 125);
             position: relative;
@@ -256,7 +278,6 @@ header{
             img{
                 height: 46px;
             }
-            
         }
         .header-flex-spacing{
             flex-grow: 1;
