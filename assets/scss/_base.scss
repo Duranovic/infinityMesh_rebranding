@@ -132,6 +132,7 @@ html,body
         margin-bottom: 100px;
         @include media-xs{
             margin-bottom: 30px;
+            
         }
         @include media-sm{
             margin-bottom: 40px;
@@ -198,7 +199,7 @@ html,body
     padding: 400px 0 100px 0;
     position: relative;
     @include media-us{
-        padding: 350px 60px 100px 60px !important;
+        padding: 350px 20px 100px 20px !important;
     }
     @include media-xs{
         padding: 450px 60px 100px 60px;
@@ -233,7 +234,7 @@ html,body
         }
         @include media-xs{
             flex-direction: column;
-            padding: 50px 60px 20px 60px;
+            padding: 50px 30px 20px 30px;
         }
         @include media-sm{
             flex-direction: column;
@@ -243,7 +244,7 @@ html,body
             padding: 100px 60px 100px 60px;
         }
         @include media-lg{
-            padding: 100px 60px 100px 60px;
+            padding: 60px 60px 60px 60px;
         }
         @include media-xlg{
             padding: 100px 60px 100px 60px;
@@ -316,8 +317,12 @@ html,body
                     margin-top: 20px;
                     margin-bottom: 20px;
                     text-align: center;
+                    @include media-us{
+                        min-width: 100%;
+                        margin-bottom: 10px;
+                    }
                     @include media-xs{
-                        width: 100%;
+                        width: 50%;
                         margin-bottom: 10px;
                     }
                     @include media-sm{
@@ -331,7 +336,10 @@ html,body
                         width: 20%;
                     }
                     img{
-                        height: 100px;
+                        max-height: 120px;
+                        @include media-xs{
+                            height: 100px;
+                        }
                         @include media-xlg{
                             height: 120px;
                         }
