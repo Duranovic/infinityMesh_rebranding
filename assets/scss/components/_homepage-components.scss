@@ -1,0 +1,971 @@
+.services-section{
+    background: white;
+    padding: 400px 0 100px 0;
+    position: relative;
+    @include media-us{
+        padding: 350px 20px 100px 20px !important;
+    }
+    @include media-xs{
+        padding: 450px 60px 100px 60px;
+    }
+    @include media-sm{
+        padding: 600px 60px 100px 60px;
+    }
+    @include media-md{
+        padding: 400px 60px 100px 60px;
+    }
+    @include media-lg{
+        padding: 400px 60px 150px 60px;
+    }
+    @include media-xlg{
+        padding: 350px 60px 200px 60px;
+    }
+    @include media-xxlg{
+        padding: 400px 60px 200px 60px;
+
+    }
+    .why-choose-us-container{
+        background: #83C71A;
+        padding: 100px 200px 300px 200px;
+        top: -25vh;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 0;
+        display: flex;
+        transition: width .3s, height .3;
+        .why-choose-us-left{
+            width: 50%;
+            color: white;
+            margin-bottom: 100px;
+            @include media-us{
+                width: 100%;
+            }
+            @include media-xs{
+                width: 100%;
+            }
+            @include media-sm{
+                width: 100%;
+            }
+            @include media-md{
+                width: 50%;
+            }
+            h1{
+                position: relative;
+                font-family: $heebo-bold;
+                @include media-us{
+                    font-size: 30px;
+                }
+                span{
+                    font-family: $heebo-bold;
+                }
+            }
+            h1::after{
+                content: '';
+                position: absolute;
+                width: 20%;
+                bottom: -20px;
+                border-bottom: 3px solid white;
+                @include media-xs{
+                    width: 50%;
+                }
+                @include media-sm{
+                    width: 50%;
+                }
+            }
+        }
+        .why-choose-us-right{
+            width: 50%;
+            @include media-us{
+                width: 100%;
+            }
+            @include media-xs{
+                width: 100%;
+            }
+            @include media-sm{
+                width: 100%;
+            }
+            @include media-md{
+                width: 50%;
+            }
+            @include media-lg{
+                width: 50%;
+            }
+            @include media-xlg{
+                width: 50%;
+            }
+            .why-choose-us-reasons{
+                .why-choose-us-reason{
+                    background-color: white;
+                    padding: 25px 40px;
+                    margin-bottom: 35px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    transition: width .3s;
+                    @include media-us{
+                        padding: 10px 20px;
+                    }
+                    .reason-img-container{
+                        border-right: 2px solid rgb(218, 218, 218);
+                        padding-right: 15px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        img{
+                            height: 46px;
+                            width: 46px;
+                        }
+                    }
+                    .reason-text{
+                        padding-left: 15px;
+                        color: $secondary-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        @include media-us{
+            width: 100%;
+        }
+        .services-container{
+            position: relative;
+            z-index: 11;
+            border-radius: 10px;
+            box-shadow: 0 10px 10px -3px gainsboro;
+            background: white;
+            padding-right: 5px;
+            @include media-us{
+                padding-right: 0;    
+            }
+            @include media-xs{
+                padding-right: 0;
+            }
+            @include media-sm{
+                padding-right: 0;
+            }
+            .services-container-left{
+                color: white;
+                border-radius: 10px;
+                background-image: url('/themes//images/services-man@2x.png');
+                box-shadow:inset 0 0 0 2000px rgba(24, 24, 24, 0.822);
+                background-repeat: no-repeat;
+                background-size: 130%;
+                background-position: center;
+                padding: 0;
+                transition: width .3s, height .3s, background .3s;
+                @include media-us{
+                    
+                }
+                @include media-xs{
+                    background-size: 180%;
+                }
+                @include media-md{
+                    background-size: 160%;
+                }
+                .services-container-left-body{
+                    margin-top: 300px;
+                    padding-left: 50px;
+                    padding-right: 200px;
+                    padding-bottom: 100px;
+                    @include media-us{
+                        margin-top: 70px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        padding-bottom: 50px;
+                    }
+                    @include media-xs{
+                        margin-top: 100px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-bottom: 70px;
+                    }
+                    h1, h2, h3, h4, h5, h6{
+                        font-family: $heebo-bold;
+                        color: $secondary-color;
+                    }
+                }
+            }
+            .services-container-right{
+                text-align: center;
+                padding: 120px 0;
+                background: white;
+                @include media-us{
+                    padding: 5px 0 35px 0 !important;
+                }
+                @include media-xs{
+                    padding: 20px 0  40px 0;
+                }
+                @include media-sm{
+                    padding: 0 0  70px 0;
+                }
+                @include media-md{
+                    padding: 3% 0 40px 0;
+                }
+                @include media-lg{
+                    padding: 50px 0 40px 0;
+                }
+                @include media-xlg{
+                    padding: 0 0 40px 0;
+                }
+                .service-item{
+                    margin-top: 10px;
+                    @include media-us{
+                        margin-top:5px;
+                    }
+                    @include media-xs{
+                        margin-top: 30px;
+                    }
+                    @include media-sm{
+                        margin-top: 70px;
+                    }
+                    @include media-md{
+                        margin-top: 100px;
+                    }
+                    @include media-lg{
+                        margin-top: 65px;
+                    }
+                    @include media-xlg{
+                        margin-top: 100px;
+                    }
+                    img{
+                        margin-bottom: 15px;
+                        width: 64px;
+                        height: 64px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:nth-of-type(odd){
+                        @include media-us{
+                            border-right: none;
+                        }
+                        border-right: 1px solid gainsboro;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.how-we-do-section{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 300px;
+    position: relative;
+    @include media-xs{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include media-sm{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include media-lmd{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @include media-lg{
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    @include media-xlg{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    @include media-xxlg{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    &::after{
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/themes/images/computer-developer@2x.png); 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.04;
+    z-index: -1;
+    }
+    >h1{
+        display: inline-block;
+        padding: 0 !important ;
+        font-family: $heebo-bold;
+        color: $secondary-color;
+        margin-bottom: 100px;
+        @include media-xs{
+            margin-bottom: 30px;
+            
+        }
+        @include media-sm{
+            margin-bottom: 40px;
+        }
+        @include media-lg{
+            margin-bottom: 50px;
+        }
+        @include media-xlg{
+            padding: 80px;
+            font-size: 50px;
+        }
+        @include media-xxlg{
+            padding: 100px;
+            font-size: 50px;
+        }
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        @include media-xs{
+            flex-direction: column;
+        }
+        @include media-sm{
+            flex-direction: column;
+        }
+        .left-box{
+            position: relative;
+            display: flex;
+            transition: width .4s, height .4s;
+            background-color: rgb(245, 245, 245);
+            border-radius: 7px;
+            box-shadow: 0 0 10px 3px gainsboro;
+            @include media-us{
+                align-items: center;
+                justify-content: center;
+                width: 95%;
+            }
+            @include media-xs{
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+            }
+            @include media-sm{
+                width: 80%;
+            }
+            @include media-md{
+                width: 50%;
+            }
+            @include media-lg{
+                width: 45%;
+            }
+            @include media-xlg{
+                width: 45%;
+            }
+            @include media-xxlg{
+                width: 40%;
+                padding: 30px 20px;
+            }
+            flex-wrap: wrap;
+            .box-item{
+                width: 50%;
+                display: flex;
+                align-items: flex-start;
+                padding: 30px;
+                color: black;
+                @include media-us{
+                    padding: 10px;
+                }
+                @include media-xs{
+                    width: 90%;
+                    padding: 15px;
+                }
+                h1{
+                    font-family: $heebo-bold;
+                    margin: 10px 10px 0 0;
+                    color: $secondary-color;
+                    font-weight: bolder;
+                    @include media-xs{
+                        font-size: 30px;
+                        margin: 5px 10px 0 0;
+                    }
+                    @include media-sm{
+                        font-size: 30px;
+                        margin: 5px 10px 0 0;
+                    }
+                    @include media-md{
+                        font-size: 30px;
+                        margin: 5px 10px 0 0;
+                    }
+                    @include media-lg{
+                        font-size: 40px;
+                        margin: 10px 10px 0 0;
+                    }
+                }
+                .box-item-body{
+                    max-width: 300px;
+                    border-left: 3px solid $main-color;
+                    .box-item-body-title{
+                        text-align: left;
+                        color: white;
+                        padding: 20px;
+                        background: $main-color;
+                        text-transform: uppercase;
+                        h1, h2, h3, h4, h5, h6{
+                            font-family: $heebo-bold;
+                            margin: 0;
+                            @include media-xs{
+                                font-size: 20px;
+                            }
+                            @include media-sm{
+                                font-size: 20px;
+                            }
+                            @include media-md{
+                                font-size: 20px;
+                            }
+                            @include media-lg{
+                                font-size: 20px;
+                            }
+                        }
+                        @include media-xs{
+                            padding: 6px;
+                        }
+                        @include media-sm{
+                            padding: 6px;
+                        }
+                        @include media-lmd{
+                            padding: 10px;
+                        }
+                        @include media-lg{
+                            padding: 10px;
+                        }
+                        @include media-xlg{
+                            padding: 15px;
+                        }
+                        @include media-xxlg{
+                            padding: 20px;
+                        }
+                    }
+                    .box-item-body-description{
+                        color: black;
+                        padding: 20px;
+                        text-align: left;
+                        @include media-xs{
+                            padding: 4px;
+                        }
+                        @include media-sm{
+                            padding: 6px;
+                        }
+                        @include media-lmd{
+                            padding: 10px;
+                        }
+                        @include media-lg{
+                            padding: 10px;
+                        }
+                        @include media-xlg{
+                            padding: 15px;
+                        }
+                        @include media-xxlg{
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .how-we-do-path{
+            z-index: -1;
+            img{
+                width: 130%;
+                transform: translateX(-30px);
+            }
+            @include media-us{
+                width: 30% !important;
+                transform: rotate(90deg) translateX(100px);
+            }
+            @include media-xs{
+                width: 30%;
+                transform: rotate(90deg) translateX(30px);
+            }
+            @include media-sm{
+                width: 20%;
+                transform: rotate(90deg);
+            }
+            @include media-md{
+                width: 10%;
+            }
+            @include media-lg{
+                width: 12%;
+            }
+            @include media-xlg{
+                width: 15%;
+            }
+            @include media-xxlg{
+                width: 10%;
+                padding: 30px 20px;
+            }
+        }
+        .right-box{
+            display: flex;
+            flex-direction: column;
+            background-color: $secondary-color;
+            border-radius: 7px;
+            transition: width .4s, height .4s;
+            @include media-xs{
+                margin-top: 60px;
+                width: 80%;
+            }
+            @include media-sm{
+                margin-top: 60px;
+                min-width: auto;
+            }
+            @include media-lmd{
+                min-width: 30%;
+            }
+            @include media-lg{
+                min-width: 30%;
+            }
+            @include media-xlg{
+                min-width: 25%;
+            }
+            @include media-xxlg{
+                min-width: 18%;
+            }
+            .box-item{
+                display: flex;
+                align-items: flex-start;
+                padding: 30px;
+                color: white;
+                @include media-us{
+                    padding: 10px;
+                }
+                @include media-xs{
+                    padding: 30px;
+                }
+                h1{
+                    font-family: $heebo-bold;
+                    margin: 10px 10px 0 0;
+                    color: white;
+                    @include media-xs{
+                        font-size: 30px;
+                        margin: 5px 10px 0 0;
+                    }
+                    @include media-sm{
+                        font-size: 30px;
+                        margin: 5px 10px 0 0;
+                    }
+                    @include media-md{
+                        font-size: 30px;
+                        margin: 5px 10px 0 0;
+                    }
+                    @include media-lg{
+                        font-size: 40px;
+                        margin: 10px 10px 0 0;
+                    }
+                }
+                .box-item-body{
+                    max-width: 300px;
+                    border-left: 3px solid white;
+                    .box-item-body-title{
+                        text-align: left;
+                        color: white;
+                        padding: 20px;
+                        background: $main-color;
+                        text-transform: uppercase;
+                        h1, h2, h3, h4, h5, h6{
+                            font-family: $heebo-bold;
+                            margin: 0;
+                            @include media-xs{
+                                font-size: 20px;
+                            }
+                            @include media-sm{
+                                font-size: 20px;
+                            }
+                            @include media-md{
+                                font-size: 20px;
+                            }
+                            @include media-lg{
+                                font-size: 20px;
+                            }
+                        }
+                        @include media-xs{
+                            padding: 6px;
+                        }
+                        @include media-sm{
+                            padding: 6px;
+                        }
+                        @include media-lmd{
+                            padding: 10px;
+                        }
+                        @include media-lg{
+                            padding: 10px;
+                        }
+                        @include media-xlg{
+                            padding: 15px;
+        
+                        }
+                        @include media-xxlg{
+                            padding: 20px;
+                        }
+                    }
+                    .box-item-body-description{
+                        color: white;
+                        padding: 20px;
+                        text-align: left;
+                        @include media-xs{
+                            padding: 6px;
+                        }
+                        @include media-xs{
+                            padding: 6px;
+                        }
+                        @include media-sm{
+                            padding: 6px;
+                        }
+                        @include media-lmd{
+                            padding: 10px;
+                        }
+                        @include media-lg{
+                            padding: 10px;
+                        }
+                        @include media-xlg{
+                            padding: 15px;
+                        }
+                        @include media-xxlg{
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.work-with-section{
+    width: 100%;
+    box-shadow: 0 0 100px 4px gainsboro;
+    .work-with-section-container{
+        padding: 60px 60px;
+        display: flex;
+        align-items: center;
+        @include media-us{
+            flex-direction: column;
+            padding: 10px 20px 10px 20px;
+        }
+        @include media-xs{
+            flex-direction: column;
+            padding: 50px 30px 20px 30px;
+        }
+        @include media-sm{
+            flex-direction: column;
+            padding: 60px 60px 60px 60px;
+        }
+        @include media-md{
+            padding: 100px 60px 100px 60px;
+        }
+        @include media-lg{
+            padding: 60px 60px 60px 60px;
+        }
+        @include media-xlg{
+            padding: 100px 60px 100px 60px;
+        }
+        @include media-xxlg{
+            padding: 100px 60px 100px 60px;
+
+        }
+        .heading{
+            text-align: right;
+            width: 50%;
+            padding: 0;
+            @include media-xs{
+                width: 100%;
+                padding: 0;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            @include media-sm{
+                width: 100%;
+                padding: 0;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            @include media-md{
+                text-align: center;
+            }
+            @include media-lg{
+                width: 30%;
+                text-align: center;
+            }
+            @include media-xlg{
+                width: 35%;
+                text-align: right;
+            }
+            @include media-xxlg{
+                width: 30%;
+                text-align: right;
+            }
+            h1{
+                display: inline-block;
+                text-align: left;
+                font-family: $heebo-bold;
+                font-size: 60px;
+                color: $secondary-color;
+                @include media-xs{
+                    font-size: 30px;
+                }
+                @include media-sm{
+                    font-size: 40px;
+                }
+                span{
+                    font-family: $heebo-bold;
+                }
+            }
+        }
+        .quotes-container{
+            width: 72%;
+            padding-left: 150px;
+            @include media-us{
+                align-items: center;
+                padding-left: 0;
+                width: 100%;
+            }
+            @include media-xs{
+                padding-left: 0;
+                width: 100%;
+            }
+            @include media-sm{
+                padding-left: 0;
+                width: 100%;
+            }
+            @include media-md{
+                padding-left: 80px;
+                width: 80%;
+            }
+            @include media-lg{
+                padding-left: 80px;
+                width: 70%;
+            }
+            @include media-xlg{
+                padding-left: 100px;
+                width: 65%;
+            }
+            @include media-xxlg{
+                padding-left: 200px;
+                width: 70%;
+            }
+            .slick-arrow-container{
+                text-align: center;
+                @include media-us{
+                    width: 100%;
+                }
+                @include media-xs{
+                    width: 100%;
+                }
+                @include media-sm{
+                    width: 100%;
+                }
+                @include media-md{
+                    width: 100%;
+                }
+                @include media-lg{
+                    width: 80%;
+                }
+                @include media-xlg{
+                    width: 65%;
+                }
+                @include media-xxlg{
+                    width: 73%;
+                }
+                .slick-quotes-arrow-up, .slick-quotes-arrow-down{
+                    color: rgb(194, 194, 194);
+                    text-align: center;
+                    font-size: 20px;
+                    transition: color .3s;
+                    min-width: 31px;
+                    min-height: 71px;
+                }
+                .slick-arrow{
+                    opacity: 0.45;
+                    width: 31px;
+                    height: 71px;
+                }
+                .slick-quotes-arrow-up{
+                    i{
+                        background: url('/themes/images/tm-testi-slider-prev.png');
+                        transform: rotate(90deg);
+                    }
+                }
+                .slick-quotes-arrow-down{
+                    i{
+                        background: url('/themes/images/tm-testi-slider-prev.png');
+                        background-repeat: no-repeat;
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+         
+        
+            .slider{
+                width: 70%;
+                border-radius: 5px;
+                @include media-us{
+                    width: 100%;
+                }
+                @include media-xs{
+                    width: 100%;
+                }
+                @include media-sm{
+                    width: 100%;
+                }
+                @include media-md{
+                    width: 100%;
+                }
+                @include media-lg{
+                    width: 80%;
+                }
+                @include media-xlg{
+                    width: 70%;
+                }
+                @include media-xxlg{
+                    width: 73%;
+                }
+                .quote-container{
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    box-shadow: 0 0 10px 2px rgb(235, 235, 235);
+                    display: flex;
+                    align-items: stretch;
+                    border-radius: 5px;
+                    @include media-us{
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                    @include media-xs{
+                        margin-top: 10px;
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                    @include media-sm{
+                        width: 100%;
+                    }
+                    @include media-md{
+                        width: 100%;
+                    }
+                    @include media-lg{
+                        width: 90%;
+                    }
+                    @include media-xlg{
+                        width: 100%;
+                    }
+                    @include media-xxlg{
+                        width: 100%;
+                    }
+                    .img-container{
+                        padding: 20px;
+                        border-radius: 5px;
+                        @include media-us{
+                            padding: 5px;
+                        }
+                        @include media-xs{
+                            padding: 0;
+                        }
+                        img{
+                            max-width: 100px;
+                            border-radius:100px;
+                            //border: 3px solid $main-color;
+                            position: relative;
+                            left: 50%;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            @include media-us{
+                                left: 50%;
+                                top: 80%;
+                                transform: translate(-50%, 50%);
+                            }
+                            @include media-xs{
+                                left: 50%;
+                                top: 80%;
+                                transform: translate(-50%, 50%);
+                            }
+                        }
+                    }
+                    .quote-text-container{
+                        box-sizing: border-box;
+                        text-align: center;
+                        padding: 30px 50px;
+                        @include media-us{
+                            padding: 60px 20px 10px 20px !important;
+                        }
+                        @include media-xs{
+                            padding: 70px 20px 10px 20px;
+                        }
+                        .quote-text{                      
+                            color: rgb(78, 78, 78);
+                            font-style: italic;
+                        }
+                        .quote-person{
+                            margin-top: 20px;
+                            color: $secondary-color;
+                        }
+                        .quote-job-position{
+                            color: gainsboro;
+                        }
+                    }
+                }
+                .quote-container:nth-of-type(n){  
+                       .img-container{
+                           background: $main-color;
+                       }
+                }
+                .quote-container:nth-of-type(2n){  
+                    .img-container{
+                        background: $secondary-color;
+                    }
+             }
+            }
+           
+            
+        }    
+    }
+    .brands-container{
+        background-color: rgb(247, 242, 242);
+        .container{
+             @include media-xlg{
+                min-width: 55%;
+            }
+            .brands{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                .brand-container{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    @include media-us{
+                        min-width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    @include media-xs{
+                        width: 50%;
+                        margin-bottom: 10px;
+                    }
+                    @include media-sm{
+                        width: 50%;
+                        margin-bottom: 20px;
+                    }
+                    @include media-md{
+                        width: 33.3333333333%;
+                    }
+                     @include media-lg{
+                        width: 20%;
+                    }
+                    img{
+                        max-height: 120px;
+                        @include media-xs{
+                            height: 100px;
+                        }
+                        @include media-xlg{
+                            height: 120px;
+                        }
+                    }
+                }
+            }
+        }
+  
+    }
+  
+}

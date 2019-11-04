@@ -76,278 +76,38 @@ html,body
 .main-color{
     color: $main-color;
 }
-
-
-.home-section{
-    height: 100vh;
-    background: black;
-}
-.how-we-do-section{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 300px;
-    position: relative;
-    @include media-xs{
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    @include media-sm{
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    @include media-lmd{
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    @include media-lg{
-        padding-top: 100px;
-        padding-bottom: 120px;
-    }
-    @include media-xlg{
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
-    @include media-xxlg{
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
-    &::after{
-    content : "";
-    display: block;
+.overlap-header{
     position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(/themes/images/computer-developer@2x.png); 
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    opacity : 0.04;
-    z-index: -1;
-    }
-    >h1{
-        display: inline-block;
-        padding: 0 !important ;
-        font-family: $heebo-bold;
-        color: $secondary-color;
-        margin-bottom: 100px;
-        @include media-xs{
-            margin-bottom: 30px;
-            
-        }
-        @include media-sm{
-            margin-bottom: 40px;
-        }
-        @include media-lg{
-            margin-bottom: 50px;
-        }
-        @include media-xlg{
-            padding: 80px;
-            font-size: 50px;
-        }
-        @include media-xxlg{
-            padding: 100px;
-            font-size: 50px;
-        }
-    }
-    .boxes{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-        @include media-xs{
+    width: 90%;
+     @include media-us{
             flex-direction: column;
-        }
-        @include media-sm{
-            flex-direction: column;
-        }
-        .how-we-do-path{
-            z-index: -1;
-            img{
-                width: 130%;
-                transform: translateX(-30px);
-            }
-            @include media-us{
-                width: 30% !important;
-                transform: rotate(90deg) translateX(100px);
-            }
-            @include media-xs{
-                width: 30%;
-                transform: rotate(90deg) translateX(30px);
-            }
-            @include media-sm{
-                width: 20%;
-                transform: rotate(90deg);
-            }
-            @include media-md{
-                width: 10%;
-            }
-            @include media-lg{
-                width: 12%;
-            }
-            @include media-xlg{
-                width: 15%;
-            }
-            @include media-xxlg{
-                width: 10%;
-                padding: 30px 20px;
-            }
-        }
-    }
-}
-.services-section{
-    background: white;
-    padding: 400px 0 100px 0;
-    position: relative;
-    @include media-us{
-        padding: 350px 20px 100px 20px !important;
-    }
-    @include media-xs{
-        padding: 450px 60px 100px 60px;
-    }
-    @include media-sm{
-        padding: 600px 60px 100px 60px;
-    }
-    @include media-md{
-        padding: 400px 60px 100px 60px;
-    }
-    @include media-lg{
-        padding: 400px 60px 150px 60px;
-    }
-    @include media-xlg{
-        padding: 350px 60px 200px 60px;
-    }
-    @include media-xxlg{
-        padding: 400px 60px 200px 60px;
-
-    }
-}
-.work-with-section{
-    width: 100%;
-    box-shadow: 0 0 100px 4px gainsboro;
-    .work-with-section-container{
-        padding: 60px 60px;
-        display: flex;
-        align-items: center;
-        @include media-us{
-            flex-direction: column;
-            padding: 10px 20px 10px 20px;
+            padding: 20px 20px 100px 20px !important;
+            top: -20% !important;
         }
         @include media-xs{
             flex-direction: column;
-            padding: 50px 30px 20px 30px;
+            top: -20%;
+            padding: 20px 20px 100px 20px
         }
         @include media-sm{
+            top: -18%;
             flex-direction: column;
-            padding: 60px 60px 60px 60px;
+            padding: 100px 100px 300px 100px;
         }
         @include media-md{
-            padding: 100px 60px 100px 60px;
+            top: -20%;
+            padding: 100px 150px 300px 150px;
         }
         @include media-lg{
-            padding: 60px 60px 60px 60px;
+            top: -20%;
+            padding: 100px 100px 300px 100px;
         }
         @include media-xlg{
-            padding: 100px 60px 100px 60px;
+            padding: 100px 100px 300px 100px;
         }
         @include media-xxlg{
-            padding: 100px 60px 100px 60px;
-
+            padding: 100px 200px 300px 200px;
+            width: 60vw;
+            top: -20vh;
         }
-        .heading{
-            text-align: right;
-            width: 50%;
-            padding: 0;
-            @include media-xs{
-                width: 100%;
-                padding: 0;
-                text-align: center;
-                padding-bottom: 50px;
-            }
-            @include media-sm{
-                width: 100%;
-                padding: 0;
-                text-align: center;
-                padding-bottom: 50px;
-            }
-            @include media-md{
-                text-align: center;
-            }
-            @include media-lg{
-                width: 30%;
-                text-align: center;
-            }
-            @include media-xlg{
-                width: 35%;
-                text-align: right;
-            }
-            @include media-xxlg{
-                width: 30%;
-                text-align: right;
-            }
-            h1{
-                display: inline-block;
-                text-align: left;
-                font-family: $heebo-bold;
-                font-size: 60px;
-                color: $secondary-color;
-                @include media-xs{
-                    font-size: 30px;
-                }
-                @include media-sm{
-                    font-size: 40px;
-                }
-                span{
-                    font-family: $heebo-bold;
-                }
-            }
-        }    
-    }
-    .brands-container{
-        background-color: rgb(247, 242, 242);
-        .container{
-             @include media-xlg{
-                min-width: 55%;
-            }
-            .brands{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                flex-wrap: wrap;
-                .brand-container{
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    text-align: center;
-                    @include media-us{
-                        min-width: 100%;
-                        margin-bottom: 10px;
-                    }
-                    @include media-xs{
-                        width: 50%;
-                        margin-bottom: 10px;
-                    }
-                    @include media-sm{
-                        width: 50%;
-                        margin-bottom: 20px;
-                    }
-                    @include media-md{
-                        width: 33.3333333333%;
-                    }
-                     @include media-lg{
-                        width: 20%;
-                    }
-                    img{
-                        max-height: 120px;
-                        @include media-xs{
-                            height: 100px;
-                        }
-                        @include media-xlg{
-                            height: 120px;
-                        }
-                    }
-                }
-            }
-        }
-  
-    }
-  
 }

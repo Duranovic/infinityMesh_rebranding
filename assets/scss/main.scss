@@ -7,10 +7,14 @@
 // Fonts
 @import '_fonts';
 
+// Slick
+@import '../css/slick/slick-theme.scss';
+@import '../css/slick/slick.scss';
+
+// Sal JS for scroll animations
+@import '../css/sal.css';
+
 // Components
-@import './components/services-component';
-@import './components/doingProcessOneColumn-component';
-@import './components/doingProcessTwoColumn-component';
-@import './components/_quote-component';
 @import './components/_footer';
 @import './components/_header';
+@import './components/homepage-components';
