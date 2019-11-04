@@ -3,7 +3,7 @@
     padding: 400px 0 100px 0;
     position: relative;
     @include media-us{
-        padding: 500px 20px 100px 20px !important;
+        padding: 350px 20px 100px 20px !important;
     }
     @include media-xs{
         padding: 450px 60px 100px 60px;
@@ -31,8 +31,13 @@
         z-index: 0;
         display: flex;
         transition: width .3s, height .3;
+        @include media-us{
+            padding: 20px 20px 100px 20px;
+            top: -21% !important;
+        }
         @include media-xs{
-            padding: 20px 20px 100px 20px
+            padding: 20px 20px 100px 20px;
+            top: -20%;
         }
         @include media-sm{
             padding: 20px 20px 100px 20px
@@ -48,6 +53,7 @@
         }
         @include media-xxlg{
             padding: 100px 200px 300px 200px;
+            top: -15%;
 
         }
         .why-choose-us-left{

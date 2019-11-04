@@ -197,7 +197,7 @@ html, body {
 @media (min-width: 1824px) {
   .overlap-header {
     width: 60vw;
-    top: -20vh;
+    top: -15%;
   }
 }
 
@@ -629,7 +629,7 @@ footer .footer-copyright {
 header {
   background-position: center;
   background-size: cover;
-  padding: 20px 100px 400px 100px;
+  padding: 20px 100px 350px 100px;
   z-index: 10;
 }
 @media (max-width: 424px) {
@@ -1054,7 +1054,7 @@ header.banner-header-standard .header-overlay {
 }
 @media (max-width: 424px) {
   .services-section {
-    padding: 500px 20px 100px 20px !important;
+    padding: 350px 20px 100px 20px !important;
   }
 }
 @media (max-width: 767px) {
@@ -1095,9 +1095,16 @@ header.banner-header-standard .header-overlay {
   display: flex;
   transition: width 0.3s, height 0.3;
 }
+@media (max-width: 424px) {
+  .services-section .why-choose-us-container.overlap-header {
+    padding: 20px 20px 100px 20px;
+    top: -21% !important;
+  }
+}
 @media (max-width: 767px) {
   .services-section .why-choose-us-container.overlap-header {
     padding: 20px 20px 100px 20px;
+    top: -20%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1123,6 +1130,7 @@ header.banner-header-standard .header-overlay {
 @media (min-width: 1824px) {
   .services-section .why-choose-us-container.overlap-header {
     padding: 100px 200px 300px 200px;
+    top: -15%;
   }
 }
 .services-section .why-choose-us-container.overlap-header .why-choose-us-left {
