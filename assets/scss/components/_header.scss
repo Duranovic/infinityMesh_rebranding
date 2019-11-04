@@ -272,6 +272,15 @@ header{
             display: inline-block;
             padding-left: 100px;
             padding-right: 100px;
+            @include media-xs{
+                padding-left: 10px;
+                padding-right: 10px;
+             }
+            @include media-sm{
+                padding-left: 10px;
+                padding-right: 10px;
+             }
+
             h1{
                 font-family: $heebo-bold;
                 @include media-us{

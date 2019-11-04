@@ -976,6 +976,18 @@ header .header-body .header-body-content {
   padding-left: 100px;
   padding-right: 100px;
 }
+@media (max-width: 767px) {
+  header .header-body .header-body-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .header-body .header-body-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 header .header-body .header-body-content h1 {
   font-family: "Heebo Bold";
 }
