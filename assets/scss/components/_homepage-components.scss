@@ -3,7 +3,7 @@
     padding: 400px 0 100px 0;
     position: relative;
     @include media-us{
-        padding: 350px 20px 100px 20px !important;
+        padding: 500px 20px 100px 20px !important;
     }
     @include media-xs{
         padding: 450px 60px 100px 60px;
@@ -24,15 +24,32 @@
         padding: 400px 60px 200px 60px;
 
     }
-    .why-choose-us-container{
+    .why-choose-us-container.overlap-header{
         background: #83C71A;
         padding: 100px 200px 300px 200px;
         top: -25vh;
-        left: 50%;
-        transform: translate(-50%);
         z-index: 0;
         display: flex;
         transition: width .3s, height .3;
+        @include media-xs{
+            padding: 20px 20px 100px 20px
+        }
+        @include media-sm{
+            padding: 20px 20px 100px 20px
+        }
+        @include media-md{
+            padding: 100px 150px 300px 150px;
+        }
+        @include media-lg{
+            padding: 100px 100px 300px 100px;
+        }
+        @include media-xlg{
+            padding: 100px 100px 300px 100px;
+        }
+        @include media-xxlg{
+            padding: 100px 200px 300px 200px;
+
+        }
         .why-choose-us-left{
             width: 50%;
             color: white;

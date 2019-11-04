@@ -1,9 +1,7 @@
 header{
-    background: url('/themes/images/header-background@2x.png');
     background-position: center;
     background-size: cover;
     //box-shadow:inset 0 0 0 2022px rgba(90, 59, 201, 0.205);
-    min-height: 500px;
     padding: 20px 100px 400px 100px;
     z-index: 10;
     @include media-us{
@@ -11,18 +9,6 @@ header{
     }
     @include media-xs{
         padding: 25px 55px 400px 50px;
-    }
-    @include media-sm{
-        
-    }
-    @include media-md{
-        
-    }
-    @include media-lg{
-        
-    }
-    @include media-xlg{
-        
     }
     .hamburger-menu{
         box-shadow: 1px 0 3px -3px gainsboro;
@@ -63,15 +49,6 @@ header{
                 }
             }
         }
-    }
-    .header-overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(42, 159, 255, 0.527), rgba(109, 3, 248, 0.705));
-        z-index: 0;
     }
     .header-head{
         position: relative;
@@ -293,6 +270,8 @@ header{
         .header-body-content{
             margin-top: 80px;
             display: inline-block;
+            padding-left: 100px;
+            padding-right: 100px;
             h1{
                 font-family: $heebo-bold;
                 @include media-us{
@@ -311,5 +290,38 @@ header{
                 }
             }
         }
+    }
+}
+header.banner-header-home{
+    background: url('/themes/images/header-background.png');
+    background-position: center;
+    background-size: cover;
+    .header-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(42, 159, 255, 0.527), rgba(109, 3, 248, 0.705));
+        z-index: 0;
+    }
+}
+header.banner-header-standard{
+    background: url('/themes/images/about-banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include media-us{
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+    .header-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(19, 19, 19, 0.527), rgba(32, 32, 32, 0.719));
+        z-index: 0;
     }
 }
