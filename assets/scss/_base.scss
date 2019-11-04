@@ -13,14 +13,14 @@ html,body
 }
 @mixin customButton {
     position: relative;
-    padding: 7px 30px 7px 30px;
+    padding: 10px 30px 10px 30px;
     text-decoration: none;
     border-radius: 7%;
     text-transform: uppercase;
     font-size: 12px;
     outline: none !important;
 }
-.primary-button{
+.primary-button, a.primary-button{
     @include customButton();
     background-color: $main-color;
     color: white;

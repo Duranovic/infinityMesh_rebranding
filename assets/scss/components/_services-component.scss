@@ -241,6 +241,10 @@
                         width: 64px;
                         height: 64px;
                     }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
                     &:nth-of-type(odd){
                         @include media-us{
                             border-right: none;

@@ -63,9 +63,9 @@ html, body {
   overflow-x: hidden;
 }
 
-.primary-button {
+.primary-button, a.primary-button {
   position: relative;
-  padding: 7px 30px 7px 30px;
+  padding: 10px 30px 10px 30px;
   text-decoration: none;
   border-radius: 7%;
   text-transform: uppercase;
@@ -75,7 +75,7 @@ html, body {
   color: white;
   transition: background-color 0.3s;
 }
-.primary-button::after {
+.primary-button::after, a.primary-button::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -85,13 +85,13 @@ html, body {
   background: #73bf15;
   transition: width 1s;
 }
-.primary-button:hover::after {
+.primary-button:hover::after, a.primary-button:hover::after {
   width: 100%;
 }
 
 .secondary-button {
   position: relative;
-  padding: 7px 30px 7px 30px;
+  padding: 10px 30px 10px 30px;
   text-decoration: none;
   border-radius: 7%;
   text-transform: uppercase;
@@ -107,7 +107,7 @@ html, body {
 
 .primary-button-bordered {
   position: relative;
-  padding: 7px 30px 7px 30px;
+  padding: 10px 30px 10px 30px;
   text-decoration: none;
   border-radius: 7%;
   text-transform: uppercase;
@@ -125,7 +125,7 @@ html, body {
 
 .secondary-button-bordered {
   position: relative;
-  padding: 7px 30px 7px 30px;
+  padding: 10px 30px 10px 30px;
   text-decoration: none;
   border-radius: 7%;
   text-transform: uppercase;
@@ -877,6 +877,10 @@ html, body {
   width: 64px;
   height: 64px;
 }
+.container .services-container .services-container-right .service-item a {
+  text-decoration: none;
+  color: white;
+}
 .container .services-container .services-container-right .service-item:nth-of-type(odd) {
   border-right: 1px solid gainsboro;
 }
@@ -1426,7 +1430,7 @@ html, body {
   margin-left: 10px;
   margin-right: 10px;
   box-shadow: 0 0 10px 2px #ebebeb;
-  display: flex !important;
+  display: flex;
   align-items: stretch;
   border-radius: 5px;
 }

@@ -63,4 +63,7 @@ $('.slider').slick({
     }
   ]
 });
-
+sal({
+  once: false,
+  threshold	: 0.7
+});
