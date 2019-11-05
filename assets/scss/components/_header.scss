@@ -268,6 +268,7 @@ header{
         color: white;
         text-align: center;
         .header-body-content{
+            font-size: $about-paragraph-font-size;
             margin-top: 80px;
             display: inline-block;
             padding-left: 100px;
@@ -280,7 +281,9 @@ header{
                 padding-left: 10px;
                 padding-right: 10px;
              }
-
+             @include media-xxlg{
+                font-size: 15px;
+             }
             h1{
                 font-family: $heebo-bold;
                 @include media-us{
