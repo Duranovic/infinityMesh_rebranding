@@ -2826,7 +2826,7 @@ header.banner-header-standard .header-overlay {
   }
 }
 .custom-container .list-posts {
-  padding: 0 100px;
+  padding: 0 20px;
 }
 @media (max-width: 424px) {
   .custom-container .list-posts {
@@ -2846,6 +2846,11 @@ header.banner-header-standard .header-overlay {
 @media (min-width: 992px) and (max-width: 1199px) {
   .custom-container .list-posts {
     padding: 0 20px;
+  }
+}
+@media (min-width: 1450px) {
+  .custom-container .list-posts {
+    padding: 0 100px;
   }
 }
 .custom-container .list-posts .post {
@@ -2902,18 +2907,42 @@ header.banner-header-standard .header-overlay {
 .custom-container .list-posts .post .img-container {
   width: 300px;
   height: 200px;
-  width: 30%;
 }
 @media (max-width: 424px) {
   .custom-container .list-posts .post .img-container {
-    width: 50px !important;
+    width: 70px !important;
     opacity: 0;
   }
 }
 @media (max-width: 767px) {
   .custom-container .list-posts .post .img-container {
     width: 100px;
+    height: 50px;
     opacity: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-container .list-posts .post .img-container {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .custom-container .list-posts .post .img-container {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .custom-container .list-posts .post .img-container {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (min-width: 1450px) {
+  .custom-container .list-posts .post .img-container {
+    width: 200px;
+    height: 150px;
   }
 }
 .custom-container .list-posts .post .img-container img {
@@ -2945,6 +2974,7 @@ header.banner-header-standard .header-overlay {
 }
 .custom-container .list-posts .post .post-body p {
   padding-bottom: 20px;
+  text-align: left;
 }
 .custom-container .list-posts .post .post-body .post-author {
   display: inline-block;
@@ -2960,6 +2990,12 @@ header.banner-header-standard .header-overlay {
   text-decoration: none;
   color: white;
   margin-right: 30px;
+}
+.custom-container .list-posts .post .post-body .sharethis-inline-share-buttons {
+  border: 1px solid red;
+  display: inline-block !important;
+  padding-left: 100px;
+  padding-top: 50px;
 }
 @media (max-width: 424px) {
   .custom-container .sidebar {
