@@ -80,7 +80,7 @@
     
     }
     p{
-        font-size: $about-paragraph-font-size;
+        font-size: $paragraph-font-size;
         @include media-xxlg{
             font-size: 15px;
          }

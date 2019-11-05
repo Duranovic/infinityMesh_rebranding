@@ -282,7 +282,7 @@ header{
         color: white;
         text-align: center;
         .header-body-content{
-            font-size: $about-paragraph-font-size;
+            font-size: $paragraph-font-size;
             margin-top: 80px;
             display: inline-block;
             padding-left: 100px;
@@ -352,5 +352,9 @@ header.banner-header-standard{
     }
 }
 .banner-header-about{
+    box-shadow:inset 0 0 0 2022px rgba(34, 34, 34, 0.486);
+}
+.banner-header-blog{
+    padding: 20px 100px 150px 100px;
     box-shadow:inset 0 0 0 2022px rgba(34, 34, 34, 0.486);
 }
