@@ -80,6 +80,9 @@ html, body {
   background-color: #175fc7;
   color: white;
   transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
 }
 .primary-button::after, a.primary-button::after {
   content: "";
@@ -90,6 +93,9 @@ html, body {
   height: 5%;
   background: #73bf15;
   transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  -webkit-transition: width 1s;
 }
 .primary-button:hover::after, a.primary-button:hover::after {
   width: 100%;
@@ -106,6 +112,9 @@ html, body {
   background-color: #055c05;
   color: white;
   transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
 }
 .secondary-button:hover {
   background-color: #73bf15;
@@ -123,6 +132,9 @@ html, body {
   color: white;
   border: 2px solid white;
   transition: background 0.3s, color 0.3s, border-color 0.3s;
+  -moz-transition: background 0.3s, color 0.3s, border-color 0.3s;
+  -o-transition: background 0.3s, color 0.3s, border-color 0.3s;
+  -webkit-transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 .primary-button-bordered:hover {
   background-color: rgba(115, 191, 21, 0.4);
@@ -141,6 +153,9 @@ html, body {
   color: white;
   border: 2px solid white;
   transition: background 0.3s, color 0.3s, border-color 0.3s;
+  -moz-transition: background 0.3s, color 0.3s, border-color 0.3s;
+  -o-transition: background 0.3s, color 0.3s, border-color 0.3s;
+  -webkit-transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 .secondary-button-bordered:hover {
   background-color: rgba(23, 95, 199, 0.4);
@@ -164,12 +179,14 @@ html, body {
 @media (max-width: 424px) {
   .overlap-header {
     flex-direction: column;
+    -ms-flex-direction: column;
     top: -8% !important;
   }
 }
 @media (max-width: 767px) {
   .overlap-header {
     flex-direction: column;
+    -ms-flex-direction: column;
     top: -9%;
   }
 }
@@ -177,6 +194,7 @@ html, body {
   .overlap-header {
     top: -13%;
     flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -521,6 +539,9 @@ footer .footer-logo img {
 }
 footer .footer-contact > a {
   transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
   text-decoration: none;
 }
 footer .footer-contact > a:hover {
@@ -539,6 +560,9 @@ footer .footer-contact .social-media-links a {
   color: gainsboro;
   margin-right: 10px;
   transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
   position: relative;
 }
 footer .footer-contact .social-media-links a:hover {
@@ -571,7 +595,10 @@ footer .footer-quick-links ul li {
 }
 footer .footer-quick-links ul li a {
   color: gainsboro;
-  transition: color 0.2s;
+  transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
 }
 footer .footer-quick-links ul li a:hover {
   color: #73bf15;
@@ -588,11 +615,16 @@ footer .footer-latest-posts .footer-post-list {
 }
 footer .footer-latest-posts .footer-post-list .footer-post {
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: center;
   color: inherit;
   border: 1px solid transparent;
   padding: 5px;
   transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  -webkit-transition: box-shadow 0.3s;
   text-decoration: none;
   margin: 10px 0;
 }
@@ -682,6 +714,9 @@ header .hamburger-menu nav a {
   padding: 10px;
   display: block;
   transition: transform 0.3s, color 0.3s;
+  -moz-transition: transform 0.3s, color 0.3s;
+  -o-transition: transform 0.3s, color 0.3s;
+  -webkit-transition: transform 0.3s, color 0.3s;
   text-decoration: none;
   font-family: "Heebo Regular";
   color: #838383;
@@ -693,6 +728,8 @@ header .header-head {
   position: relative;
   z-index: 10000;
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: center;
 }
 header .header-head .header-logo img {
@@ -703,6 +740,8 @@ header .header-head .header-flex-spacing {
 }
 header .header-head nav {
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   justify-items: space-around;
 }
 @media (max-width: 767px) {
@@ -739,7 +778,10 @@ header .header-head nav a {
   margin-right: 20px;
   text-decoration: none;
   color: white;
-  transition: color 0.2s;
+  transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
 }
 header .header-head nav a:hover {
   color: #73bf15;
@@ -829,6 +871,9 @@ header .header-head .hamburger-menu-icon-open .hamburger-menu-icon-unit:nth-of-t
 header .header-head.sticky {
   z-index: 100;
   transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   position: fixed;
   top: 0;
   left: 0;
@@ -837,6 +882,8 @@ header .header-head.sticky {
   background: white;
   align-items: center;
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   box-shadow: 0 6px 3px -3px #e6e6e6;
 }
 @media (max-width: 424px) {
@@ -1053,6 +1100,10 @@ header.banner-header-standard .header-overlay {
   z-index: 0;
 }
 
+.banner-header-about {
+  box-shadow: inset 0 0 0 2022px rgba(34, 34, 34, 0.486);
+}
+
 .services-section {
   background: white;
   padding: 400px 0 100px 0;
@@ -1099,7 +1150,12 @@ header.banner-header-standard .header-overlay {
   top: -25vh;
   z-index: 0;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   transition: width 0.3s, height 0.3;
+  -moz-transition: width 0.3s, height 0.3;
+  -o-transition: width 0.3s, height 0.3;
+  -webkit-transition: width 0.3s, height 0.3;
 }
 @media (max-width: 424px) {
   .services-section .why-choose-us-container.overlap-header {
@@ -1231,9 +1287,15 @@ header.banner-header-standard .header-overlay {
   padding: 25px 40px;
   margin-bottom: 35px;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-direction: row;
+  -ms-flex-direction: row;
   align-items: center;
   transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  -webkit-transition: width 0.3s;
 }
 @media (max-width: 424px) {
   .services-section .why-choose-us-container.overlap-header .why-choose-us-right .why-choose-us-reasons .why-choose-us-reason {
@@ -1293,6 +1355,10 @@ header.banner-header-standard .header-overlay {
   background-position: center;
   padding: 0;
   transition: width 0.3s, height 0.3s, background 0.3s;
+  transition: width 0.3s, height 0.3s, background 0.3s;
+  -moz-transition: width 0.3s, height 0.3s, background 0.3s;
+  -o-transition: width 0.3s, height 0.3s, background 0.3s;
+  -webkit-transition: width 0.3s, height 0.3s, background 0.3s;
 }
 @media (max-width: 767px) {
   .services-section .container .services-container .services-container-left {
@@ -1507,28 +1573,39 @@ header.banner-header-standard .header-overlay {
 }
 .how-we-do-section .boxes {
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: center;
   flex-direction: row;
+  -ms-flex-direction: row;
   justify-content: center;
 }
 @media (max-width: 767px) {
   .how-we-do-section .boxes {
     flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .how-we-do-section .boxes {
     flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 .how-we-do-section .boxes .left-box {
   position: relative;
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   transition: width 0.4s, height 0.4s;
+  -moz-transition: width 0.4s, height 0.4s;
+  -o-transition: width 0.4s, height 0.4s;
+  -webkit-transition: width 0.4s, height 0.4s;
   background-color: whitesmoke;
   border-radius: 7px;
   box-shadow: 0 0 10px 3px gainsboro;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
 }
 @media (max-width: 424px) {
   .how-we-do-section .boxes .left-box {
@@ -1766,10 +1843,16 @@ header.banner-header-standard .header-overlay {
 }
 .how-we-do-section .boxes .right-box {
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: column;
+  -ms-flex-direction: column;
   background-color: #73bf15;
   border-radius: 7px;
   transition: width 0.4s, height 0.4s;
+  -moz-transition: width 0.4s, height 0.4s;
+  -o-transition: width 0.4s, height 0.4s;
+  -webkit-transition: width 0.4s, height 0.4s;
 }
 @media (max-width: 767px) {
   .how-we-do-section .boxes .right-box {
@@ -1805,6 +1888,8 @@ header.banner-header-standard .header-overlay {
 }
 .how-we-do-section .boxes .right-box .box-item {
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: flex-start;
   padding: 30px;
   color: white;
@@ -1961,23 +2046,28 @@ header.banner-header-standard .header-overlay {
 .work-with-section .work-with-section-container {
   padding: 60px 60px;
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: center;
 }
 @media (max-width: 424px) {
   .work-with-section .work-with-section-container {
     flex-direction: column;
+    -ms-flex-direction: column;
     padding: 10px 20px 10px 20px;
   }
 }
 @media (max-width: 767px) {
   .work-with-section .work-with-section-container {
     flex-direction: column;
+    -ms-flex-direction: column;
     padding: 50px 30px 20px 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .work-with-section .work-with-section-container {
     flex-direction: column;
+    -ms-flex-direction: column;
     padding: 60px 60px 60px 60px;
   }
 }
@@ -2155,6 +2245,9 @@ header.banner-header-standard .header-overlay {
   text-align: center;
   font-size: 20px;
   transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
   min-width: 31px;
   min-height: 71px;
 }
@@ -2218,6 +2311,8 @@ header.banner-header-standard .header-overlay {
   margin-right: 10px;
   box-shadow: 0 0 10px 2px #ebebeb;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   align-items: stretch;
   border-radius: 5px;
 }
@@ -2225,6 +2320,7 @@ header.banner-header-standard .header-overlay {
   .work-with-section .work-with-section-container .quotes-container .slider .quote-container {
     width: 100%;
     flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 @media (max-width: 767px) {
@@ -2232,6 +2328,7 @@ header.banner-header-standard .header-overlay {
     margin-top: 10px;
     width: 100%;
     flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2337,9 +2434,13 @@ header.banner-header-standard .header-overlay {
 }
 .work-with-section .brands-container .container .brands {
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
-  justify-content: center;
+  -ms-flex-direction: row;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: center;
 }
 .work-with-section .brands-container .container .brands .brand-container {
   margin-top: 20px;
@@ -2524,22 +2625,27 @@ header.banner-header-standard .header-overlay {
 }
 .first-section .our-history {
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   background-color: #73bf15;
   color: white;
 }
 @media (max-width: 424px) {
   .first-section .our-history {
     flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 @media (max-width: 767px) {
   .first-section .our-history {
     flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .first-section .our-history {
     flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 .first-section .our-history .left-box {
@@ -2637,7 +2743,10 @@ header.banner-header-standard .header-overlay {
 }
 .first-section .our-team-container .team-member-list {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
 }
@@ -2695,6 +2804,9 @@ header.banner-header-standard .header-overlay {
   margin-left: 10px;
   margin-right: 10px;
   transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
 }
 .first-section .our-team-container .team-member-list .team-member .team-member-body .team-member-social a:hover {
   color: #73bf15;

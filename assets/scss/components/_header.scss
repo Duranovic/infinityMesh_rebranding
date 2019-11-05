@@ -1,7 +1,6 @@
 header{
     background-position: center;
     background-size: cover;
-    //box-shadow:inset 0 0 0 2022px rgba(90, 59, 201, 0.205);
     padding: 20px 100px 350px 100px;
     z-index: 10;
     @include media-us{
@@ -41,6 +40,9 @@ header{
                 padding: 10px;
                 display: block;
                 transition: transform .3s, color .3s;
+                -moz-transition: transform .3s, color .3s;
+                -o-transition: transform .3s, color .3s;
+                -webkit-transition: transform .3s, color .3s;
                 text-decoration: none;
                 font-family: $heebo-regular;
                 color: rgb(131, 131, 131);
@@ -54,6 +56,8 @@ header{
         position: relative;
         z-index: 10000;
         display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         align-items: center;
         .header-logo{
             img{
@@ -66,6 +70,8 @@ header{
         }
         nav{
             display: flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             justify-items: space-around;
             @include media-xs{
                 display: none;
@@ -90,7 +96,10 @@ header{
                 margin-right:20px;
                 text-decoration: none;
                 color: white;
-                transition: color .2s;
+                transition: color .3s;
+                -moz-transition: color .3s;
+                -o-transition: color .3s;
+                -webkit-transition: color .3s;
                 &:hover{
                     color: $secondary-color;
                 }
@@ -160,6 +169,9 @@ header{
     .header-head.sticky {
         z-index: 100;
         transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -webkit-transition: all .3s;
         position: fixed;
         top: 0;
         left: 0;
@@ -168,6 +180,8 @@ header{
         background: white;
         align-items: center;
         display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         box-shadow: 0 6px 3px -3px rgb(230, 230, 230);
         @include media-us{
             padding: 20px 20px !important;
@@ -336,4 +350,7 @@ header.banner-header-standard{
         background: linear-gradient(to right, rgba(19, 19, 19, 0.527), rgba(32, 32, 32, 0.719));
         z-index: 0;
     }
+}
+.banner-header-about{
+    box-shadow:inset 0 0 0 2022px rgba(34, 34, 34, 0.486);
 }

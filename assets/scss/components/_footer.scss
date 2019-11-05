@@ -32,6 +32,9 @@ footer{
      }
      >a{
         transition: color .3s;
+        -moz-transition: color .3s;
+        -o-transition: color .3s;
+        -webkit-transition: color .3s;
         text-decoration: none;
      }
      >a:hover{
@@ -49,6 +52,9 @@ footer{
             color: gainsboro;
             margin-right: 10px;
             transition: color .3s;
+            -moz-transition: color .3s;
+            -o-transition: color .3s;
+            -webkit-transition: color .3s;
             position: relative;
             &:hover{
                color: $secondary-color;
@@ -76,7 +82,10 @@ footer{
             padding: 3px 0;
             a{
                color: gainsboro;
-               transition: color .2s;
+               transition: color .3s;
+               -moz-transition: color .3s;
+               -o-transition: color .3s;
+               -webkit-transition: color .3s;
                &:hover{
                   color: $secondary-color;
                   text-decoration: none;
@@ -94,11 +103,16 @@ footer{
          margin: 20px 0;
          .footer-post{
             display: flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             align-items: center;
             color: inherit;
             border: 1px solid transparent;
             padding: 5px;
             transition: box-shadow .3s;
+            -moz-transition: box-shadow .3s;
+            -o-transition: box-shadow .3s;
+            -webkit-transition: box-shadow .3s;
             text-decoration: none;
             margin: 10px 0;
             @include media-xs{
