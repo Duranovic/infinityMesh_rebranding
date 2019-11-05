@@ -2669,7 +2669,7 @@ header.banner-header-standard .header-overlay {
 }
 .first-section .our-team-container .team-member-list .team-member .team-member-body .team-member-title {
   position: absolute;
-  top: -20px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
@@ -2683,8 +2683,8 @@ header.banner-header-standard .header-overlay {
 }
 .first-section .our-team-container .team-member-list .team-member .team-member-body .team-member-social {
   z-index: -1;
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   box-shadow: 0 3px 10px 2px #ececec;
   width: 80%;
   margin-left: auto;
