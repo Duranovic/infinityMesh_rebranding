@@ -67,3 +67,10 @@ sal({
   once: false,
   threshold	: 0.5
 });
+
+$('.search-container input[type="text"]').on('focus', function(e){
+  $(this).parent().css({'box-shadow' : '0 0 10px 2px gainsboro'});
+})
+$('.search-container input[type="text"]').on('blur', function(e){
+  $(this).parent().css({'box-shadow' : 'none'});
+})

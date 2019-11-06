@@ -66,12 +66,10 @@
                 height: 200px;
                 @include media-us{
                     width: 70px !important;
-                    opacity: 0;
                  }
                 @include media-xs{
                     width: 100px;
                     height: 50px;
-                    opacity: 0;
                 }
                 @include media-sm{
                     width: 200px;
@@ -94,6 +92,9 @@
                     height: 100%;
                     object-fit: fill;
                     object-position: center;
+                    @include media-xs{
+                        display: none;
+                    }
                 }
             }
             .post-body{
@@ -146,36 +147,58 @@
         @include media-md{
             padding: 50px 0;
         }
-        .search-container{
-            font-size: $paragraph-font-size;
-            position: relative;
-            width: 100%;
-            border: 1px solid gainsboro;
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 5px;
-            @include media-us{
-                margin: 0 10px;
+        form{
+            @include media-xs{
+                margin-right: 20px;
+                margin-left: 20px;
             }
-            .search-icon{
-                color: $main-color;
-                font-size: 20px;
-            }
-            input[type="text"]{
-                padding-left: 10px;
-                border: 0;
-                outline: 0;
-                &::placeholder{
-                    color: rgb(175, 175, 175);
+            .search-container{
+                font-size: $paragraph-font-size;
+                position: relative;
+                width: 100%;
+                border: 1px solid gainsboro;
+                display: inline-block;
+                padding: 15px 20px;
+                border-radius: 5px;
+                transition: box-shadow .3s, width 1s;
+                -moz-transition: box-shadow .3s, width 1s;
+                -o-transition: box-shadow .3s, width 1s;
+                -webkit-transition: box-shadow .3s, width 1s;
+                @include media-us{
+                    margin: 0 10px;
+                }
+                .search-icon{
+                    position: absolute;
+                    bottom: 50%;
+                    transform: translateY(50%);
+                    color: $main-color;
+                    font-size: 20px;
+                }
+                input[type="text"]{
+                    padding-left: 50px;
+                    border: 0;
+                    outline: 0;
+                    width: 100%;
+                    height: 100%;
+                    @include media-xs{
+                        padding-left: 25px;
+                    }
+                    &::placeholder{
+                        color: rgb(175, 175, 175);
+                    }
+                }
+                .primary-button{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 100%;
+                    @include media-xs{
+                        padding: 10px 15px;
+                    }
                 }
             }
-            .primary-button{
-                position: absolute;
-                right: 0;
-                top: 0;
-                height: 101%;
-            }
         }
+       
         .latest-posts-container{
             font-size: $paragraph-font-size;
             margin-top: 80px;
@@ -197,7 +220,7 @@
                         margin-top: 10px;
                     }
                     &:hover{
-                        box-shadow: 0 0 10px 3px gainsboro;
+                        box-shadow: 0 0 5px 1px rgb(236, 236, 236);
                     }
                     .latest-post-image-container{
                         width: 120px;

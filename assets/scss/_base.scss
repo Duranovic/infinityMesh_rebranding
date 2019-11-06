@@ -20,9 +20,6 @@ html,body
     font-size: 12px;
     outline: none !important;
 }
-.active{
-    color: $secondary-color !important;
-}
 .primary-button, a.primary-button{
     @include customButton();
     background-color: $main-color;
@@ -93,6 +90,10 @@ html,body
 }
 .main-color{
     color: $main-color;
+}
+.bold{
+    font-family: $heebo-bold;
+    font-weight: bold;
 }
 .overlap-header{
     position: absolute;

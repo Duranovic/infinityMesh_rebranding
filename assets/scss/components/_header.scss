@@ -277,6 +277,24 @@ header{
             color: gray;
         }
     }
+    .header-head, header-head-sticky{
+        .active{
+            font-family: $heebo-bold;
+             color: $secondary-color;
+             position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: $secondary-color;
+            }
+
+
+         }
+    }
     .header-body{
         position: relative;
         color: white;
