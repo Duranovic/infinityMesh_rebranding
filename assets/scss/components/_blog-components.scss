@@ -101,7 +101,6 @@
                 font-size: $paragraph-font-size;
                 width: 60%;
                 padding-left: 30px;
-
                  @include media-us{
                     padding: 20px 0;
                 }
@@ -141,6 +140,10 @@
                     justify-content: space-between;
                     flex-direction: row;
                     width: 100px;
+                    transition: width .3s;
+                    -moz-transition: width .3s;
+                    -o-transition: width .3s;
+                    -webkit-transition: width .3s;
                     @include media-xs{
                         bottom: 50%;
                         transform: translateY(50%);
