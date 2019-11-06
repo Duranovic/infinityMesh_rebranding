@@ -99,7 +99,7 @@
             }
             .post-body{
                 font-size: $paragraph-font-size;
-                width: 70%;
+                width: 60%;
                 padding-left: 30px;
 
                  @include media-us{
@@ -130,6 +130,106 @@
                     text-decoration: none;
                     color: white;
                     margin-right: 30px;
+                }
+                .share-links{
+                    position: absolute;
+                    right: 50px;
+                    bottom: 20px;
+                    font-size: 16px;
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    width: 100px;
+                    @include media-xs{
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        right: -10px;
+                        flex-direction: column;
+                        width: 42px;
+                    }
+                    @include media-sm{
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        right: -10px;
+                        flex-direction: column;
+                        width: 42px;
+                    }
+                    @include media-md{
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        right: -10px;
+                        flex-direction: column;
+                        width: 42px;
+                    }
+                    @include media-lg{
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        right: -10px;
+                        flex-direction: column;
+                        width: 42px;
+                    }
+                    @include media-xlg{
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        right: -10px;
+                        flex-direction: column;
+                        width: 42px;
+                    }
+                    @include media-xxlg{
+                        right: 50px;
+                        bottom: 30%;
+                        font-size: 16px;
+                        width: 100px;
+                        flex-direction: row;
+                    }
+                    a{
+                        border-radius: 100%;
+                        margin-bottom: 10px;
+                        padding: 9px 5px;
+                        width: 45%;
+                        height: 45%;
+                        text-align: center;
+                        color: white;
+                        transition: opacity .3s, transform .3s;
+                        -moz-transition: opacity .3s, transform .3s;
+                        -o-transition: opacity .3s, transform .3s;
+                        -webkit-transition: opacity .3s, transform .3s;
+                        @include media-xs{
+                            width: 100%;
+                        }
+                        @include media-sm{
+                            width: 100%;
+                        }
+                        @include media-md{
+                            width: 100%;
+                        }
+                        @include media-lg{
+                            width: 100%;
+                        }
+                        @include media-xlg{
+                            width: 100%;
+                        }
+                        @include media-xxlg{
+                            width: 45%;
+                        }
+                        &:hover{
+                            opacity: 0.7;
+                            transform: translateY(-5px);
+                        }
+                    }
+                    a.twitter-share{
+                        background:  #1DA1F2;
+                    }
+                    a.facebook-share{
+                        background: #4267B2;
+                    }
+                    a.linkedin-share{
+                        background: #2867B2;
+                    }
+                    a.googleplus-share{
+                        background: #DD4B39;
+                    }
                 }
             }
         }
