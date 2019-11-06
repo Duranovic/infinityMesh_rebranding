@@ -278,7 +278,7 @@ header{
         }
     }
     .header-head, header-head-sticky{
-        .active{
+        a.active{
             font-family: $heebo-bold;
              color: $secondary-color;
              position: relative;

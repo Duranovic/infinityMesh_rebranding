@@ -1013,12 +1013,12 @@ header .header-head.sticky .header-flex-spacing {
 header .header-head.sticky a {
   color: gray;
 }
-header .header-head .active, header header-head-sticky .active {
+header .header-head a.active, header header-head-sticky a.active {
   font-family: "Heebo Bold";
   color: #73bf15;
   position: relative;
 }
-header .header-head .active::after, header header-head-sticky .active::after {
+header .header-head a.active::after, header header-head-sticky a.active::after {
   content: "";
   position: absolute;
   bottom: -5px;
