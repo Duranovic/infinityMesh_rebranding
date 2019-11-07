@@ -110,4 +110,4 @@ if(window.outerWidth >= 1450)
 }else{
   $(".article-container").parent().parent().parent().height('auto');
 }
-}, 100);
+}, 10);
