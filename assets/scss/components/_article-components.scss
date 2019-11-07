@@ -1,9 +1,4 @@
 .custom-container{
-    position: relative;
-    transition: width .3s, height .3s;
-    @include media-lg{
-        min-width: 90%;
-    }
     .absolute-container{
         z-index: 11;
         background: white;
@@ -18,22 +13,27 @@
         @include media-xs{
             padding: 20px;
             position: relative;
-            box-shadow: none
+            box-shadow: none;
+            transform: translate(-50%,  -70px);
         }
         @include media-sm{
             padding: 40px;
             position: relative;
+            transform: translate(-50%,  -70px);
         }
         @include media-md{
             padding: 60px;
             position: relative;
+            transform: translate(-50%,  -70px);
         }
         @include media-lg{
             padding: 80px;
             position: relative;
+            transform: translate(-50%,  -70px);
         }
         @include media-xlg{
             position: absolute;
+            transform: translate(-50%,  0);
         }
         .article-title{
             position: relative;
@@ -67,6 +67,10 @@
                 font-family: $heebo-bold;
                 margin-top: 50px;
                 margin-bottom: 30px;
+            }
+            >img{
+                max-width: 60%;
+                margin-bottom: 60px;
             }
             .background-section{
                 margin: 30px 0;

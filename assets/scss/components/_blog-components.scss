@@ -1,5 +1,10 @@
 .custom-container{
     padding: 70px 0;
+    position: relative;
+    transition: width .3s, height .3s;
+    @include media-lg{
+        min-width: 90%;
+    }
     @include media-xlg{
         min-width: 70%;
     }
