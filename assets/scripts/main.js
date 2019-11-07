@@ -68,9 +68,41 @@ sal({
   threshold	: 0.5
 });
 
-$('.search-container input[type="text"]').on('focus', function(e){
+$('.input-container input[type="text"]').on('focus', function(e){
   $(this).parent().css({'box-shadow' : '0 0 10px 2px gainsboro'});
 })
-$('.search-container input[type="text"]').on('blur', function(e){
+$('.input-container input[type="text"]').on('blur', function(e){
   $(this).parent().css({'box-shadow' : 'none'});
 })
+
+/*
+if(window.outerWidth < 1025)
+{
+  if(window.outerWidth < 575)
+  {
+    if(window.outerWidth < 421)
+    {
+      if(window.outerWidth < 330)
+      {
+        $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
+      }
+      else{
+        $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
+      }  
+    }
+    else{
+      $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
+    }
+  }
+  else{
+    console.log("IPAD PRO");
+    $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
+  }
+}
+else{
+  $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
+}*/
+if(window.outerWidth >= 1450)
+{
+  $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
+}

@@ -1,0 +1,163 @@
+.custom-container{
+    position: relative;
+    transition: width .3s, height .3s;
+    @include media-lg{
+        min-width: 90%;
+    }
+    .someClass{
+        z-index: 11;
+        background: white;
+        box-shadow: 0 2px 20px -2px rgb(235, 235, 235);
+        position: absolute;
+        top: -40px;
+        width: 100%;
+        transition: width .3s, height .3s;
+        padding: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include media-xs{
+            padding: 20px;
+            position: relative;
+            box-shadow: none
+        }
+        @include media-sm{
+            padding: 40px;
+            position: relative;
+        }
+        @include media-md{
+            padding: 60px;
+            position: relative;
+        }
+        @include media-lg{
+            padding: 80px;
+            position: relative;
+        }
+        @include media-xlg{
+            position: absolute;
+        }
+        .article-title{
+            position: relative;
+            display: block;
+            padding: 20px 20px;
+            margin-bottom: 70px;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                background: $main-color;
+                height: 2px;
+            }
+        }
+    }
+    .article-container{
+        .article-body{
+            @include media-xlg{
+                padding-right: 100px;
+            }
+            @include media-xxlg{
+                padding-right: 100px;
+            }
+            .article-title{
+                margin-bottom: 50px;
+            }
+            .article-subtitle{
+                color: $main-color;
+                font-family: $heebo-bold;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+            .background-section{
+                margin: 30px 0;
+                background: rgb(241, 241, 241);
+                padding: 70px;
+                color: gray;
+                width: 80%;
+                @include media-us{
+                    width: 100%;
+                    padding: 40px;
+                }
+                @include media-xs{
+                    width: 100%;
+                    padding: 40px;
+                }
+                @include media-sm{
+                    width: 100%;
+                    padding:40px;
+                }
+            }
+            .author{
+                display: flex;
+                margin-top: 80px;
+                @include media-us{
+                    flex-direction: column;
+                    -ms-flex-direction: column;
+                }
+                @include media-xs{
+                    flex-direction: column;
+                    -ms-flex-direction: column;
+                }
+                @include media-sm{
+                    flex-direction: column;
+                    -ms-flex-direction: column;
+                }
+                .author-image-name{
+                    box-shadow: 0 0 4px 1px gainsboro;
+                    .img-container{
+                        min-width: 250px;
+                        width: 250px;
+                        height: 300px;
+                        margin: auto;
+                        @include media-xs{
+                            width: 100%;
+                        }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: fill;
+                        }
+                    }
+                    .title{
+                        color: rgb(59, 59, 59);
+                        padding: 20px;
+                        text-align: center;
+                        h1, h2, h3, h4, h5, h6{
+                            margin: 0;
+                        }
+                        span{
+                            font-size: 11px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .about-author{
+                    padding-left: 60px;
+                    @include media-us{
+                        width: 100%;
+                        padding: 0;
+                        margin-top: 40px;
+                    }
+                    @include media-xs{
+                        width: 100%;
+                        padding: 0;
+                        margin-top: 40px;
+                    }
+                    @include media-sm{
+                        width: 100%;
+                        padding:0;
+                        margin-top: 40px;
+                    }
+                    h1, h2, h3, h4, h5, h6{
+                        font-family: $heebo-bold;
+                        color: rgb(59, 59, 59);
+                    }
+                    .primary-button{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

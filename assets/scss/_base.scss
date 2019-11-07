@@ -95,6 +95,11 @@ html,body
     font-family: $heebo-bold;
     font-weight: bold;
 }
+.tag{
+    padding: 10px 30px;
+    background: $secondary-color;
+    border-radius: 100px;
+}
 .overlap-header{
     position: absolute;
     width: 90%;
