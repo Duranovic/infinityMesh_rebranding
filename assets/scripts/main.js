@@ -102,7 +102,12 @@ if(window.outerWidth < 1025)
 else{
   $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
 }*/
+
+window.setInterval(function(){
 if(window.outerWidth >= 1450)
 {
-  $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
+  $(".article-container").parent().parent().parent().height($('.absolute-container').outerHeight());
+}else{
+  $(".article-container").parent().parent().parent().height('auto');
 }
+}, 100);

@@ -3354,7 +3354,7 @@ header.banner-header-standard-article .header-body h1, header.banner-header-stan
     min-width: 90%;
   }
 }
-.custom-container .someClass {
+.custom-container .absolute-container {
   z-index: 11;
   background: white;
   box-shadow: 0 2px 20px -2px #ebebeb;
@@ -3367,42 +3367,42 @@ header.banner-header-standard-article .header-body h1, header.banner-header-stan
   transform: translateX(-50%);
 }
 @media (max-width: 767px) {
-  .custom-container .someClass {
+  .custom-container .absolute-container {
     padding: 20px;
     position: relative;
     box-shadow: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .custom-container .someClass {
+  .custom-container .absolute-container {
     padding: 40px;
     position: relative;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .custom-container .someClass {
+  .custom-container .absolute-container {
     padding: 60px;
     position: relative;
   }
 }
 @media (min-width: 1200px) {
-  .custom-container .someClass {
+  .custom-container .absolute-container {
     padding: 80px;
     position: relative;
   }
 }
 @media (min-width: 1450px) {
-  .custom-container .someClass {
+  .custom-container .absolute-container {
     position: absolute;
   }
 }
-.custom-container .someClass .article-title {
+.custom-container .absolute-container .article-title {
   position: relative;
   display: block;
   padding: 20px 20px;
   margin-bottom: 70px;
 }
-.custom-container .someClass .article-title::after {
+.custom-container .absolute-container .article-title::after {
   position: absolute;
   content: "";
   width: 100%;
