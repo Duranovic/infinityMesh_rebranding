@@ -108,7 +108,7 @@ html,body
      @include media-us{
             flex-direction: column;
             -ms-flex-direction: column;
-            top: -8% !important;
+            top: -8%;
         }
         @include media-xs{
             flex-direction: column;

@@ -56,7 +56,8 @@ $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         vertical: false,
-        dots: true
+        dots: true,
+        arrows: false
       }
     }
   ]

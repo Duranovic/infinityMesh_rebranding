@@ -9,6 +9,10 @@ footer{
       font-weight: bold;
       font-family: $heebo-bold;
    }
+   @include media-us{
+      padding-right:30px;
+      padding-left: 30px;
+   }
    @include media-xs{
       padding-right:30px;
       padding-left: 30px;
@@ -16,6 +20,9 @@ footer{
    .footer-logo{
       margin-bottom: 30px;
       position: relative;
+      @include media-us{
+         text-align: center;
+      }
       @include media-xs{
         text-align: center;
      }
@@ -26,6 +33,10 @@ footer{
       }
    }
    .footer-contact{
+      @include media-us{
+         margin-top: 30px;
+         text-align: center;
+     }
       @include media-xs{
          margin-top: 30px;
          text-align: center;
@@ -63,23 +74,36 @@ footer{
       }
    }
    .footer-quick-links{
+      @include media-us{
+         margin-top: 50px;
+         text-align: center;
+     }
       @include media-xs{
          margin-top: 50px;
          text-align: center;
      }
       ul{
+         @include media-us{
+            text-align: center;
+        }
          @include media-xs{
             text-align: center;
         }
          list-style: none;
          li{
+            padding: 3px 0;
+            @include media-us{
+               display: inline-block;
+               margin-right: 15px;
+               margin-left: 15px;
+               margin-top: 10px;
+           }
             @include media-xs{
                display: inline-block;
                margin-right: 15px;
                margin-left: 15px;
                margin-top: 10px;
            }
-            padding: 3px 0;
             a{
                color: gainsboro;
                transition: color .3s;
@@ -95,6 +119,10 @@ footer{
       }
    }
    .footer-latest-posts{
+      @include media-us{
+         margin-top: 50px;
+         text-align: center;
+     }
       @include media-xs{
          margin-top: 50px;
          text-align: center;
@@ -115,6 +143,9 @@ footer{
             -webkit-transition: box-shadow .3s;
             text-decoration: none;
             margin: 10px 0;
+            @include media-us{
+               text-align: left;
+           }
             @include media-xs{
                text-align: left;
            }
@@ -139,6 +170,9 @@ footer{
    }
    .footer-copyright{
       padding-top: 50px;
+      @include media-us{
+         text-align: center;
+     }
       @include media-xs{
          text-align: center;
      }

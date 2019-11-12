@@ -72,6 +72,9 @@ header{
             display: -ms-flexbox;
             display: -webkit-flex;
             justify-items: space-around;
+            @include media-us{
+                display: none;
+             }
             @include media-xs{
                 display: none;
              }
@@ -107,6 +110,9 @@ header{
         .hamburger-menu-icon-close{
             display: none;
             color: white;
+            @include media-us{
+                display: none;
+             }
             @include media-xs{
                 display: none;
              }
@@ -122,8 +128,7 @@ header{
              @include media-xlg{
                  display: none !important;
              }
-             @include media-xxlg{
-                 
+             @include media-xxlg{           
                  display: none !important;
              }
         }
@@ -144,6 +149,9 @@ header{
                     top: 18px;
                 }
             }
+            @include media-us{
+                display: block;
+             }
             @include media-xs{
                display: block;
             }
@@ -159,8 +167,7 @@ header{
             @include media-xlg{
                 display: none !important;
             }
-            @include media-xxlg{
-                
+            @include media-xxlg{                
                 display: none !important;
             }
         }
@@ -183,7 +190,7 @@ header{
         display: -webkit-flex;
         box-shadow: 0 6px 3px -3px rgb(230, 230, 230);
         @include media-us{
-            padding: 20px 20px !important;
+            padding: 20px 20px;
          }
         @include media-xs{
             padding: 20px 100px;
@@ -221,6 +228,9 @@ header{
                     top: 18px;
                 }
             }
+            @include media-us{
+                display: block;
+             }
             @include media-xs{
                display: block;
             }
@@ -236,14 +246,16 @@ header{
             @include media-xlg{
                 display: none !important;
             }
-            @include media-xxlg{
-                
+            @include media-xxlg{                
                 display: none !important;
             }
         }
         .hamburger-menu-icon-close{
             display: none;
             color: $main-color;
+            @include media-us{
+                display: none;
+             }
             @include media-xs{
                 display: none;
              }
@@ -304,6 +316,10 @@ header{
             display: inline-block;
             padding-left: 100px;
             padding-right: 100px;
+            @include media-us{
+                padding-left: 10px;
+                padding-right: 10px;
+             }
             @include media-xs{
                 padding-left: 10px;
                 padding-right: 10px;
@@ -339,6 +355,8 @@ header.banner-header-home{
     background: url('/themes/images/header-background.png');
     background-position: center;
     background-size: cover;
+    position: relative;
+    z-index: auto;
     .header-overlay{
         position: absolute;
         top: 0;
@@ -389,7 +407,10 @@ header.banner-header-standard-article{
         left: 50%;
         transform: translateX(-50%);
         text-align: left;
-
+        @include media-us{
+            left: 50%;
+            text-align: center;
+        }
         @include media-xs{
             left: 50%;
             text-align: center;

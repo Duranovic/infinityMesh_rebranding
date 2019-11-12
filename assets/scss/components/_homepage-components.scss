@@ -3,7 +3,7 @@
     padding: 400px 0 100px 0;
     position: relative;
     @include media-us{
-        padding: 350px 20px 100px 20px !important;
+        padding: 350px 20px 100px 20px;
     }
     @include media-xs{
         padding: 450px 60px 100px 60px;
@@ -27,7 +27,6 @@
     .why-choose-us-container.overlap-header{
         background: #83C71A;
         padding: 100px 200px 300px 200px;
-        top: -25vh;
         z-index: 0;
         display: flex;
         display: -webkit-flex;
@@ -38,14 +37,15 @@
         -webkit-transition:  width .3s, height .3;
         @include media-us{
             padding: 20px 20px 100px 20px;
-            top: -21% !important;
+            top: -23%;
         }
         @include media-xs{
             padding: 20px 20px 100px 20px;
             top: -20%;
         }
         @include media-sm{
-            padding: 20px 20px 100px 20px
+            padding: 20px 20px 100px 20px;
+            top: -10%;
         }
         @include media-md{
             padding: 100px 150px 300px 150px;
@@ -59,7 +59,6 @@
         @include media-xxlg{
             padding: 100px 200px 300px 200px;
             top: -15%;
-
         }
         .why-choose-us-left{
             width: 50%;
@@ -229,7 +228,7 @@
                 padding: 120px 0;
                 background: white;
                 @include media-us{
-                    padding: 5px 0 35px 0 !important;
+                    padding: 5px 0 35px 0;
                 }
                 @include media-xs{
                     padding: 20px 0  40px 0;
@@ -249,7 +248,8 @@
                 .service-item{
                     margin-top: 10px;
                     @include media-us{
-                        margin-top:5px;
+                        margin-top:20px;
+                        margin-bottom:20px;
                     }
                     @include media-xs{
                         margin-top: 30px;
@@ -292,6 +292,10 @@
     text-align: center;
     padding-bottom: 300px;
     position: relative;
+    @include media-us{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     @include media-xs{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -331,10 +335,16 @@
     }
     >h1{
         display: inline-block;
-        padding: 0 !important ;
+        padding: 0;
         font-family: $heebo-bold;
         color: $secondary-color;
         margin-bottom: 100px;
+        @include media-us{
+            margin-bottom: 30px;          
+        }
+        @include media-xs{
+            margin-bottom: 20px;          
+        }
         @include media-xs{
             margin-bottom: 30px;          
         }
@@ -361,6 +371,10 @@
         flex-direction: row;
         -ms-flex-direction: row;
         justify-content: center;
+        @include media-us{
+            flex-direction: column;
+            -ms-flex-direction: column;
+        }
         @include media-xs{
             flex-direction: column;
             -ms-flex-direction: column;
@@ -416,6 +430,7 @@
                 padding: 30px;
                 color: black;
                 @include media-us{
+                    width: 90%;
                     padding: 10px;
                 }
                 @include media-xs{
@@ -427,6 +442,10 @@
                     margin: 10px 10px 0 0;
                     color: $secondary-color;
                     font-weight: bolder;
+                    @include media-us{
+                        font-size: 30px;
+                        margin: 5px 10px 0 0;
+                    }
                     @include media-xs{
                         font-size: 30px;
                         margin: 5px 10px 0 0;
@@ -456,6 +475,9 @@
                         h1, h2, h3, h4, h5, h6{
                             font-family: $heebo-bold;
                             margin: 0;
+                            @include media-us{
+                                font-size: 20px;
+                            }
                             @include media-xs{
                                 font-size: 20px;
                             }
@@ -468,6 +490,9 @@
                             @include media-lg{
                                 font-size: 20px;
                             }
+                        }
+                        @include media-us{
+                            padding: 6px;
                         }
                         @include media-xs{
                             padding: 6px;
@@ -492,6 +517,9 @@
                         color: black;
                         padding: 20px;
                         text-align: left;
+                        @include media-us{
+                            padding: 4px;
+                        }
                         @include media-xs{
                             padding: 4px;
                         }
@@ -521,8 +549,8 @@
                 transform: translateX(-30px);
             }
             @include media-us{
-                width: 30% !important;
-                transform: rotate(90deg) translateX(100px);
+                width: 30%;
+                transform: rotate(90deg) translateX(50px);
             }
             @include media-xs{
                 width: 30%;
@@ -558,6 +586,10 @@
             -moz-transition: width .4s, height .4s;
             -o-transition: width .4s, height .4s;
             -webkit-transition: width .4s, height .4s;
+            @include media-us{
+                margin-top: 60px;
+                width: 90%;
+            }
             @include media-xs{
                 margin-top: 60px;
                 width: 80%;
@@ -595,6 +627,10 @@
                     font-family: $heebo-bold;
                     margin: 10px 10px 0 0;
                     color: white;
+                    @include media-us{
+                        font-size: 30px;
+                        margin: 5px 10px 0 0;
+                    }
                     @include media-xs{
                         font-size: 30px;
                         margin: 5px 10px 0 0;
@@ -624,6 +660,9 @@
                         h1, h2, h3, h4, h5, h6{
                             font-family: $heebo-bold;
                             margin: 0;
+                            @include media-us{
+                                font-size: 20px;
+                            }
                             @include media-xs{
                                 font-size: 20px;
                             }
@@ -636,6 +675,9 @@
                             @include media-lg{
                                 font-size: 20px;
                             }
+                        }
+                        @include media-us{
+                            padding: 6px;
                         }
                         @include media-xs{
                             padding: 6px;
@@ -661,7 +703,7 @@
                         color: white;
                         padding: 20px;
                         text-align: left;
-                        @include media-xs{
+                        @include media-us{
                             padding: 6px;
                         }
                         @include media-xs{
@@ -729,6 +771,12 @@
             text-align: right;
             width: 50%;
             padding: 0;
+            @include media-us{
+                width: 100%;
+                padding: 0;
+                text-align: center;
+                padding: 20px 0;
+            }
             @include media-xs{
                 width: 100%;
                 padding: 0;
@@ -762,6 +810,9 @@
                 font-family: $heebo-bold;
                 font-size: 60px;
                 color: $secondary-color;
+                @include media-us{
+                    font-size: 30px;
+                }
                 @include media-xs{
                     font-size: 30px;
                 }
@@ -955,7 +1006,7 @@
                         text-align: center;
                         padding: 30px 50px;
                         @include media-us{
-                            padding: 60px 20px 10px 20px !important;
+                            padding: 60px 20px 10px 20px;
                         }
                         @include media-xs{
                             padding: 70px 20px 10px 20px;
