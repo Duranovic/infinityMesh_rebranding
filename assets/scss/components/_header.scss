@@ -110,6 +110,7 @@ header{
         .hamburger-menu-icon-close{
             display: none;
             color: white;
+            // !important using to override js styling
             @include media-us{
                 display: none;
              }
@@ -149,6 +150,7 @@ header{
                     top: 18px;
                 }
             }
+            // !important using to override js styling
             @include media-us{
                 display: block;
              }
@@ -228,6 +230,7 @@ header{
                     top: 18px;
                 }
             }
+                 // !important using to override js styling
             @include media-us{
                 display: block;
              }
@@ -250,6 +253,7 @@ header{
                 display: none !important;
             }
         }
+             // !important using to override js styling
         .hamburger-menu-icon-close{
             display: none;
             color: $main-color;

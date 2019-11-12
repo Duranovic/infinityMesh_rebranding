@@ -2835,7 +2835,7 @@ header.banner-header-standard-article .header-body h1, header.banner-header-stan
 }
 @media (max-width: 424px) {
   .first-section {
-    padding: 500px 20px 100px 20px !important;
+    padding: 500px 20px 100px 20px;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -3151,7 +3151,7 @@ header.banner-header-standard-article .header-body h1, header.banner-header-stan
 }
 @media (max-width: 424px) {
   .custom-container .list-posts .post::before {
-    width: 30px !important;
+    width: 30px;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
