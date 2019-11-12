@@ -1,0 +1,167 @@
+.sidebar{
+    @include media-us{
+        padding: 50px 0;
+    }
+    @include media-xs{
+        padding: 50px 0;
+    }
+    @include media-sm{
+        padding: 50px 0;
+    }
+    @include media-md{
+        padding: 50px 0;
+    }
+    h1, h2, h3, h4, h5{
+        padding-left: 20px;
+        color: $main-color;
+    }
+    form{
+        @include media-xs{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        @include media-xlg{
+           width: 80%;
+        }
+        .input-container{
+            font-size: $paragraph-font-size;
+            position: relative;
+            width: 100%;
+            border: 1px solid gainsboro;
+            display: inline-block;
+            padding: 15px 20px;
+            border-radius: 5px;
+            transition: box-shadow .3s, width 1s;
+            -moz-transition: box-shadow .3s, width 1s;
+            -o-transition: box-shadow .3s, width 1s;
+            -webkit-transition: box-shadow .3s, width 1s;
+            @include media-us{
+                margin-right: 0 10px;
+            }
+            .input-icon{
+                position: absolute;
+                bottom: 50%;
+                transform: translateY(50%);
+                color: $main-color;
+                font-size: 20px;
+            }
+            input[type="text"]{
+                padding-left: 50px;
+                padding-right: 80px;
+                border: 0;
+                outline: 0;
+                width: 100%;
+                height: 100%;
+                @include media-us{
+                    padding-left: 25px;
+                }
+                @include media-xs{
+                    padding-left: 25px;
+                }
+                &::placeholder{
+                    color: rgb(175, 175, 175);
+                }
+            }
+            .primary-button{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                @include media-us{
+                    padding: 10px 15px;
+                }
+                @include media-xs{
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+    .search-container{
+        form{
+            margin-left: 20px;
+            @include media-us{
+                margin-right:20px;
+            }
+        }
+    }
+    .latest-posts-container{
+        font-size: $paragraph-font-size;
+        margin-top: 80px;
+        .latest-posts{
+            .latest-post{
+                display: flex;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                text-decoration: none;
+                align-items: center;
+                padding: 20px;
+                border-radius: 10px;
+                transition: box-shadow .3s;
+                &:not(:nth-of-type(1)){
+                    margin-top: 10px;
+                }
+                &:hover{
+                    box-shadow: 0 0 5px 1px rgb(236, 236, 236);
+                }
+                .latest-post-image-container{
+                    width: 120px;
+                    height: 80px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: fill;
+                    }
+                }
+                .latest-post-description{
+                    padding-left: 20px;
+                    span, p{
+                        margin: 0;
+                    }
+                    span{
+                        color: rgb(94, 65, 225);
+                    }
+                }
+            }
+        }
+    }
+    .folow-us-container{
+        margin-top: 30px;
+        @include media-us{
+            text-align: center;
+            margin-top: 50px;
+        }
+        @include media-xs{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .follow-us-links{
+            margin-left: 20px;
+            @include media-us{
+                margin-top: 20px;
+                border-bottom: 1px solid gainsboro;
+            }
+            @include media-xs{
+                margin-top: 20px;
+                border-bottom: 1px solid gainsboro;
+            }
+            a{
+                font-size: 20px;
+                color: gray;
+                margin-left: 10px;
+                transition: color .3s;
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .subscribe-newsletter{
+        margin-top: 50px;
+        form{
+            margin-left: 20px;
+            @include media-us{
+                margin-right:20px;
+            }
+        }
+    }
+}
