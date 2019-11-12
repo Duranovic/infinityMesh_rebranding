@@ -3,37 +3,23 @@
         z-index: 11;
         background: white;
         box-shadow: 0 2px 20px -2px rgb(235, 235, 235);
-        position: absolute;
-        top: -40px;
         width: 100%;
         transition: width .3s, height .3s;
         padding: 100px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%,  -110px);
+        position: relative;
         @include media-xs{
             padding: 20px;
-            position: relative;
-            box-shadow: none;
-            transform: translate(-50%,  -70px);
         }
         @include media-sm{
             padding: 40px;
-            position: relative;
-            transform: translate(-50%,  -70px);
         }
         @include media-md{
             padding: 60px;
-            position: relative;
-            transform: translate(-50%,  -70px);
         }
         @include media-lg{
             padding: 80px;
-            position: relative;
-            transform: translate(-50%,  -70px);
-        }
-        @include media-xlg{
-            position: absolute;
-            transform: translate(-50%,  0);
         }
         .article-title{
             position: relative;

@@ -13,17 +13,14 @@ hamburgerMenuCloseIcon.addEventListener("click", function (e) {
   menu.style.display = 'none';
   hamburgerMenuCloseIcon.style.display = "none";
   hamburgerMenuOpenIcon.style.display = "block";
-
 });
-
-
 // Get the header
 var header = document.getElementById("header-head");
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
 
-
+// Add event listener on scroll
 window.addEventListener("scroll", function () {
   myFunction();
 }, false);
@@ -39,6 +36,7 @@ function myFunction() {
   }
 }
 
+// Slick
 $('.slider').slick({
   infinite: true,
   autoplay: true,
@@ -63,51 +61,17 @@ $('.slider').slick({
     }
   ]
 });
+
+// Sal
 sal({
   once: false,
   threshold	: 0.5
 });
 
+// Custom Input animation on focus and blur
 $('.input-container input[type="text"]').on('focus', function(e){
   $(this).parent().css({'box-shadow' : '0 0 10px 2px gainsboro'});
 })
 $('.input-container input[type="text"]').on('blur', function(e){
   $(this).parent().css({'box-shadow' : 'none'});
 })
-
-/*
-if(window.outerWidth < 1025)
-{
-  if(window.outerWidth < 575)
-  {
-    if(window.outerWidth < 421)
-    {
-      if(window.outerWidth < 330)
-      {
-        $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
-      }
-      else{
-        $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
-      }  
-    }
-    else{
-      $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
-    }
-  }
-  else{
-    console.log("IPAD PRO");
-    $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
-  }
-}
-else{
-  $(".article-container").parent().parent().parent().height($('.someClass').outerHeight());
-}*/
-
-window.setInterval(function(){
-if(window.outerWidth >= 1450)
-{
-  $(".article-container").parent().parent().parent().height($('.absolute-container').outerHeight());
-}else{
-  $(".article-container").parent().parent().parent().height('auto');
-}
-}, 10);

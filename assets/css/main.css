@@ -682,7 +682,7 @@ header {
   }
 }
 header .hamburger-menu {
-  box-shadow: 1px 0 3px -3px gainsboro;
+  box-shadow: 1px 4px 3px -3px gainsboro;
   display: none;
   top: 80px;
   right: 50%;
@@ -1154,7 +1154,17 @@ header.banner-header-standard-article .header-body {
 }
 @media (min-width: 1200px) {
   header.banner-header-standard-article .header-body {
+    min-width: 100%;
+  }
+}
+@media (min-width: 1450px) {
+  header.banner-header-standard-article .header-body {
     min-width: 90%;
+  }
+}
+@media (min-width: 1824px) {
+  header.banner-header-standard-article .header-body {
+    min-width: 75%;
   }
 }
 header.banner-header-standard-article .header-body h1, header.banner-header-standard-article .header-body h2, header.banner-header-standard-article .header-body h3, header.banner-header-standard-article .header-body h4, header.banner-header-standard-article .header-body h5, header.banner-header-standard-article .header-body h6 {
@@ -3352,60 +3362,35 @@ header.banner-header-standard-article .header-body h1, header.banner-header-stan
   margin-left: 20px;
 }
 
-.custom-container {
-  position: relative;
-  transition: width 0.3s, height 0.3s;
-}
-@media (min-width: 1200px) {
-  .custom-container {
-    min-width: 90%;
-  }
-}
 .custom-container .absolute-container {
   z-index: 11;
   background: white;
   box-shadow: 0 2px 20px -2px #ebebeb;
-  position: absolute;
-  top: -40px;
   width: 100%;
   transition: width 0.3s, height 0.3s;
   padding: 100px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -110px);
+  position: relative;
 }
 @media (max-width: 767px) {
   .custom-container .absolute-container {
     padding: 20px;
-    position: relative;
-    box-shadow: none;
-    transform: translate(-50%, -70px);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .custom-container .absolute-container {
     padding: 40px;
-    position: relative;
-    transform: translate(-50%, -70px);
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .custom-container .absolute-container {
     padding: 60px;
-    position: relative;
-    transform: translate(-50%, -70px);
   }
 }
 @media (min-width: 1200px) {
   .custom-container .absolute-container {
     padding: 80px;
-    position: relative;
-    transform: translate(-50%, -70px);
-  }
-}
-@media (min-width: 1450px) {
-  .custom-container .absolute-container {
-    position: absolute;
-    transform: translate(-50%, 0);
   }
 }
 .custom-container .absolute-container .article-title {

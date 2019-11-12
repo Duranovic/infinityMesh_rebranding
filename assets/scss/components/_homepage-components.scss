@@ -336,8 +336,7 @@
         color: $secondary-color;
         margin-bottom: 100px;
         @include media-xs{
-            margin-bottom: 30px;
-            
+            margin-bottom: 30px;          
         }
         @include media-sm{
             margin-bottom: 40px;

@@ -10,7 +10,7 @@ header{
         padding: 25px 55px 400px 50px;
     }
     .hamburger-menu{
-        box-shadow: 1px 0 3px -3px gainsboro;
+        box-shadow: 1px 4px 3px -3px gainsboro;
         display: none;
         top: 80px;
         right: 50%;
@@ -19,6 +19,7 @@ header{
         width: 100%;
         background: white;
         z-index: 12222;
+        // !important using to override js styling
          @include media-md{
              display: none !important;
          }
@@ -28,8 +29,7 @@ header{
          @include media-xlg{
              display: none !important;
          }
-         @include media-xxlg{
-             
+         @include media-xxlg{    
              display: none !important;
          }
         nav{
@@ -63,7 +63,6 @@ header{
             img{
                 height: 46px;
             }
-            
         }
         .header-flex-spacing{
             flex-grow: 1;
@@ -390,12 +389,19 @@ header.banner-header-standard-article{
         left: 50%;
         transform: translateX(-50%);
         text-align: left;
+
         @include media-xs{
             left: 50%;
             text-align: center;
         }
         @include media-lg{
+            min-width: 100%;
+        }
+        @include media-xlg{
             min-width: 90%;
+        }
+        @include media-xxlg{
+            min-width: 75%;
         }
         h1, h2, h3, h4, h5, h6{
             display: inline-block;
