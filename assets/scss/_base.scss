@@ -24,6 +24,7 @@ html,body
     @include customButton();
     background-color: $main-color;
     color: white;
+    text-decoration: none;
     transition: background-color .3s;
     -moz-transition: background-color .3s;
     -o-transition: background-color .3s;
@@ -45,7 +46,7 @@ html,body
         width: 100%;
     }
 }
-.secondary-button{
+.secondary-button, a.secondary-button{
     @include customButton();
     background-color:rgb(5, 92, 5);
     color: white;
@@ -57,11 +58,12 @@ html,body
         background-color: $secondary-color;
     }
 }
-.primary-button-bordered{
+.primary-button-bordered, a.primary-button-bordered{
     @include customButton();
     background-color: transparentize($color: $main-color, $amount: 0.6);
     color: white;
     border: 2px solid white;
+    text-decoration: none;
     transition: background .3s, color .3s, border-color .3s;
     -moz-transition: background .3s, color .3s, border-color .3s;
     -o-transition: background .3s, color .3s, border-color .3s;
@@ -71,11 +73,12 @@ html,body
         color: white;
     }
 }
-.secondary-button-bordered{
+.secondary-button-bordered, a.secondary-button-bordered{
     @include customButton();
     background-color:rgb(5, 92, 5);
     color: white;
     border: 2px solid white;
+    text-decoration: none;
     transition: background .3s, color .3s, border-color .3s;
     -moz-transition: background .3s, color .3s, border-color .3s;
     -o-transition: background .3s, color .3s, border-color .3s;
