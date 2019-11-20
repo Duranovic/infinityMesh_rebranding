@@ -75,8 +75,7 @@
         padding: 200px 60px 200px 60px;
     }
     @include media-xxlg{
-        padding: 200px 60px 200px 60px;
-    
+        padding: 200px 60px 200px 60px;   
     }
     p{
         font-size: $paragraph-font-size;
@@ -149,9 +148,23 @@
             }
         }
     }
+    .our-history.overlap-header{
+        @include media-us{
+            top: -3%;
+         }
+         @include media-sm{
+            top: -5%;
+         }
+    }
     .our-process{
+        @include media-us{
+            margin-top: 170px;
+        }
         @include media-xs{
-            margin-top: 50px;
+            margin-top: 170px;
+        }
+        @include media-sm{
+            margin-top: 200px;
         }
     }
     .our-mission{

@@ -63,6 +63,32 @@ $('.slider').slick({
   ]
 });
 
+$('.slides').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 8000,
+  speed: 2000,
+  dots: false,
+  arrows: true,
+  vertical: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: $('.slick-arrow-container-left'),
+  nextArrow: $('.slick-arrow-container-right'),
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: false,
+        dots: true,
+        arrows: false
+      }
+    }
+  ]
+});
+
 // Sal
 sal({
   once: false,

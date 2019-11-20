@@ -1,8 +1,10 @@
 header{
     background-position: center;
     background-size: cover;
-    padding: 20px 100px 350px 100px;
-    z-index: 10;
+    position: absolute;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
     @include media-us{
         padding: 20px 50px 400px 50px;
     }
@@ -53,7 +55,6 @@ header{
         }
     }
     .header-head{
-        position: relative;
         z-index: 10000;
         display: flex;
         display: -ms-flexbox;
@@ -310,133 +311,5 @@ header{
 
          }
     }
-    .header-body{
-        position: relative;
-        color: white;
-        text-align: center;
-        .header-body-content{
-            font-size: $paragraph-font-size;
-            margin-top: 80px;
-            display: inline-block;
-            padding-left: 100px;
-            padding-right: 100px;
-            @include media-us{
-                padding-left: 10px;
-                padding-right: 10px;
-             }
-            @include media-xs{
-                padding-left: 10px;
-                padding-right: 10px;
-             }
-            @include media-sm{
-                padding-left: 10px;
-                padding-right: 10px;
-             }
-             @include media-xxlg{
-                font-size: 15px;
-             }
-            h1{
-                font-family: $heebo-bold;
-                @include media-us{
-                    margin-bottom: 40px;
-                }
-            }
-            .header-body-content-btn-container{
-                margin-top: 50px;
-                a{
-                    text-decoration: none;
-                    margin-right: 20px;
-                    @include media-us{
-                        display: block;
-                        margin-top: 20px;
-                    }
-                }
-            }
-        }
-    }
-}
-header.banner-header-home{
-    background: url('/themes/images/header-background.png');
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: auto;
-    .header-overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(42, 159, 255, 0.527), rgba(109, 3, 248, 0.705));
-        z-index: 0;
-    }
-}
-header.banner-header-standard{
-    background: url('/themes/images/about-banner.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @include media-us{
-       padding-left: 15px;
-       padding-right: 15px;
-    }
-    .header-overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(19, 19, 19, 0.527), rgba(32, 32, 32, 0.719));
-        z-index: 0;
-    }
-}
-header.banner-header-standard-article{
-    z-index: auto;
-    position: relative;
-    background: url('/themes/images/about-banner.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow:inset 0 0 0 2022px rgba(0, 57, 133, 0.486);
-    @include media-us{
-       padding-left: 15px;
-       padding-right: 15px;
-    }
-    .header-body{
-        width: 70%;
-        display: inline-block;
-        padding: 0;
-        position: absolute;
-        bottom: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: left;
-        @include media-us{
-            left: 50%;
-            text-align: center;
-        }
-        @include media-xs{
-            left: 50%;
-            text-align: center;
-        }
-        @include media-lg{
-            min-width: 100%;
-        }
-        @include media-xlg{
-            min-width: 90%;
-        }
-        @include media-xxlg{
-            min-width: 75%;
-        }
-        h1, h2, h3, h4, h5, h6{
-            display: inline-block;
-        }
-    }
-}
-.banner-header-about{
-    box-shadow:inset 0 0 0 2022px rgba(34, 34, 34, 0.486);
-}
-.banner-header-blog{
-    padding: 20px 100px 150px 100px;
-    box-shadow:inset 0 0 0 2022px rgba(34, 34, 34, 0.486);
+
 }

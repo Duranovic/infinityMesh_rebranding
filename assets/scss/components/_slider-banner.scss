@@ -1,0 +1,144 @@
+.slider-banner{
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 650px;
+    z-index: auto;
+    @include media-us{
+        height: 750px;
+     }
+    @include media-xs{
+        height: 550px;
+     }
+    @include media-sm{
+        height: 550px;
+     }
+     @include media-xxlg{
+        height: 650px;
+     }
+    .slick-arrow-container-left{
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        transform: translateX(20px);
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        opacity: 0.4;
+        transition: opacity .3s;
+        &:hover{
+            opacity: 1;
+        }
+        .slick-arrow-left{
+            font-size: 20px;
+            i{
+                background: url('/themes/images/tm-testi-slider-prev-white.png');
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 70px;
+            }
+        }
+    }
+    .slick-arrow-container-right{
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        transform: translateX(20px);
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        z-index: 100;
+        transform: rotate(180deg);
+        opacity: 0.4;
+        transition: opacity .3s;
+        &:hover{
+            opacity: 1;
+        }
+        .slick-arrow-right{
+            font-size: 20px;
+            i{
+                background: url('/themes/images/tm-testi-slider-prev-white.png');
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 70px;
+            }
+        }
+    }
+    .slicker-slick{
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include media-us{
+            height: 750px;
+         }
+        @include media-xs{
+            height: 550px;
+         }
+        @include media-sm{
+            height: 550px;
+         }
+         @include media-xxlg{
+            height: 650px;
+         }
+    }
+    .slicker-slick.cms-slider{
+        background-image: url('/themes/images/cms-slider.png');
+    }
+    .slicker-slick.digital-slider{
+        background-image: url('/themes/images/digital-slider.jpg');
+    }
+    .slicker-slick.touch-slider{
+        background-image: url('/themes/images/touch-slider.jpg');
+    }
+    .header-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:  rgba(42, 159, 255, 0.05);
+        z-index: 0;
+    }
+    .header-body-content{
+        font-size: $paragraph-font-size;
+        margin-top: 130px;
+        display: inline-block;
+        padding-left: 100px;
+        padding-right: 100px;
+        z-index: 100;
+        position: relative;
+        @include media-us{
+            padding-left: 10px;
+            padding-right: 10px;
+         }
+        @include media-xs{
+            padding-left: 10px;
+            padding-right: 10px;
+         }
+        @include media-sm{
+            padding-left: 10px;
+            padding-right: 10px;
+         }
+         @include media-xxlg{
+            font-size: 15px;
+         }
+        h1{
+            font-family: $heebo-bold;
+            @include media-us{
+                margin-bottom: 40px;
+            }
+        }
+        .header-body-content-btn-container{
+            margin-top: 50px;
+            a{
+                text-decoration: none;
+                margin-right: 20px;
+                @include media-us{
+                    display: block;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
